@@ -1,0 +1,202 @@
+[
+  {
+    "text": "",
+    "description": "Previous track",
+    "bounds": "[234,122][378,266]",
+    "clickable": "true",
+    "enabled": "false",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "",
+    "description": "Play",
+    "bounds": "[450,107][630,284]",
+    "clickable": "true",
+    "enabled": "false",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "",
+    "description": "Next track",
+    "bounds": "[702,122][846,266]",
+    "clickable": "true",
+    "enabled": "false",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Native state: IDLE",
+    "description": "",
+    "bounds": "[60,359][1020,419]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Stop (retain queue)",
+    "bounds": "[60,455][1020,593]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Stop (retain queue)",
+    "description": "",
+    "bounds": "[349,496][731,553]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Retry / resume playback",
+    "bounds": "[60,629][1020,767]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Retry / resume playback",
+    "description": "",
+    "bounds": "[299,670][782,727]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Close development access",
+    "bounds": "[60,803][1020,941]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Close development access",
+    "description": "",
+    "bounds": "[277,844][804,901]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Believer by Imagine Dragons",
+    "bounds": "[60,983][1020,1234]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Believer",
+    "description": "",
+    "bounds": "[108,1031][972,1108]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Imagine Dragons · 2018 · 204s",
+    "description": "",
+    "bounds": "[108,1126][972,1186]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Believer by Imagine Dragons",
+    "bounds": "[60,1276][1020,1527]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Believer",
+    "description": "",
+    "bounds": "[108,1324][972,1401]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Imagine Dragons · 2019 · 219s",
+    "description": "",
+    "bounds": "[108,1419][972,1479]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Believer (Kaskade Remix) by Imagine Dragons, Kaskade",
+    "bounds": "[60,1569][1020,1820]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Believer (Kaskade Remix)",
+    "description": "",
+    "bounds": "[108,1617][972,1694]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Imagine Dragons, Kaskade · 2017 · 190s",
+    "description": "",
+    "bounds": "[108,1712][972,1772]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Believer (Acoustic) by The Cameron Collective",
+    "bounds": "[60,1862][1020,2113]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Believer (Acoustic)",
+    "description": "",
+    "bounds": "[108,1910][972,1987]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "The Cameron Collective · 2017 · 198s",
+    "description": "",
+    "bounds": "[108,2005][972,2065]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Believer by The Cameron Collective",
+    "bounds": "[60,2155][1020,2364]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Believer",
+    "description": "",
+    "bounds": "[108,2203][972,2280]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "The Cameron Collective · 2017 · 196s",
+    "description": "",
+    "bounds": "[108,2298][972,2358]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  }
+]

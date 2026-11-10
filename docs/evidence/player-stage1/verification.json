@@ -1,0 +1,84 @@
+{
+  "stage": "Stage 1 — player stability only",
+  "recordedAt": "2026-11-07T17:32:35.798Z",
+  "rootCauses": [
+    "Programmatic carousel animation completion was handled as a fresh user track selection, feeding navigation back into playback.",
+    "FIFO selection/source resolution applied obsolete requests and blocked Pause behind network lookup.",
+    "Store queue replacement and autoplay were separate operations, allowing delayed Play to override Pause.",
+    "Stale native event payloads could overwrite current selection; toggle did not consistently honor buffering play intent."
+  ],
+  "beforeFix": {
+    "regressionsFailed": 5,
+    "log": "/tmp/fav-stage1/before-tests.log"
+  },
+  "changes": [
+    "Coalesce rapid selection bursts (70 ms); accumulate relative intent and commit only the latest valid target.",
+    "Resolve catalog sources outside native mutation lock; retain ordered native mutations and invalidate stale callbacks.",
+    "Preserve Play/Pause intent and audio/video ownership; publish coherent native snapshots and committed queues.",
+    "Accept carousel navigation only from completed current human gestures.",
+    "Remove normal visible status captions from audio/video controls, retaining accessible feedback and visible errors."
+  ],
+  "changedCodeAndTestFiles": [
+    "apps/mobile/src/services/playback/AudioPlaybackService.ts",
+    "apps/mobile/src/services/playback/MediaPlaybackCoordinator.ts",
+    "apps/mobile/src/services/playback/types.ts",
+    "apps/mobile/src/store/usePlayerStore.ts",
+    "apps/mobile/src/components/carousel/ArtworkCarousel.tsx",
+    "apps/mobile/src/components/carousel/carousel-selection.ts",
+    "apps/mobile/src/screens/PlayerScreen.tsx",
+    "apps/mobile/src/video/NativeVideoSession.tsx",
+    "apps/mobile/src/services/playback/__tests__/AudioPlaybackService.test.ts",
+    "apps/mobile/src/services/playback/__tests__/track-player.mock.ts",
+    "apps/mobile/src/services/playback/__tests__/rapid-selection.test.ts",
+    "apps/mobile/src/store/__tests__/usePlayerStore.test.ts",
+    "apps/mobile/src/components/carousel/__tests__/carousel-selection.test.ts"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 106,
+      "files": 9,
+      "log": "/tmp/fav-stage1/final-focused.log",
+      "scope": "Native-contract mocks and captured provider fixtures; not device playback proof"
+    },
+    "mobileTypeScript": "PASS",
+    "productionMetro": "PASS",
+    "hermes": {
+      "status": "PASS",
+      "hermesVersion": 96,
+      "bytes": 5731073,
+      "registerComponentDefinitions": 1,
+      "canonicalStartup": true,
+      "apkBuilt": false
+    },
+    "iconsUnchanged": {
+      "assest/icon.png": true,
+      "assest/adaptive-icon.png": true,
+      "assest/favicon.png": true,
+      "assest/Fav music.png": true
+    }
+  },
+  "android": {
+    "status": "INCONCLUSIVE",
+    "model": "CPH2599",
+    "fixedBuildTested": false,
+    "installedApkSha256": "c1d69d2b8a8c307843db45db59b83ff18007ba0ddfb003f2d95b928e77c5fa5b",
+    "actualUiTaps": 6,
+    "beforeQueueSize": 0,
+    "afterQueueSize": 0,
+    "afterState": "STOPPED",
+    "finding": "Old installed APK had an empty stopped native queue. Six real UI taps were recorded; they cannot verify the source fix or establish a playback race reproduction.",
+    "evidence": "/tmp/fav-stage1/android-baseline-status.json"
+  },
+  "remaining": [
+    "Updated source is not in the installed APK. Actual fixed-build rapid taps, audiovisual continuity and accessibility feedback require Android acceptance."
+  ],
+  "restrictions": {
+    "gitCommands": 0,
+    "apkBuilds": 0,
+    "easBuilds": 0,
+    "backendChanges": false,
+    "databaseChanges": false,
+    "cloudChanges": false
+  }
+}

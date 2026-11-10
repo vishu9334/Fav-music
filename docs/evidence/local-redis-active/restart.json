@@ -1,0 +1,8 @@
+{
+  "stoppedPid": 18301,
+  "stopSignal": "SIGTERM",
+  "launcherPid": 63903,
+  "profile": "server/development/local-redis.env",
+  "redisDaemonRestarted": false,
+  "cloudConfigurationModified": false
+}

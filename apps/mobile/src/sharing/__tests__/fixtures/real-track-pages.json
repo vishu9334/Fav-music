@@ -1,0 +1,19 @@
+{
+  "notice": "Captured public metadata and exact song-page URLs from approved Bycom API, 2026-11-07. Both page HEAD checks returned 200. Tests are offline; no audio is included.",
+  "tracks": [
+    {
+      "id": "f5e75856-4598-8a85-8509-3e90deb1afe4",
+      "providerId": "BeXBcbVK",
+      "title": "Believer",
+      "artist": "Imagine Dragons",
+      "shareUrl": "https://www.jiosaavn.com/song/believer/Mg0zcxdSYXg"
+    },
+    {
+      "id": "407d6426-d997-8421-aacf-0b03399ae8e6",
+      "providerId": "SdZc6-ST",
+      "title": "Believer",
+      "artist": "Imagine Dragons",
+      "shareUrl": "https://www.jiosaavn.com/song/believer/IwwxUkIdZGc"
+    }
+  ]
+}

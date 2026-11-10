@@ -1,0 +1,9 @@
+{
+  "localRegression": "654 passed, 3 intentionally skipped live connectivity tests",
+  "nativeRenderingAcceptance": "NOT RUN",
+  "newEasBuilds": 0,
+  "databaseOperations": 0,
+  "cloudChanges": 0,
+  "videoAssetsBundled": true,
+  "privateDiagnosticKeyAbsentFromBundles": true
+}

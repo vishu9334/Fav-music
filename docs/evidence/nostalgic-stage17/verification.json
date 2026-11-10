@@ -1,0 +1,104 @@
+{
+  "stage": 17,
+  "scope": "Nostalgic premium theme only",
+  "localStatus": "PASS",
+  "nativeDeviceStatus": "PENDING",
+  "activeAppearance": "Existing dark presentation; light semantic tokens defined, no new mode or setting.",
+  "visualChanges": [
+    "Black/white foundations, blue actions, green playback/positive feedback; selective yellow/red status colors.",
+    "Semantic surface, text, border, action, status, media and illustration tokens; hardcoded legacy colors migrated in shared UI.",
+    "One original static decorative cassette in the existing Home artwork area; omitted on constrained text-only hero layouts.",
+    "Ordinary cards flattened; repeated gradients, carousel reflection layer and artwork shadows removed. Bounded Kobra media glass retained.",
+    "Existing layouts, typography, actions, icons, artwork bindings and animation parameters retained; shared card radii normalized to 16."
+  ],
+  "changedSourceFiles": [
+    "apps/mobile/src/design/NativeBackdrop.tsx",
+    "apps/mobile/src/design/styles.ts",
+    "apps/mobile/src/design/GlassSurface.tsx",
+    "apps/mobile/src/design/theme.ts",
+    "apps/mobile/src/video/NativeVideoSession.tsx",
+    "apps/mobile/src/screens/PlayerScreen.tsx",
+    "apps/mobile/src/screens/WarehouseScreen.tsx",
+    "apps/mobile/src/screens/LibraryScreen.tsx",
+    "apps/mobile/src/screens/HomeScreen.tsx",
+    "apps/mobile/src/components/loading/Skeleton.tsx",
+    "apps/mobile/src/components/app/BottomTabStrip.tsx",
+    "apps/mobile/src/components/app/AppHeader.tsx",
+    "apps/mobile/src/components/app/FeatureLinks.tsx",
+    "apps/mobile/src/components/app/AppTabBar.tsx",
+    "apps/mobile/src/components/kobra/MorphingPlayPause.tsx",
+    "apps/mobile/src/components/kobra/KobraPlaybackControls.tsx",
+    "apps/mobile/src/components/catalog/SongList.tsx",
+    "apps/mobile/src/components/discovery/FilterRow.tsx",
+    "apps/mobile/src/components/discovery/GlobalDiscoveryBar.tsx",
+    "apps/mobile/src/components/library/LibrarySheets.tsx",
+    "apps/mobile/src/components/carousel/ArtworkCarousel.tsx",
+    "apps/mobile/src/components/player/Scrubber.tsx",
+    "apps/mobile/src/auth/components/account-collections.panel.tsx",
+    "apps/mobile/src/auth/components/auth.screen.tsx",
+    "apps/mobile/src/auth/components/profile-editor.tsx",
+    "apps/mobile/src/auth/components/google-signin.button.tsx",
+    "apps/mobile/app/_layout.tsx",
+    "apps/mobile/src/design/NostalgicCassette.tsx"
+  ],
+  "changedTests": [
+    "apps/mobile/src/design/__tests__/nostalgic-theme.test.ts",
+    "apps/mobile/src/design/__tests__/nostalgic-components.test.tsx",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx",
+    "apps/mobile/src/components/app/__tests__/BottomTabStrip.test.tsx"
+  ],
+  "verification": {
+    "typecheck": {
+      "command": "pnpm run typecheck",
+      "status": "PASS",
+      "workspaceProjects": 4
+    },
+    "focusedTests": {
+      "command": "pnpm exec vitest run apps/mobile/src/design/__tests__ apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/components/app/__tests__/BottomTabStrip.test.tsx apps/mobile/src/components/kobra/__tests__/MorphingHeart.test.tsx apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx",
+      "status": "PASS",
+      "testFiles": 9,
+      "tests": 90,
+      "scope": "Token contrast, mocked native/SVG component trees, decorative accessibility props, constrained Home layouts, navigation, morphing geometry, reduced-effects policy, scrolling/playback isolation and existing screen actions. No native pixel or performance claim."
+    },
+    "contrastRatios": {
+      "dark": {
+        "minimumTextOnSurfaces": 6.45,
+        "primaryButton": 10.01,
+        "selectedAction": 7.16,
+        "inputBorder": 4.89,
+        "warning": 9.31,
+        "error": 7.87,
+        "mediaCaption": 10.61
+      },
+      "light": {
+        "minimumTextOnSurfaces": 4.9,
+        "primaryButton": 6.76,
+        "selectedAction": 5.67,
+        "inputBorder": 3.61,
+        "warning": 6.53,
+        "error": 6.49,
+        "mediaCaption": 10.61
+      }
+    },
+    "vectorBudget": {
+      "shapes": 10,
+      "rasterAssetsAdded": 0,
+      "animationsAdded": 0,
+      "accessibility": "Decorative, hidden from accessibility tree, pointerEvents none."
+    },
+    "sourcePreservation": {
+      "status": "PASS",
+      "componentsWithIdenticalHooksAndActionDataBindings": 25,
+      "unchangedProtectedFiles": 73,
+      "protectedFingerprintSha256": "be334149c53cea1f754e290a1c45f3f265aa2d97bfe2971ebe7390632ad62f5e",
+      "scope": "Mobile catalog, stores, playback/services, discovery/history, library, sharing, data, auth services/controllers/adapters/contracts/repositories, History screen, four original icons and both app.json files. Compared with a before-Stage-17 workspace snapshot; not a Git comparison."
+    }
+  },
+  "remainingAcceptance": [
+    "Native Android visual comparison, small-screen/large-font/landscape acceptance and actual accessibility review.",
+    "Native blur, scrolling and animation smoothness on low-end Android; no new APK was built or installed.",
+    "Light palette is token-verified only; there is no light-mode runtime or UI in this stage."
+  ],
+  "stage14Checkpoint": "Existing partial Stage 14 history implementation was not completed or changed by this stage; its additional regression verification remains unfinished.",
+  "restrictedActions": "No Git commands, backend edits, playback logic changes, database/cloud actions, service restarts, dependencies, icons/config changes or APK/EAS builds."
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Asia/Calcutta",
+  "streaming": "FAIL",
+  "verifiedPlayableTracks": [],
+  "boundedAudioGetRequests": 12,
+  "http404Count": 12,
+  "audioBytesInspected": 0,
+  "sourceSelectionExact": {
+    "iYMcgidY": true,
+    "8taj1DCo": true,
+    "46An-G70": true
+  },
+  "typeScript": "PASS: four workspaces",
+  "tests": {
+    "passed": 584,
+    "skipped": 3,
+    "newRegressionCases": 13
+  },
+  "metro": {
+    "status": "PASS",
+    "modules": 2932,
+    "assets": 29
+  },
+  "hermes": "PASS: bytecode emitted",
+  "changedExistingSourceFiles": [
+    "server/src/infrastructure/music-provider/implementations/jiosaavn-v3-music-provider.service.ts",
+    "server/src/infrastructure/music-provider/implementations/jiosaavn-music-provider.service.ts"
+  ],
+  "newRegressionFile": "server/src/infrastructure/music-provider/__tests__/stream-url-handling.test.ts",
+  "protectedFilesUnchanged": true,
+  "gitCommands": false,
+  "databaseOperations": false,
+  "s3OrCloudChanges": false,
+  "easBuilds": false,
+  "audioFilesSaved": false
+}

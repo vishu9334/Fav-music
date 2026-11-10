@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-07T01:14:02.716Z",
+  "pid": 72346,
+  "args": [
+    "tunnel",
+    "--url",
+    "http://127.0.0.1:4000",
+    "--no-autoupdate",
+    "--metrics",
+    "127.0.0.1:0"
+  ],
+  "creationInvocation": 1
+}

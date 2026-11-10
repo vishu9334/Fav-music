@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/health/live",
+    "status": 500,
+    "data": {
+      "statusCode": 500,
+      "error": "Internal Server Error",
+      "message": "An unexpected internal server error occurred",
+      "timestamp": "2026-11-06T18:36:15.548Z"
+    }
+  },
+  {
+    "path": "/graphql",
+    "status": 200,
+    "data": {
+      "data": null,
+      "errors": [
+        {
+          "message": "Invalid or unavailable GraphQL request",
+          "extensions": {
+            "code": "GRAPHQL_ERROR"
+          }
+        }
+      ]
+    }
+  }
+]

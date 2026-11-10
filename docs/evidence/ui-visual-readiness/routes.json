@@ -1,0 +1,98 @@
+[
+  {
+    "route": "/",
+    "file": "apps/mobile/app/(tabs)/index.tsx",
+    "guard": "verified account",
+    "source": "export { default } from '../../src/screens/HomeScreen';"
+  },
+  {
+    "route": "/library",
+    "file": "apps/mobile/app/(tabs)/library.tsx",
+    "guard": "verified account",
+    "source": "export { default } from '../../src/screens/LibraryScreen';"
+  },
+  {
+    "route": "/search",
+    "file": "apps/mobile/app/(tabs)/search.tsx",
+    "guard": "verified account",
+    "source": "export { default } from '../../src/screens/SearchScreen';"
+  },
+  {
+    "route": "/warehouse",
+    "file": "apps/mobile/app/(tabs)/warehouse.tsx",
+    "guard": "verified account",
+    "source": "export { default } from '../../src/screens/WarehouseScreen';"
+  },
+  {
+    "route": "/collection",
+    "file": "apps/mobile/app/collection.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/CollectionScreen';\nimport { withAccountScreen } from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/discovery",
+    "file": "apps/mobile/app/discovery.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/DiscoveryScreen';\nimport { withAccountScreen } from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/instamus",
+    "file": "apps/mobile/app/instamus.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/InstaMusScreen';\nimport { withAccountScreen } from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/login",
+    "file": "apps/mobile/app/login.tsx",
+    "guard": "auth controller screen",
+    "source": "export { AuthScreen as default } from '../src/auth/components/auth.screen';"
+  },
+  {
+    "route": "/offline",
+    "file": "apps/mobile/app/offline.tsx",
+    "guard": "redirect",
+    "source": "import React from 'react';\nimport {Redirect} from 'expo-router';\nexport default function OfflineRoute():React.JSX.Element{return <Redirect href=\"/(tabs)/library\" />;}"
+  },
+  {
+    "route": "/player",
+    "file": "apps/mobile/app/player.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/PlayerScreen';\nimport { withAccountScreen } from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/playlist",
+    "file": "apps/mobile/app/playlist.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/PlaylistScreen';\nimport { withAccountScreen } from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/profile",
+    "file": "apps/mobile/app/profile.tsx",
+    "guard": "auth controller screen",
+    "source": "export { AuthScreen as default } from '../src/auth/components/auth.screen';"
+  },
+  {
+    "route": "/provider-browse",
+    "file": "apps/mobile/app/provider-browse.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/ProviderBrowseScreen';\nimport {withAccountScreen} from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/provider-collection",
+    "file": "apps/mobile/app/provider-collection.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/ProviderCollectionScreen';\nimport {withAccountScreen} from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/shared",
+    "file": "apps/mobile/app/shared.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/SharedContentScreen';\nimport { withAccountScreen } from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  },
+  {
+    "route": "/videos",
+    "file": "apps/mobile/app/videos.tsx",
+    "guard": "verified account",
+    "source": "import Screen from '../src/screens/VideoScreen';\nimport { withAccountScreen } from '../src/auth/components/account-access';\nexport default withAccountScreen(Screen);"
+  }
+]

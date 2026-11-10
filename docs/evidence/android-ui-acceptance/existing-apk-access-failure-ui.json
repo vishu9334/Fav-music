@@ -1,0 +1,58 @@
+[
+  {
+    "text": "AADAT MUSIC · INTERNAL READ-ONLY CHECK",
+    "description": "",
+    "bounds": "[60,167][1020,208]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Playback verification",
+    "description": "",
+    "bounds": "[60,280][1020,401]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Real development-provider media. No account is signed in. Personal collections and production distribution rights are not verified here.",
+    "description": "",
+    "bounds": "[60,449][1020,629]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Access could not be verified. Check the private key, server and network.",
+    "description": "",
+    "bounds": "[60,677][1020,797]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "[secure input]",
+    "description": "Private development catalog key",
+    "bounds": "[60,845][1020,1019]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.EditText"
+  },
+  {
+    "text": "",
+    "description": "Verify read-only access",
+    "bounds": "[60,1055][1020,1193]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Verify read-only access",
+    "description": "",
+    "bounds": "[308,1096][772,1153]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  }
+]

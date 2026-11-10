@@ -1,0 +1,3 @@
+List of devices attached
+X4GACUMZMVEQY5XO       device usb:17825792X product:CPH2599IN model:CPH2599 device:OP5ABFL1 transport_id:18
+

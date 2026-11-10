@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Asia/Calcutta",
+  "productionReady": false,
+  "providerMetadata": "PASS: 30 unique songs and five album contents",
+  "providerAudio": "FAIL: nine HEAD 404s and three approved bounded GET 404s, zero audio bytes",
+  "typeScript": {
+    "status": "PASS",
+    "workspaces": 4
+  },
+  "regressionTests": {
+    "passed": 571,
+    "skipped": 3,
+    "testFilesPassed": 52,
+    "testFilesSkipped": 1,
+    "liveDatabaseTestsEnabled": false
+  },
+  "metro": {
+    "status": "PASS",
+    "modules": 2932,
+    "assets": 29
+  },
+  "hermes": {
+    "status": "PASS",
+    "registerComponentDefinitions": 1,
+    "canonicalEntryTail": true
+  },
+  "nativeAndroidAcceptance": "NOT RUN: target package absent; no build/install approved",
+  "noDatabaseSchemaChange": true,
+  "noCloudChanges": true,
+  "noEasBuild": true,
+  "noGitCommands": true,
+  "sourceIntegrity": {
+    "server/prisma/schema.prisma": true,
+    "app.json": true,
+    "apps/mobile/app.json": true,
+    "pnpm-lock.yaml": true,
+    "apps/mobile/.env.local": true,
+    "metro.config.js": true,
+    "apps/mobile/metro.config.js": true,
+    "apps/mobile/index.tsx": true
+  },
+  "secrets": {
+    "privateCredentialValuesFound": [],
+    "realMetadataTestFixtureBundled": false,
+    "demoStreamBundled": false
+  },
+  "schemaMirrorsMatch": true
+}

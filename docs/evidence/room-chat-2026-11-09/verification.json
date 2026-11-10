@@ -1,0 +1,51 @@
+{
+  "bytes": 34158154,
+  "sha256": "2eda1880dc0f50d092f0ac2cea186680afa692b52bfceb20faa092e417cd6c01",
+  "abis": [
+    "arm64-v8a"
+  ],
+  "hermesVersion": 96,
+  "nativeGetMethod": true,
+  "nativeGoogle": true,
+  "nativePlayback": true,
+  "privateFiles": [],
+  "secretHits": [],
+  "signatureMatchesPrevious": true,
+  "date": "2026-11-09",
+  "artifact": "artifacts/android/Fav-Music-room-chat-arm64.apk",
+  "status": "CLIENT_READY_PENDING_BACKEND_VERIFICATION",
+  "installed": false,
+  "buildMethod": "Local signed ARM64 Gradle release",
+  "tests": {
+    "passed": 1128,
+    "skipped": 3,
+    "failed": 0
+  },
+  "typecheck": "PASS all four workspaces",
+  "nativeHttpCheck": "PASS actual Java GET/body/POST/bearer/redirect/endpoint checks with a fake connection; no network",
+  "canonicalRegisterComponentDeclarations": 2,
+  "backendProbes": {
+    "localGraphQLIntrospection": 200,
+    "localSocketIoHandshake": 200,
+    "localHealthLive": 500,
+    "localRoomList": 500,
+    "publicTunnelDnsStatus": 3,
+    "publicTunnelDnsAnswers": 0,
+    "localGraphQLHealth": {
+      "httpStatus": 200,
+      "data": null,
+      "errorCode": "GRAPHQL_ERROR"
+    },
+    "localPostgresPort56315": "accepts TCP connections",
+    "localRedisPort56316": "accepts TCP connections",
+    "independentGoogleDnsStatus": 3,
+    "ordinaryInternetDns": "accounts.google.com resolves normally"
+  },
+  "limitations": [
+    "Two-user live room/chat/queue verification is pending backend restoration.",
+    "Configured public tunnel returns NXDOMAIN.",
+    "Local room REST and liveness endpoints currently return HTTP 500.",
+    "Backend repair and replacement-tunnel approval requested; backend source/schema/connection settings unchanged."
+  ],
+  "pendingApproval": "Repair the existing room backend and create one replacement HTTPS tunnel, preserving database schema and connection settings."
+}

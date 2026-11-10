@@ -1,0 +1,94 @@
+{
+  "checkedOn": "2026-11-06",
+  "approval": "Local rehearsal only",
+  "status": "PASS",
+  "localPostgres": "18.4",
+  "neonVersionFromPriorPreflight": "18.6",
+  "runId": "946f938ea627",
+  "scenarios": {
+    "apply": {
+      "status": "PASS",
+      "successfulHistoryRows": 1,
+      "historyChecksum": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+      "replayNoChange": true,
+      "nativeDiffExitCode": 0,
+      "syntheticUsers": 3,
+      "prismaFixtureChecks": {
+        "prismaUuid": true,
+        "updatedAt": true,
+        "defaults": true,
+        "emailUnique": true,
+        "subjectUnique": true,
+        "multipleNullSubjects": true,
+        "rowsAfterRejectedDuplicates": 3
+      }
+    },
+    "atomic": {
+      "status": "PASS",
+      "expectedExitCode": 3,
+      "sqlState": "22012",
+      "remainingPublicObjects": 0,
+      "remainingPublicTypes": 0
+    },
+    "recovery": {
+      "status": "PASS",
+      "dumpSha256": "e27557493821b8359290a474ecb099e85d3e38a7ccc3a0b5bcd022fed2365f92",
+      "syntheticUsersRestored": 3,
+      "fixtureContentExactMatch": true,
+      "historyExactMatch": true,
+      "schemaExactMatch": true,
+      "nativeDiffExitCode": 0,
+      "originalDatabaseUnchanged": true,
+      "omittedTocEntries": 1
+    },
+    "forward": {
+      "status": "PASS",
+      "successfulHistoryRows": 2,
+      "initialHistoryUnchanged": true,
+      "syntheticUsersPreserved": 3,
+      "fixtureContentExactMatch": true,
+      "additionalIndex": "User_createdAt_rehearsal_idx",
+      "forwardMigrationChecksum": "468a3ef3740ee77e3cd128fc53096c8ba4a780af379879c95157986aa42c0065"
+    }
+  },
+  "cluster": {
+    "root": "/private/var/folders/kn/51qtp42s3djbbb7hflzc630m0000gn/T/aadat-phase1a-rehearsal-C3eaMa",
+    "port": 57571,
+    "stopped": true,
+    "pgCtlStatusExitCode": 3,
+    "postmasterPidFileExists": false,
+    "filesRetained": true
+  },
+  "liveConnectionsAttempted": 0,
+  "liveDatabaseWrites": 0,
+  "productionCredentialsOrDataCopied": false,
+  "activeServerMigrationDirectoryExists": false,
+  "reviewedCandidateSha256": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+  "sourceFilesChecked": 10,
+  "sourceFilesChanged": [],
+  "protectedFilesChecked": 16,
+  "protectedFilesChanged": [],
+  "harnessCorrections": [
+    "Normalize inet address display using host(inet_server_addr())",
+    "Explicitly verify PostgreSQL 18 NOT NULL constraint entries"
+  ],
+  "sameClusterResumed": true,
+  "fullSourceCodeRegressionSuite": "Not rerun — no application code changed in this task",
+  "liveReadiness": "HOLD — prior native Neon P1001/DNS failure, live recovery verification and live-write approval unresolved",
+  "startedAt": "2026-11-06T04:10:11.188Z",
+  "finalScenarioRunStartedAt": "2026-11-06T04:12:13.380Z",
+  "finishedAt": "2026-11-06T04:12:17.629Z",
+  "privateEvidenceFiles": [
+    "summary.json",
+    "commands.jsonl",
+    "apply-state.json",
+    "apply-fixtures.json",
+    "atomic-state.json",
+    "synthetic-public.dump",
+    "restore-reviewed.list",
+    "recovered-state.json",
+    "forward-before.json",
+    "forward-after.json",
+    "postgres.log"
+  ]
+}

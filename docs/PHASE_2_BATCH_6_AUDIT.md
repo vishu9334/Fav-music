@@ -1,0 +1,9 @@
+# Batch 6 audit
+
+Existing code already verifies Google ID tokens on the backend, refuses email-based automatic linking, issues short-lived JWTs and Redis-backed rotating refresh tokens, checks account status/session revocation, and exposes GraphQL login/refresh/me/logout. Mobile already has lazy native Google Sign-In, SecureStore, a serialized session service and Login/Profile UI. These implementations will be extended, not duplicated.
+
+Gaps: the current root no longer mounts auth restoration; Library has no account entry; authenticated API calls have no reusable refresh path; the HTTPS configuration does not bind credential transmission to an explicitly reviewed endpoint; all users currently share the same guest library journal; no collection import/conflict policy exists. Cloud collection persistence has no implemented repository/API or approved schema/revision/tombstone strategy.
+
+Plan: keep auth disabled by default, require an explicitly approved HTTPS endpoint and credential-free server capability check, and gate backend session operations while the database HOLD applies. Add session expiry/request authorization and profile/lifecycle integration. Reuse LibraryService and its journal behind serialized guest/account namespaces. Copy guest collections only after an explicit one-time preview, preserving guest data and account conflicts. Prepare a pure cloud synchronization plan with no live writer. Keep cloud synchronization explicitly on HOLD.
+
+No live Google sign-in, database/Redis/S3 connectivity tests, migrations, database writes, deployment, cloud changes, EAS/native builds or Git commands. Real endpoint/OAuth/native capability and account persistence remain blocked pending later approval and verification. Actual environment files, icons, playback/video/catalog implementation and Prisma schema/migrations are protected by pre-batch hashes.

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "225f2d04-7d79-80e4-953e-4af5bc64e9eb",
+    "providerId": "iYMcgidY",
+    "title": "Aadat",
+    "artist": "Ninja",
+    "qualities": [
+      {
+        "quality": "96_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      },
+      {
+        "quality": "160_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      },
+      {
+        "quality": "320_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      }
+    ],
+    "artwork": {
+      "status": 200,
+      "contentType": "image/jpeg"
+    }
+  },
+  {
+    "id": "1f122aed-006b-8f65-84da-3e5168b091a8",
+    "providerId": "8taj1DCo",
+    "title": "Rain",
+    "artist": "DIVINE",
+    "qualities": [
+      {
+        "quality": "96_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      },
+      {
+        "quality": "160_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      },
+      {
+        "quality": "320_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      }
+    ],
+    "artwork": {
+      "status": 200,
+      "contentType": "image/jpeg"
+    }
+  },
+  {
+    "id": "37662751-96fc-807d-962f-51e963733d03",
+    "providerId": "46An-G70",
+    "title": "Happy",
+    "artist": "Karthik",
+    "qualities": [
+      {
+        "quality": "96_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      },
+      {
+        "quality": "160_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      },
+      {
+        "quality": "320_KBPS",
+        "host": "aac.saavncdn.com",
+        "status": 404,
+        "contentType": "application/octet-stream",
+        "contentLength": "0",
+        "acceptRanges": null,
+        "bodyRequested": false
+      }
+    ],
+    "artwork": {
+      "status": 200,
+      "contentType": "image/jpeg"
+    }
+  }
+]

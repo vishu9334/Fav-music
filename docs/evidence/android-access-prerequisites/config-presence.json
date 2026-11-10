@@ -1,0 +1,12 @@
+{
+  "googleClientIdPresent": true,
+  "googleClientIdFormatValid": true,
+  "jwtSigningMaterialPresent": true,
+  "jwtSigningMaterialAtLeast32Characters": true,
+  "databaseUrlPresent": true,
+  "directDatabaseUrlPresent": true,
+  "redisConfigurationPresent": true,
+  "authEnabled": false,
+  "accountCloudPersistenceEnabled": false,
+  "providerMode": "jiosaavn-development"
+}

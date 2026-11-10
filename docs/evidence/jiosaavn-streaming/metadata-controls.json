@@ -1,0 +1,98 @@
+[
+  {
+    "method": "search",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "server": "Vercel",
+    "cache": "HIT",
+    "age": "4088",
+    "location": null,
+    "statusField": true,
+    "message": null,
+    "error": null,
+    "responseFieldNames": [
+      "status",
+      "serverTime",
+      "searchQuery",
+      "results"
+    ]
+  },
+  {
+    "method": "song",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "server": "Vercel",
+    "cache": "HIT",
+    "age": "3928",
+    "location": null,
+    "statusField": true,
+    "message": null,
+    "error": null,
+    "responseFieldNames": [
+      "status",
+      "serverTime",
+      "id",
+      "song",
+      "album",
+      "year",
+      "primary_artists",
+      "singers",
+      "image",
+      "images",
+      "duration",
+      "label",
+      "albumid",
+      "language",
+      "copyright_text",
+      "has_lyrics",
+      "lyrics",
+      "media_url",
+      "media_urls",
+      "perma_url",
+      "album_url",
+      "release_date",
+      "api_url"
+    ]
+  },
+  {
+    "method": "link",
+    "status": 500,
+    "contentType": "application/json; charset=utf-8",
+    "server": "Vercel",
+    "cache": "MISS",
+    "age": "0",
+    "location": null,
+    "statusField": null,
+    "message": "Cannot read properties of undefined (reading 'media_preview_url')",
+    "error": null,
+    "responseFieldNames": [
+      "statis",
+      "message"
+    ]
+  },
+  {
+    "method": "album",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "server": "Vercel",
+    "cache": "HIT",
+    "age": "3929",
+    "location": null,
+    "statusField": true,
+    "message": null,
+    "error": null,
+    "responseFieldNames": [
+      "status",
+      "serverTime",
+      "albumid",
+      "title",
+      "name",
+      "year",
+      "primary_artists",
+      "image",
+      "songs",
+      "perma_url",
+      "release_date"
+    ]
+  }
+]

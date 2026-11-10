@@ -1,0 +1,129 @@
+{
+  "checkedOn": "2026-11-06",
+  "liveMigrationReadiness": "FAIL / HOLD",
+  "nativeEngineConnectivity": {
+    "status": "FAIL",
+    "operation": "prisma migrate diff --from-config-datasource --to-empty --exit-code",
+    "attempts": [
+      {
+        "exitCode": 1,
+        "elapsedMs": 771,
+        "errorCodes": [
+          "P1001"
+        ]
+      },
+      {
+        "exitCode": 1,
+        "elapsedMs": 765,
+        "errorCodes": [
+          "P1001"
+        ],
+        "concurrentSystemDns": {
+          "pass": false,
+          "code": "ENOTFOUND",
+          "elapsedMs": 5
+        }
+      }
+    ],
+    "nativeTooling": {
+      "prismaVersion": "7.10.1",
+      "engineVersion": "schema-engine-cli d1b3f377ca835d73fd50954a5e22128b9ebdd6b8",
+      "engineFileType": "Mach-O 64-bit executable arm64",
+      "engineSha256": "6032ea1bdbd6dc3d453c36a22838d1d3b3554053083bf7695c104e9993637ba1",
+      "localPostgres": "postgres (PostgreSQL) 18.4 (Homebrew)",
+      "databaseInitialized": false
+    },
+    "tls": "require + strict",
+    "startupReadOnlyRequested": true,
+    "liveReadOnlyStateConfirmedByNativeEngine": false,
+    "persistentConfigChanged": false,
+    "successfulNativeIntrospection": false
+  },
+  "initialMigration": {
+    "name": "20261106000100_init_auth",
+    "candidateSha256": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+    "matchesReviewedDraft": true,
+    "activeMigrationDirectoryExists": false,
+    "strategy": "Real initial auth-only migration; no baseline for absent objects"
+  },
+  "rehearsalPreparation": {
+    "configGuards": [
+      {
+        "name": "local validate only",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "name": "reject remote Neon target",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "name": "reject shared default port",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "name": "reject target override",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "name": "reject duplicate schema",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "name": "reject missing explicit URL",
+        "exitCode": 1,
+        "passed": true
+      }
+    ],
+    "authSnapshotCreateDefinitions": 7,
+    "authSnapshotMatchesReviewedCandidate": true,
+    "configValidationContactedDatabase": false,
+    "disposableClusterInitialized": false,
+    "rehearsalExecuted": false
+  },
+  "preparedRehearsalArtifacts": [
+    {
+      "file": "docs/phase1a-rehearsal/prisma.config.ts",
+      "sha256": "0e4e7de1d26bb2f94c162daeb4216ebe58139411aba563097a2c41c77d1afcfa"
+    },
+    {
+      "file": "docs/phase1a-rehearsal/schema.prisma",
+      "sha256": "906ce99279b5d3fef83151941dadf318aa0f0b8485aa912581a50abd1edb14b1"
+    },
+    {
+      "file": "docs/phase1a-rehearsal/atomic-failure.sql",
+      "sha256": "a5e0627cdfb45bdbd5aacc76d4caa754c37ff49cdb88f8198be4e797a32ed33a"
+    },
+    {
+      "file": "docs/phase1a-rehearsal/forward-index.sql",
+      "sha256": "468a3ef3740ee77e3cd128fc53096c8ba4a780af379879c95157986aa42c0065"
+    }
+  ],
+  "recoveryMetadata": {
+    "projectId": "misty-darkness-00417111",
+    "historyRetentionSeconds": 21600,
+    "postgresMajor": 18,
+    "source": "read-only Neon describe_project",
+    "restorePointVerified": false,
+    "restoreTestExecuted": false
+  },
+  "liveDatabaseWritesExecuted": 0,
+  "rehearsalDatabaseWritesExecuted": 0,
+  "liveDatabaseCredentialsCopiedToRehearsal": false,
+  "migrationsApplied": false,
+  "baselineSourceConfigEnvironmentFilesChecked": 6,
+  "baselineSourceConfigEnvironmentFilesChanged": [],
+  "protectedFilesChecked": 16,
+  "protectedFilesChanged": [],
+  "remainingBlockers": [
+    "Native Prisma connectivity P1001 with system DNS ENOTFOUND",
+    "Local rehearsal and recovery tests not approved or executed",
+    "Live recovery point and isolated restore not verified; six-hour retention alone insufficient",
+    "Separate live migration/history-write approval absent"
+  ],
+  "privateEvidenceDirectory": "/var/folders/kn/51qtp42s3djbbb7hflzc630m0000gn/T/aadat-final-readiness-rCHF5G"
+}

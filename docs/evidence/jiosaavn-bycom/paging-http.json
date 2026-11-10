@@ -1,0 +1,97 @@
+{
+  "at": "2026-11-06T17:47:06.049Z",
+  "origin": "https://saavn.bycomsolutions.com",
+  "auth": "No credentials; ordinary JSON Accept header; no restriction bypass",
+  "results": [
+    {
+      "path": "/api/playlists?id=156710699&page=0&limit=10",
+      "status": 200,
+      "ms": 1047,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 57467,
+      "accessDenied": false,
+      "rawMetadataFile": "paging-0.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/playlists?id=156710699&page=1&limit=10",
+      "status": 200,
+      "ms": 448,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 57467,
+      "accessDenied": false,
+      "rawMetadataFile": "paging-1.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/playlists?id=156710699&page=2&limit=10",
+      "status": 200,
+      "ms": 388,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 67246,
+      "accessDenied": false,
+      "rawMetadataFile": "paging-2.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/artists/599452/albums?page=0&sortBy=popularity&sortOrder=desc",
+      "status": 200,
+      "ms": 989,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 25780,
+      "accessDenied": false,
+      "rawMetadataFile": "paging-3.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/songs/BeXBcbVK",
+      "status": 200,
+      "ms": 712,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 6937,
+      "accessDenied": false,
+      "rawMetadataFile": "paging-4.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    }
+  ]
+}

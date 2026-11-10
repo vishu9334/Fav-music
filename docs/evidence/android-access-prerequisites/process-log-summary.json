@@ -1,0 +1,15 @@
+{
+  "backendRecentErrors": [
+    {
+      "type": "Error",
+      "message": "Connection is closed."
+    },
+    {
+      "type": "GraphQLError",
+      "message": "Connection is closed."
+    }
+  ],
+  "existingTunnelHostnames": [
+    "massachusetts-colleges-silicon-utc.trycloudflare.com"
+  ]
+}

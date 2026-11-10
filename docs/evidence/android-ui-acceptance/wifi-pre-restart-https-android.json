@@ -1,0 +1,47 @@
+{
+  "at": "2026-11-07T04:59:50.838Z",
+  "serial": "X4GACUMZMVEQY5XO",
+  "origin": "https://anyway-pdf-obligation-suggests.trycloudflare.com",
+  "credentialsSent": false,
+  "newApkInstalled": false,
+  "deviceResult": {
+    "probeId": "aadat-ui-acceptance-20261107",
+    "origin": "https://anyway-pdf-obligation-suggests.trycloudflare.com",
+    "credentialsSent": false,
+    "liveness": {
+      "path": "/health/live",
+      "httpStatus": 200,
+      "tlsCipher": "TLS_AES_128_GCM_SHA256",
+      "responseBytes": 57,
+      "payload": {
+        "status": "alive",
+        "timestamp": "2026-11-07T04:59:52.840Z"
+      },
+      "pass": true
+    },
+    "graphql": {
+      "path": "/graphql",
+      "httpStatus": 200,
+      "tlsCipher": "TLS_AES_128_GCM_SHA256",
+      "responseBytes": 172,
+      "payload": {
+        "data": {
+          "health": {
+            "status": "ok",
+            "version": "0.1.0"
+          },
+          "authCapabilities": {
+            "service": "aadat-music",
+            "version": 1,
+            "authenticationEnabled": false,
+            "cloudCollectionsEnabled": false
+          }
+        }
+      },
+      "pass": true
+    },
+    "pass": true
+  },
+  "pass": true,
+  "temporaryFileRemoved": true
+}

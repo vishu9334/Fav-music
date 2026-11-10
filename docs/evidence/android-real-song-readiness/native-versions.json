@@ -1,0 +1,74 @@
+[
+  {
+    "name": "expo",
+    "declared": "~52.0.30",
+    "installed": "52.0.49",
+    "expoRecommended": null
+  },
+  {
+    "name": "react",
+    "declared": "18.3.1",
+    "installed": "18.3.1",
+    "expoRecommended": "18.3.1"
+  },
+  {
+    "name": "react-native",
+    "declared": "0.76.6",
+    "installed": "0.76.6",
+    "expoRecommended": "0.76.9"
+  },
+  {
+    "name": "react-native-track-player",
+    "declared": "^4.1.2",
+    "installed": "4.1.2",
+    "expoRecommended": null
+  },
+  {
+    "name": "expo-video",
+    "declared": "~2.0.6",
+    "installed": "2.0.6",
+    "expoRecommended": "~2.0.6"
+  },
+  {
+    "name": "expo-screen-orientation",
+    "declared": "~8.0.4",
+    "installed": "8.0.4",
+    "expoRecommended": "~8.0.4"
+  },
+  {
+    "name": "expo-secure-store",
+    "declared": "~14.0.1",
+    "installed": "14.0.1",
+    "expoRecommended": "~14.0.1"
+  },
+  {
+    "name": "@react-native-google-signin/google-signin",
+    "declared": "16.1.1",
+    "installed": "16.1.1",
+    "expoRecommended": null
+  },
+  {
+    "name": "react-native-reanimated",
+    "declared": "~3.16.1",
+    "installed": "3.16.7",
+    "expoRecommended": "~3.16.1"
+  },
+  {
+    "name": "react-native-screens",
+    "declared": "~4.4.0",
+    "installed": "4.4.0",
+    "expoRecommended": "~4.4.0"
+  },
+  {
+    "name": "react-native-gesture-handler",
+    "declared": "~2.20.2",
+    "installed": "2.20.2",
+    "expoRecommended": "~2.20.2"
+  },
+  {
+    "name": "react-native-svg",
+    "declared": "15.8.0",
+    "installed": "15.8.0",
+    "expoRecommended": "15.8.0"
+  }
+]

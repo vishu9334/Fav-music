@@ -1,0 +1,154 @@
+[
+  {
+    "text": "AADAT MUSIC · INTERNAL READ-ONLY CHECK",
+    "description": "",
+    "bounds": "[60,167][1020,208]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Playback verification",
+    "description": "",
+    "bounds": "[60,280][1020,401]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Real development-provider media. No account is signed in. Personal collections and production distribution rights are not verified here.",
+    "description": "",
+    "bounds": "[60,449][1020,629]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Real development provider · no personal collections or production licence verified.",
+    "description": "",
+    "bounds": "[60,677][1020,797]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Believer",
+    "description": "Search actual provider songs",
+    "bounds": "[60,845][1020,1019]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.EditText"
+  },
+  {
+    "text": "",
+    "description": "Search real catalog",
+    "bounds": "[60,1055][1020,1193]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Search real catalog",
+    "description": "",
+    "bounds": "[352,1096][728,1153]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Choose a returned track",
+    "description": "",
+    "bounds": "[60,1229][1020,1306]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Seek slider, 0:00 of 0:00",
+    "bounds": "[132,1467][948,1599]",
+    "clickable": "false",
+    "enabled": "false",
+    "class": "android.widget.SeekBar"
+  },
+  {
+    "text": "0:00",
+    "description": "",
+    "bounds": "[132,1611][210,1660]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "0:00",
+    "description": "",
+    "bounds": "[870,1611][948,1660]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Previous track",
+    "bounds": "[234,1789][378,1933]",
+    "clickable": "true",
+    "enabled": "false",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "",
+    "description": "Play",
+    "bounds": "[450,1771][630,1951]",
+    "clickable": "true",
+    "enabled": "false",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "",
+    "description": "Next track",
+    "bounds": "[702,1789][846,1933]",
+    "clickable": "true",
+    "enabled": "false",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Native state: IDLE",
+    "description": "",
+    "bounds": "[60,2026][1020,2086]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Stop (retain queue)",
+    "bounds": "[60,2122][1020,2260]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Stop (retain queue)",
+    "description": "",
+    "bounds": "[349,2163][731,2220]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Retry / resume playback",
+    "bounds": "[60,2296][1020,2364]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Retry / resume playback",
+    "description": "",
+    "bounds": "[299,2337][782,2364]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "stage": "Stage 5 only — clean UI copy",
+  "recordedAt": "2026-11-08T01:16:24.876Z",
+  "status": "LOCAL PASS",
+  "removed": [
+    "Home promotional slogans, repeated track totals, card detail captions and descriptions below Through the decades / seasonal sections.",
+    "Default repeated page eyebrows, Search loaded-result counts, category availability paragraphs and redundant Library empty-state guidance.",
+    "Warehouse count banner, filter counts, repeated restore explanations and verbose routine sync captions.",
+    "InstaMus result/note counts and repeated instructional paragraphs; manual matching, search state, missing-song feedback and real linked song titles remain.",
+    "Player redundant queue count and extra explanatory error paragraph; actual error, retry, metadata, attribution and accessible playback status remain.",
+    "Playlist/provider collection count summaries and editing explanations; all existing play, edit, share, restore, delete and pagination actions remain.",
+    "Discovery explanatory paragraphs and recommendation totals; the existing details toggle reveals concise keyword/recent-listening information.",
+    "Shared-review metadata counts and boilerplate; exact song identity, unavailable-song warnings and explicit Play/Bookmark remain.",
+    "Login/Profile promotional copy and redundant signed-in banner. Routine status is concise; legacy transfer details appear in its existing preview before confirmation.",
+    "Video/local-clip explanatory paragraphs; source attribution, meaningful errors, foreground-playback status and unverified-stream status remain."
+  ],
+  "affectedScreens": [
+    "Home",
+    "Search",
+    "Library",
+    "Warehouse",
+    "Liked Tracks/Favourites/Bookmarks",
+    "Decade/Season categories",
+    "Player",
+    "Playlist",
+    "Discovery",
+    "InstaMus",
+    "History",
+    "Provider browse",
+    "Provider collection",
+    "Shared track/playlist review",
+    "Video",
+    "Offline audio",
+    "Login",
+    "Loading",
+    "Profile"
+  ],
+  "preserved": [
+    "Song/artist/album/year metadata and attribution are not word-truncated.",
+    "Existing action labels, controls, disabled states, input values, accessibility labels and event bindings match the source snapshot.",
+    "StyleSheet declarations, palette, typography, branding, layout rules and four icon assets remain unchanged.",
+    "Long actionable errors, sync conflicts, destructive confirmation and transfer/privacy consent details are intentionally preserved.",
+    "Playback, sharing, likes, stores, data models and native video lifecycle effects remain unchanged."
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "files": 5,
+      "tests": 25,
+      "log": "/tmp/fav-stage5/focused-tests.log",
+      "coverage": [
+        "Rendered copy and visible controls across core screens",
+        "Headers without automatic slogans and empty paragraphs",
+        "Native-input/accessibility labels and song metadata",
+        "Full useful error preservation",
+        "Short routine sync copy with untruncated conflicts/errors",
+        "Real auth route guards, review-mode honesty, shared navigation and scroll isolation regressions"
+      ],
+      "boundary": "Mocked React Native server rendering; no device visual-acceptance claim"
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "log": "/tmp/fav-stage5/typecheck.log"
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "log": "/tmp/fav-stage5/metro.log",
+      "bundleSha256": "1a23aace5104f708c39bfd4bcd2767e5de72b6472a1a0c22f585d30896ce1762"
+    },
+    "scopeCheck": {
+      "changedUiFiles": [
+        "apps/mobile/src/screens/CollectionScreen.tsx",
+        "apps/mobile/src/screens/DiscoveryScreen.tsx",
+        "apps/mobile/src/screens/HistoryScreen.tsx",
+        "apps/mobile/src/screens/HomeScreen.tsx",
+        "apps/mobile/src/screens/InstaMusScreen.tsx",
+        "apps/mobile/src/screens/LibraryScreen.tsx",
+        "apps/mobile/src/screens/OfflineAudioScreen.tsx",
+        "apps/mobile/src/screens/PlayerScreen.tsx",
+        "apps/mobile/src/screens/PlaylistScreen.tsx",
+        "apps/mobile/src/screens/ProviderBrowseScreen.tsx",
+        "apps/mobile/src/screens/ProviderCollectionScreen.tsx",
+        "apps/mobile/src/screens/SearchScreen.tsx",
+        "apps/mobile/src/screens/SharedContentScreen.tsx",
+        "apps/mobile/src/screens/VideoScreen.tsx",
+        "apps/mobile/src/screens/WarehouseScreen.tsx",
+        "apps/mobile/src/components/app/AuthHoldScreen.tsx",
+        "apps/mobile/src/components/app/FeatureLinks.tsx",
+        "apps/mobile/src/components/app/ui.tsx",
+        "apps/mobile/src/components/catalog/CatalogNotice.tsx",
+        "apps/mobile/src/components/catalog/SongList.tsx",
+        "apps/mobile/src/components/library/LibrarySheets.tsx",
+        "apps/mobile/src/auth/components/account-collections.panel.tsx",
+        "apps/mobile/src/auth/components/account-presentation.tsx",
+        "apps/mobile/src/auth/components/auth-loading.screen.tsx",
+        "apps/mobile/src/auth/components/auth.screen.tsx",
+        "apps/mobile/src/auth/components/profile-editor.tsx",
+        "apps/mobile/src/video/NativeVideoSession.tsx"
+      ],
+      "changedUiFileCount": 27,
+      "eventBindingsAndInputValues": "UNCHANGED",
+      "actionLabelsAndControls": "UNCHANGED",
+      "styleDeclarations": "UNCHANGED",
+      "protectedCoreAndAssets": 75,
+      "protectedHashes": "PASS",
+      "nativeVideoLifecycleEffects": "UNCHANGED"
+    }
+  },
+  "changedUiSources": {
+    "apps/mobile/src/screens/CollectionScreen.tsx": "fb3b9cdd3f450e573954c2e0d43922bb4b474bc2fb2e3137d99bb472520a9356",
+    "apps/mobile/src/screens/DiscoveryScreen.tsx": "aa3b3456c4792b01d1a8f940b8c604c697e9a8d9f397f35d6058241c2f3ec6d7",
+    "apps/mobile/src/screens/HistoryScreen.tsx": "1f7fe8a416e11aafb3aa34da56c89a090f4f57379e0be0363984519919512687",
+    "apps/mobile/src/screens/HomeScreen.tsx": "417eba84b696540ee50436c5b8dbc8187f5da48a5c0ec9819a103003531dc33c",
+    "apps/mobile/src/screens/InstaMusScreen.tsx": "c44ac731bda1b038f12a96c432fc80aa7ab138de4a08aaa960d7e4c476277741",
+    "apps/mobile/src/screens/LibraryScreen.tsx": "e4180d84499d5c6381f294f10125dd2b8e9a73986e5939de7613247e2dcc74c7",
+    "apps/mobile/src/screens/OfflineAudioScreen.tsx": "8092b49f222e571ebecdb79de134e2675e337475d06459a9c74eeb5ecf977891",
+    "apps/mobile/src/screens/PlayerScreen.tsx": "408e79a44389cabe3189f8a8684ca16136bd0835f1051db042d7d9641ba50963",
+    "apps/mobile/src/screens/PlaylistScreen.tsx": "a9c97e06b21a9c60946502434a113fa0180dd7b58e86469aa998351800b172ac",
+    "apps/mobile/src/screens/ProviderBrowseScreen.tsx": "69276274c20c8777344af0ad6bb2a3cff9838a1c70f5f050b41f51087e9ba006",
+    "apps/mobile/src/screens/ProviderCollectionScreen.tsx": "346a46842942cb13dc41d1f3aab4cab4bd4d439927d0dd3cc8c8f7d2ff081b61",
+    "apps/mobile/src/screens/SearchScreen.tsx": "50414c0ad214e3ea608d587e912799ac126b8e441e23c584df90d74f11337ae4",
+    "apps/mobile/src/screens/SharedContentScreen.tsx": "6f2cbb465739ee4cbf760550ca7792b06cc931c723d135bdd21077fa535baabc",
+    "apps/mobile/src/screens/VideoScreen.tsx": "5c5ad80e8d432027a053ecbaf4cc735159844a5873fb8e70578b7ad2e23527db",
+    "apps/mobile/src/screens/WarehouseScreen.tsx": "56a96decd4957fbb8fb52c8f80b9632b1ef7601f96b30e5b6b51c856f0f4a5b7",
+    "apps/mobile/src/components/app/AuthHoldScreen.tsx": "e489cdcf88f91cc9132eaed0fcdc0663688f30f5f865894b427c9601380ca7aa",
+    "apps/mobile/src/components/app/FeatureLinks.tsx": "fdf43aa0c32b6d1819d13469863e98ebb866f55687d3ac265a4ccda11a40c8ad",
+    "apps/mobile/src/components/app/ui.tsx": "9b7a5c0431bf11a1d96b45a240e69fe6bd8d3c97e2775f5938384d033d785e85",
+    "apps/mobile/src/components/catalog/CatalogNotice.tsx": "4e0cb966a861b9831f489223ae8bad2830353d022fab6f8d9aa9514252d2a6e8",
+    "apps/mobile/src/components/catalog/SongList.tsx": "9d3e9bfd7e21c8dcdfbe23492f57029dadd5621b56462a0ff1c6662358e68439",
+    "apps/mobile/src/components/library/LibrarySheets.tsx": "8dc7d92b558140d6bc0ec45c7b058babfda4c37ab27e157e7167feb6a56eca35",
+    "apps/mobile/src/auth/components/account-collections.panel.tsx": "b99ae686fdb3a8ed31202a78ea915765dad3a9e07069ecb79ebc50ab7ce9f349",
+    "apps/mobile/src/auth/components/account-presentation.tsx": "066a0e61f053c12b71e0eaf14c9b299d504ad5fc84158dae6b3f1210c1495a56",
+    "apps/mobile/src/auth/components/auth-loading.screen.tsx": "f69961472ecbd079ae680132b5d83e5b6cbd5ae9b7515be064c13c9a065bf97f",
+    "apps/mobile/src/auth/components/auth.screen.tsx": "25000c9be6db512320888d9861da8e2efe21fce3f169af4eddcb62e3dc2e6da6",
+    "apps/mobile/src/auth/components/profile-editor.tsx": "189f0f110fa891b3caf5d73632e04600f4e20be8545571f3622fa484b89bbdbe",
+    "apps/mobile/src/video/NativeVideoSession.tsx": "60079f1e1f18da14d41c1b07080169d01a69fb47a894c54d74367a6396634e3b"
+  },
+  "additionalFiles": [
+    "apps/mobile/src/components/app/sync-caption.ts",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx",
+    "apps/mobile/src/development/__tests__/account-layout-review.test.ts"
+  ],
+  "limits": [
+    "Removing copy naturally reduces text flow; layout/style rules and functional controls were preserved.",
+    "No updated APK was built/installed. Actual Android visual acceptance remains unverified."
+  ],
+  "restrictions": {
+    "gitCommands": 0,
+    "apkBuilds": 0,
+    "easBuilds": 0,
+    "databaseChanges": 0,
+    "cloudChanges": 0,
+    "backendChanges": false,
+    "servicesStartedOrRestarted": 0
+  }
+}

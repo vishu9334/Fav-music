@@ -1,0 +1,9 @@
+ ✓ apps/mobile/src/catalog/__tests__/demo-catalog.test.ts (5 tests) 3ms
+ ✓ apps/mobile/src/catalog/__tests__/authenticated-catalog.test.ts (3 tests) 5ms
+ ↓ server/src/__tests__/gate3b-connectivity.test.ts (3 tests | 3 skipped)
+
+ Test Files  56 passed | 1 skipped (57)
+      Tests  609 passed | 3 skipped (612)
+   Start at  07:07:30
+   Duration  4.27s (transform 1.89s, setup 0ms, collect 13.83s, tests 6.74s, environment 8ms, prepare 4.84s)
+

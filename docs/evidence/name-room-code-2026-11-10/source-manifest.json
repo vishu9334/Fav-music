@@ -1,0 +1,11 @@
+{
+  "server/src/modules/rooms/utils/room-code.ts": "17a3d2e33c13897417d6ad579d1c93ff1c65d37538be3d8757aa4319b5065c03",
+  "server/src/modules/rooms/repositories/prisma-room.repository.ts": "15c9c77736c04d544517d681a4130480f311c6723c4ef29d861cc8ff4924392c",
+  "server/src/modules/rooms/services/room.service.ts": "055707920df5823da2780666b05b7e1d46133abfb20e83d2052ab6ff8cf90fdb",
+  "server/src/modules/rooms/socket/room-socket.handler.ts": "46517a2c14d524d72a8fca475ad51a04107d7e00d5381f19f3efb05e38c743fc",
+  "apps/mobile/src/components/room/RoomHeader.tsx": "0e6a147e55c47193f3ac8f899b241a321fd83ca981cbd36fd1b5caa38fd2e165",
+  "apps/mobile/src/components/room/RoomInviteModal.tsx": "e770a0a3a3feb4bd8388bf1f620fabcac596242ad072dfe6730c9744d0f84903",
+  "apps/mobile/src/components/room/RoomDiscoveryView.tsx": "7947b0049111007304ceec5bb15944ac951fdd07a15af901689bb709b2d464dc",
+  "apps/mobile/src/services/room/room-socket.client.ts": "4d24558124c516b4635eb6381bf9db423900c1cb7637b693423c4e2c20c4bd00",
+  "apps/mobile/src/screens/RoomsScreen.tsx": "95ea5f37ef50abe44f7128126d7edcbc6269a5d2b57812bdb0fbad97b55075fb"
+}

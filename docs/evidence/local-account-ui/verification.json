@@ -1,0 +1,257 @@
+{
+  "at": "2026-11-07T09:23:56.693Z",
+  "scope": "Local account backend and reference-based UI candidate; no EAS submission",
+  "typeScript": "PASS: all four projects",
+  "tests": {
+    "passed": 672,
+    "skipped": 3,
+    "reason": "Live Neon connectivity remains excluded; no production database access"
+  },
+  "metro": {
+    "pass": true,
+    "modules": 2948,
+    "normalAuthenticatedEntry": true,
+    "flagsVerifiedInActualBundle": true
+  },
+  "hermes": {
+    "compiled": true,
+    "bytes": 5718985,
+    "sha256": "487c9ffe9871d7c64fb9bcd68cd02596fd416bdf68f20d6eddd7e0dc21675294",
+    "registerComponentFunctions": 2,
+    "canonicalEntry": true,
+    "environment": {
+      "authEnabled": true,
+      "endpoint": true,
+      "audience": true,
+      "verifiedBinding": true,
+      "normalEntry": true
+    }
+  },
+  "nativeModules": [
+    {
+      "name": "expo-blur",
+      "version": "14.0.3",
+      "classes": [
+        "expo.modules.blur.BlurModule"
+      ]
+    },
+    {
+      "name": "expo-screen-orientation",
+      "version": "8.0.4",
+      "classes": [
+        "expo.modules.screenorientation.ScreenOrientationModule"
+      ]
+    },
+    {
+      "name": "expo-secure-store",
+      "version": "14.0.1",
+      "classes": [
+        "expo.modules.securestore.SecureStoreModule"
+      ]
+    },
+    {
+      "name": "expo-video",
+      "version": "2.0.6",
+      "classes": [
+        "expo.modules.video.VideoModule"
+      ]
+    }
+  ],
+  "community": {
+    "tool": "Expo SDK 52 autolinker used by Android prebuild",
+    "modules": [
+      {
+        "name": "@react-native-google-signin/google-signin",
+        "android": true,
+        "packageImport": "import com.reactnativegooglesignin.RNGoogleSigninPackage;"
+      },
+      {
+        "name": "react-native-track-player",
+        "android": true,
+        "packageImport": "import com.doublesymmetry.trackplayer.TrackPlayer;"
+      },
+      {
+        "name": "react-native-reanimated",
+        "android": true,
+        "packageImport": "import com.swmansion.reanimated.ReanimatedPackage;"
+      },
+      {
+        "name": "react-native-svg",
+        "android": true,
+        "packageImport": "import com.horcrux.svg.SvgPackage;"
+      }
+    ]
+  },
+  "archive": {
+    "files": 333,
+    "privateSecretHits": 0,
+    "sourceMismatches": [],
+    "requiredCacheHelper": true,
+    "contentSha256": "a018388da498c51421005f9c6e4fb2ecead51d486c177e45c0bb59f55ab12e25",
+    "buildSubmitted": false
+  },
+  "androidReadiness": {
+    "readinessHttp": 200,
+    "realAuthenticationEnabled": true,
+    "accountApiRejectsAnonymous": true,
+    "credentialsSent": false,
+    "newApkInstalled": false,
+    "pass": true,
+    "serial": "X4GACUMZMVEQY5XO",
+    "at": "2026-11-07T08:51:18.095Z"
+  },
+  "localDatabase": {
+    "tables": 19,
+    "enums": 13,
+    "prismaMigrationHistoryMatches": true,
+    "nativeSchemaDiff": "No difference detected",
+    "applicationRole": "DML only; no schema/history writes",
+    "fixtures": {
+      "at": "2026-11-07T09:09:22.937Z",
+      "counts": [
+        {
+          "database": "aadat_local",
+          "users": 0,
+          "libraries": 0
+        },
+        {
+          "database": "aadat_verify",
+          "users": 0,
+          "libraries": 0
+        }
+      ],
+      "fixtureCleanupVerified": true
+    }
+  },
+  "localIntegration": {
+    "prismaPersistence": true,
+    "profile": true,
+    "ownerIsolation": true,
+    "idempotentCommit": true,
+    "staleRevisionRejected": true,
+    "unknownTrackRejected": true,
+    "redisLuaRotation": true,
+    "logoutRevokesRotatedSession": true,
+    "stores": "aadat_verify and private Redis DB1 only; fixtures removed"
+  },
+  "realCatalog": {
+    "provider": "saavn.bycomsolutions.com",
+    "songs": [
+      {
+        "id": "f5e75856-4598-8a85-8509-3e90deb1afe4",
+        "title": "Believer",
+        "artist": "Imagine Dragons",
+        "releaseYear": 2018,
+        "durationSeconds": 204,
+        "httpsAudioReturned": true
+      },
+      {
+        "id": "b9e404d7-f40a-862c-ac0e-b899333f98d0",
+        "title": "Levitating",
+        "artist": "Dua Lipa",
+        "releaseYear": 2020,
+        "durationSeconds": 203,
+        "httpsAudioReturned": true
+      },
+      {
+        "id": "bde2e772-bd77-8d48-b49e-0908eec87b83",
+        "title": "Enemy (from the series Arcane League of Legends)",
+        "artist": "Jid, Imagine Dragons, Arcane, League of Legends",
+        "releaseYear": 2022,
+        "durationSeconds": 173,
+        "httpsAudioReturned": true
+      }
+    ],
+    "actualProviderMetadata": true,
+    "databaseReferencesRoundTrip": true,
+    "audioBodiesRequested": false,
+    "googleLoginTested": false,
+    "fixtureDatabase": "aadat_verify",
+    "appAccountWritten": false,
+    "neonContacted": false
+  },
+  "google": {
+    "publicAudienceMatchesBackend": true,
+    "publicSigningKeysReachable": true,
+    "anonymousApisDenied": true,
+    "malformedIdentityTokenDenied": true,
+    "genuineDeviceLogin": "PENDING: new approved APK and user Google consent"
+  },
+  "preservation": {
+    "unchanged": [
+      "server/.env",
+      "server/prisma/schema.prisma",
+      "apps/mobile/src/services/playback/AudioPlaybackService.ts",
+      "apps/mobile/src/store/usePlayerStore.ts",
+      "apps/mobile/src/video/VideoPlaybackService.ts",
+      "react-native.config.js",
+      "assest/icon.png",
+      "assest/adaptive-icon.png",
+      "assest/favicon.png",
+      "assest/Fav music.png"
+    ],
+    "intentional": [
+      {
+        "file": "metro.config.js",
+        "change": "Only public-environment transform cache version; all runtime/singleton configuration preserved"
+      }
+    ]
+  },
+  "pending": [
+    "EAS APK approval, installation and genuine Google/account/UI acceptance",
+    "Actual small-screen/large-font/rotation/blur/performance device acceptance for this candidate",
+    "Authorized remote video/content and recognition provider",
+    "Commercial distribution licence; domain/Play Store release later"
+  ],
+  "neonWrites": 0,
+  "cloudConfigurationChanges": 0,
+  "s3Changes": 0,
+  "buildsSubmitted": 1,
+  "buildApproval": {
+    "answer": "Approve one APK and device acceptance",
+    "profile": "preview-local-account",
+    "maximumBuilds": 1,
+    "id": "3ceccc2f-8b2e-4c4f-b316-b27028211473",
+    "status": "FINISHED",
+    "submittedAt": "2026-11-07T09:27:13.897Z",
+    "apk": "https://expo.dev/artifacts/eas/sPv1oON1phN-Hxxubfsqh4QSyrOTs_KyoLHz-ZpUZ5U.apk"
+  },
+  "gitIncident": {
+    "operation": "EAS CLI build:view automatically attempted read-only Git root lookup despite EAS_NO_VCS; failed with exit 128",
+    "repositoryWrites": false,
+    "prevention": "Stopped using CLI status commands; direct Expo GraphQL read-only polling now used"
+  },
+  "androidAcceptance": {
+    "at": "2026-11-07T09:59:33.753Z",
+    "installed": true,
+    "package": "com.favmusic",
+    "freshInstallReason": "User confirmed uninstalling previous app and requested fresh installation",
+    "apkInspection": {
+      "sha256": "7e57c663236c648a8629f4f33614e187d95a0d2939ef432ab99be8f4b03d0218",
+      "bytes": 74238724,
+      "package": "com.favmusic",
+      "signatureMatches": true,
+      "modules": {
+        "com/favmusic/auth/AuthHttpClient$CatalogIpv4TlsFactory": true,
+        "com/favmusic/auth/AadatAuthModule": true,
+        "com/reactnativegooglesignin/RNGoogleSigninModule": true,
+        "expo/modules/blur/BlurModule": true,
+        "expo/modules/video/VideoModule": true,
+        "expo/modules/securestore/SecureStoreModule": true,
+        "com/doublesymmetry/trackplayer/module/MusicModule": true,
+        "com/doublesymmetry/trackplayer/service/MusicService": true
+      },
+      "hermes": true,
+      "correctEndpoint": true,
+      "correctGoogleAudience": true,
+      "privateEnvironmentFiles": [],
+      "pass": true
+    },
+    "startup": "PASS: genuine native Google sign-in screen rendered; no fatal app error observed",
+    "google": "PENDING: user account selection/consent",
+    "localActualUsers": 0,
+    "protectedHomeAndPlayback": "NOT TESTED in this APK until genuine sign-in",
+    "priorDataPreservation": "N/A: no retained Android package before installation; agent did not uninstall/clear data",
+    "additionalBuilds": 0
+  }
+}

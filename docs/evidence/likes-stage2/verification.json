@@ -1,0 +1,93 @@
+{
+  "stage": "Stage 2 only — Heart UX and Liked Tracks persistence",
+  "recordedAt": "2026-11-07T18:11:27.471Z",
+  "status": "LOCAL PASS; ANDROID ACCEPTANCE PENDING",
+  "rootCauses": [
+    "Heart used generic selected IconButton styling, adding a circular background rather than a dedicated morphing glyph.",
+    "Collection changes were published only after durable save, delaying feedback on every surface.",
+    "Adding likes required the track to be present in the bounded metadata registry, rejecting valid stable catalog IDs after eviction."
+  ],
+  "implemented": [
+    "Single native animated SVG heart path, 220 ms fill/unfill and bounded 1.08 scale; cancellation on replacement/unmount and reduced-motion support; no circular overlay.",
+    "One shared account-scoped LikeButton on song rows and Player, with synchronized morphing heart in track actions.",
+    "Immediate shared-state presentation over durable account data; explicit idempotent setLiked intent, failed-save rollback and latest-intent protection for rapid toggles.",
+    "Account generation captured before notifying subscribers; stale rendered callbacks and late account results cannot mutate the next account.",
+    "Existing alternating journals and existing authenticated cloud synchronization reused; no authentication bypass or persistence-schema change.",
+    "Library headings retained; repetitive descriptions, eyebrows and counts removed. Liked Tracks keeps useful errors and unavailable-song feedback."
+  ],
+  "changedFiles": {
+    "apps/mobile/src/library/library.service.ts": "dcab1805fa506e8776c0fffc9d3a9e04a7099ac98f163ee1c375c837d8c726c6",
+    "apps/mobile/src/store/useLibraryStore.ts": "665b4bd03c2f7451841b0e71a5641cb71ab3def3b73af76b4f3403000c43e7f3",
+    "apps/mobile/src/design/heart-motion.ts": "d5c0950a4b08c5773dcbd8bab1ada37f6146d5c17e312d4d53d32fbe5e9d95ea",
+    "apps/mobile/src/components/kobra/MorphingHeart.tsx": "73466b43341f4d3b9ead7625f7f4c96be484611441d74fe59228bd59efa3dc28",
+    "apps/mobile/src/components/library/LikeButton.tsx": "33588ed30f08d195150720dda022d26914ddee6b1d6ac25c3e5bf021fc893e08",
+    "apps/mobile/src/components/catalog/SongList.tsx": "9f3b4206648ba460328cd59195863e220bcc43793c5be1ec64d91c65f2849c53",
+    "apps/mobile/src/screens/PlayerScreen.tsx": "fb34d69ed20fc0f834a62e918206230e1f32ef0e4a4eac1f03831cc68db59c85",
+    "apps/mobile/src/components/library/LibrarySheets.tsx": "bd6d9de0d2ceda45513975dfa8830124884a74ba2fe2a9c495d8b45528e55aae",
+    "apps/mobile/src/components/app/ui.tsx": "fb6b942f617930628218674820be9884fc5c42dca8c88e037a8791c038fb0b94",
+    "apps/mobile/src/screens/LibraryScreen.tsx": "d59b5db1412371626ce2e595160be6766d992bd213c6ec5c20f18d230f3c5d06",
+    "apps/mobile/src/screens/CollectionScreen.tsx": "2c9d4df665991a17015bc223ef794df5b82fb8a2a69e624cb8dd0241c7f4983f",
+    "apps/mobile/src/library/__tests__/liked-tracks.test.ts": "086fecd42df4bdf688ab4af7fd78685ddb97bda7189a8c36e6a65f8153391d95",
+    "apps/mobile/src/design/__tests__/heart-motion.test.ts": "b99057b1d4daed9c2ca2964cbd2c3da47bdd84c41bb7f8a8db3e8d2393a7e4f5",
+    "apps/mobile/src/components/kobra/__tests__/MorphingHeart.test.tsx": "4504fa165a320b949be0d32756f8922a7b5833d1fcbf199971374d53d14289ec",
+    "apps/mobile/src/components/library/__tests__/LikeButton.test.tsx": "b8c5c370a24d5bf939523322eb115b343b39ac0e93bec5628b533b22a59aac2d"
+  },
+  "verification": {
+    "beforeFix": {
+      "tests": 7,
+      "failed": 5,
+      "passed": 2,
+      "log": "/tmp/fav-stage2/before-tests.log"
+    },
+    "focused": {
+      "status": "PASS",
+      "files": 10,
+      "tests": 65,
+      "log": "/tmp/fav-stage2/focused-tests.log",
+      "coverage": [
+        "Like/unlike and immediate multi-subscriber state",
+        "Rapid toggles without duplicate IDs or intermediate flicker",
+        "Failed-save rollback and retry",
+        "Restart and account-session restoration",
+        "In-flight failures and synchronous account switching",
+        "Production account-journal offline/restart/synchronization with injected remote fake",
+        "Shared control accessibility and stale callback guards",
+        "Morph geometry, bounded scheduling, interruption cleanup and reduced motion"
+      ]
+    },
+    "typeScript": {
+      "status": "PASS",
+      "scope": "@aadat/mobile",
+      "log": "/tmp/fav-stage2/typecheck.log"
+    },
+    "metro": {
+      "status": "PASS",
+      "log": "/tmp/fav-stage2/metro.log"
+    },
+    "hermes": {
+      "status": "PASS",
+      "version": 96,
+      "singletonCount": 1,
+      "canonicalStartup": true
+    },
+    "iconsUnchanged": {
+      "assest/icon.png": true,
+      "assest/adaptive-icon.png": true,
+      "assest/favicon.png": true,
+      "assest/Fav music.png": true
+    }
+  },
+  "limits": [
+    "All storage and remote synchronization tests use isolated in-memory storage and injected remote test doubles. No live account/database writes were executed.",
+    "Animation tests verify geometry, element structure and scheduling with a mocked React Native/UI runtime; native smoothness is unverified.",
+    "No updated APK was built or installed. Actual Android Heart interaction, visual acceptance, restart and account-switch persistence remain pending."
+  ],
+  "restrictedActions": {
+    "gitCommands": 0,
+    "builds": 0,
+    "cloudChanges": false,
+    "databaseMigrations": false,
+    "liveDatabaseWrites": false,
+    "backendChanges": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-07",
+  "timezone": "Asia/Calcutta",
+  "localRedisInstalled": "8.6.2",
+  "existingRedisReused": true,
+  "redisBind": [
+    "127.0.0.1",
+    "::1"
+  ],
+  "protectedMode": true,
+  "localRedisPing": "PASS",
+  "developmentProfile": "PREPARED; inactive; --check passed",
+  "redisDatabase": 15,
+  "existingDatabase0Keys": 160,
+  "redisWritesExecuted": false,
+  "redisConfigChanged": false,
+  "servicesStartedOrRestarted": false,
+  "fastifyWithLocalRedis": "NOT RUN: restart approval required",
+  "neonPooledAndDirectTls": "PASS: fresh credential-free TLS 1.3 checks",
+  "neonAuthenticatedSqlPreflight": "Previous approved preflight PASS; no new SQL in this task",
+  "cloudflareCommand": "PREPARED ONLY; no tunnel created",
+  "productionConfigPreserved": {
+    "server/.env": true,
+    "apps/mobile/.env.local": true,
+    "server/src/main.ts": true,
+    "server/src/index.ts": true,
+    "server/prisma/schema.prisma": true,
+    "app.json": true,
+    "apps/mobile/app.json": true,
+    "eas.json": true
+  },
+  "typeScript": "PASS: all four workspaces",
+  "testsPassed": 609,
+  "testsSkippedLiveDatabase": 3,
+  "newRegressionTests": 10,
+  "gitCommands": false,
+  "migrations": false,
+  "cloudChanges": false,
+  "easBuilds": false
+}

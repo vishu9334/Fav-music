@@ -1,0 +1,191 @@
+{
+  "at": "2026-11-06T17:48:45.017Z",
+  "providerInfo": {
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true,
+    "resourceKinds": [
+      "albums",
+      "artists",
+      "playlists"
+    ],
+    "remotePagination": true,
+    "videoSupported": false,
+    "recognitionSupported": false
+  },
+  "catalog": [
+    {
+      "query": "Believer",
+      "count": 10,
+      "hasNextPage": true,
+      "first": {
+        "id": "f5e75856-4598-8a85-8509-3e90deb1afe4",
+        "title": "Believer",
+        "artistName": "Imagine Dragons",
+        "albumName": "Evolve",
+        "durationSeconds": 204,
+        "releaseYear": 2018,
+        "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "hasVideo": false,
+        "moods": [],
+        "seasonAffinities": [],
+        "timeAffinities": [],
+        "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+        "sourceLabel": "JioSaavn · development provider",
+        "developmentOnly": true
+      }
+    },
+    {
+      "query": "Happy",
+      "count": 10,
+      "hasNextPage": true,
+      "first": {
+        "id": "37662751-96fc-807d-962f-51e963733d03",
+        "title": "Happy",
+        "artistName": "Karthik",
+        "albumName": "Happy",
+        "durationSeconds": 219,
+        "releaseYear": 2005,
+        "attribution": "© 2005 Aditya Music",
+        "hasVideo": false,
+        "moods": [
+          "Happy"
+        ],
+        "seasonAffinities": [],
+        "timeAffinities": [],
+        "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+        "sourceLabel": "JioSaavn · development provider",
+        "developmentOnly": true
+      }
+    },
+    {
+      "query": "Rain",
+      "count": 10,
+      "hasNextPage": true,
+      "first": {
+        "id": "1f122aed-006b-8f65-84da-3e5168b091a8",
+        "title": "Rain",
+        "artistName": "DIVINE",
+        "albumName": "Rain",
+        "durationSeconds": 203,
+        "releaseYear": 2025,
+        "attribution": "℗ 2025 Gully Gang Records",
+        "hasVideo": false,
+        "moods": [],
+        "seasonAffinities": [
+          "MONSOON"
+        ],
+        "timeAffinities": [],
+        "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+        "sourceLabel": "JioSaavn · development provider",
+        "developmentOnly": true
+      }
+    }
+  ],
+  "collections": [
+    {
+      "kind": "albums",
+      "searchCount": 10,
+      "name": "Evolve",
+      "count": 12,
+      "total": 12,
+      "hasMore": false,
+      "nextCount": 0,
+      "overlap": null
+    },
+    {
+      "kind": "artists",
+      "searchCount": 10,
+      "name": "Imagine Dragons",
+      "count": 10,
+      "total": 1191,
+      "hasMore": true,
+      "nextCount": 10,
+      "overlap": 0
+    },
+    {
+      "kind": "playlists",
+      "searchCount": 10,
+      "name": "Bollywood Rock - Workout Mix",
+      "count": 10,
+      "total": null,
+      "hasMore": true,
+      "nextCount": 10,
+      "overlap": 0
+    }
+  ],
+  "calls": [
+    {
+      "path": "/api/search/songs?query=Believer&page=1&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/search/songs?query=Happy&page=1&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/search/songs?query=Rain&page=1&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/search/songs?query=Believer&page=2&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/search/albums?query=Believer&page=1&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/albums?id=13435951",
+      "status": 200
+    },
+    {
+      "path": "/api/search/artists?query=Imagine+Dragons&page=1&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/artists/599452",
+      "status": 200
+    },
+    {
+      "path": "/api/artists/599452/songs?page=0&sortBy=popularity&sortOrder=desc",
+      "status": 200
+    },
+    {
+      "path": "/api/artists/599452/songs?page=1&sortBy=popularity&sortOrder=desc",
+      "status": 200
+    },
+    {
+      "path": "/api/search/playlists?query=Workout&page=1&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/playlists?id=156710699&page=1&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/playlists?id=156710699&page=2&limit=10",
+      "status": 200
+    },
+    {
+      "path": "/api/songs?ids=BeXBcbVK",
+      "status": 200
+    },
+    {
+      "path": "/api/songs?ids=BeXBcbVK",
+      "status": 200
+    }
+  ],
+  "pagination": {
+    "firstCount": 10,
+    "secondCount": 10,
+    "overlap": 0
+  },
+  "media": {
+    "id": "f5e75856-4598-8a85-8509-3e90deb1afe4",
+    "nativeId": "BeXBcbVK",
+    "exactReturned320Url": true,
+    "urlSha256": "07112afd19d72c3e223644befb13e94970e69446253679e1133194eab9edabef",
+    "expiresAt": null,
+    "refreshAfterSeconds": 120
+  }
+}

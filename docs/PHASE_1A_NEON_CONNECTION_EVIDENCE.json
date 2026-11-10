@@ -1,0 +1,260 @@
+{
+  "checkedOn": "2026-11-06",
+  "diagnosticScope": "Read-only control-plane metadata, DNS/TCP/TLS and PostgreSQL authentication handshakes; no SQL",
+  "directVariableActuallyUsesPooledHostname": true,
+  "verifiedDirectHostname": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+  "configuredHostname": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+  "neonState": {
+    "currentState": "active",
+    "disabled": false,
+    "suspendTimeoutSeconds": 0,
+    "postgresVersion": 18,
+    "publicConnectionsBlocked": false,
+    "ipAllowListEmpty": true
+  },
+  "localDnsFindings": [
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "answers": [
+        {
+          "method": "A",
+          "pass": true,
+          "addresses": [
+            "18.138.49.39",
+            "13.251.17.193",
+            "3.0.167.45"
+          ]
+        },
+        {
+          "method": "AAAA",
+          "pass": false,
+          "code": "EREFUSED"
+        },
+        {
+          "method": "system",
+          "pass": false,
+          "code": "ENOTFOUND"
+        }
+      ]
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "answers": [
+        {
+          "method": "A",
+          "pass": false,
+          "code": "EREFUSED"
+        },
+        {
+          "method": "AAAA",
+          "pass": true,
+          "addresses": [
+            "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+            "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+            "2406:da18:1a49:ee15:82a7:99c5:abf7:9839"
+          ]
+        },
+        {
+          "method": "system",
+          "pass": true,
+          "addresses": [
+            {
+              "address": "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+              "family": 6
+            },
+            {
+              "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+              "family": 6
+            },
+            {
+              "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+              "family": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "independentDnsResults": [
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "type": "A",
+      "httpStatus": 200,
+      "dnsStatus": 0,
+      "records": [
+        "18.138.49.39",
+        "13.251.17.193",
+        "3.0.167.45"
+      ]
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "type": "AAAA",
+      "httpStatus": 200,
+      "dnsStatus": 0,
+      "records": [
+        "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+        "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+        "2406:da18:1a49:ee15:82a7:99c5:abf7:9839"
+      ]
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "type": "A",
+      "httpStatus": 200,
+      "dnsStatus": 0,
+      "records": [
+        "18.138.49.39",
+        "3.0.167.45",
+        "13.251.17.193"
+      ]
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "type": "AAAA",
+      "httpStatus": 200,
+      "dnsStatus": 0,
+      "records": [
+        "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+        "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+        "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a"
+      ]
+    }
+  ],
+  "tcpMatrix": [
+    {
+      "address": "18.138.49.39",
+      "family": 4,
+      "pass": true,
+      "elapsedMs": 93
+    },
+    {
+      "address": "13.251.17.193",
+      "family": 4,
+      "pass": true,
+      "elapsedMs": 97
+    },
+    {
+      "address": "3.0.167.45",
+      "family": 4,
+      "pass": true,
+      "elapsedMs": 94
+    },
+    {
+      "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+      "family": 6,
+      "pass": false,
+      "code": "TIMEOUT",
+      "elapsedMs": 5002
+    },
+    {
+      "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+      "family": 6,
+      "pass": false,
+      "code": "TIMEOUT",
+      "elapsedMs": 5002
+    },
+    {
+      "address": "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+      "family": 6,
+      "pass": false,
+      "code": "TIMEOUT",
+      "elapsedMs": 5002
+    }
+  ],
+  "handshakes": [
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "mode": "systemDNS",
+      "pass": false,
+      "stage": "dns_lookup",
+      "elapsedMs": 68,
+      "code": "ENOTFOUND",
+      "tlsVerified": false
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "mode": "systemDNS",
+      "pass": true,
+      "stage": "authenticated_ready",
+      "elapsedMs": 692,
+      "tlsVerified": true
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "mode": "verifiedIPv4",
+      "pass": true,
+      "stage": "authenticated_ready",
+      "elapsedMs": 623,
+      "tlsVerified": true
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "mode": "verifiedIPv4",
+      "pass": true,
+      "stage": "authenticated_ready",
+      "elapsedMs": 623,
+      "tlsVerified": true
+    }
+  ],
+  "timeoutReproduction": [
+    {
+      "label": "controlled IPv6 reproduction of 15-second timeout",
+      "pass": false,
+      "stage": "tcp_connect",
+      "elapsedMs": 15002,
+      "code": "CONNECTION_TIMEOUT",
+      "safeError": "timeout expired",
+      "sqlStatementsExecuted": 0,
+      "events": [
+        {
+          "stage": "dns_lookup",
+          "ms": 2,
+          "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+          "family": 6
+        },
+        {
+          "stage": "tcp_attempt",
+          "ms": 3,
+          "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+          "port": 5432,
+          "family": 6
+        }
+      ]
+    },
+    {
+      "label": "configured pooled host with default system DNS",
+      "pass": false,
+      "stage": "dns",
+      "elapsedMs": 3,
+      "code": "ENOTFOUND",
+      "sqlStatementsExecuted": 0,
+      "events": [
+        {
+          "stage": "dns_lookup",
+          "ms": 3,
+          "code": "ENOTFOUND"
+        }
+      ]
+    }
+  ],
+  "currentFailureStages": [
+    "Local/system DNS failures: EREFUSED / ENOTFOUND",
+    "IPv6 TCP connection timeout before TLS or authentication"
+  ],
+  "originalAttemptAddressFamily": "Unknown: earlier attempt did not capture socket events; IPv6 signature reproduced now",
+  "smallestProposedFix": [
+    "Use the Neon API-confirmed unpooled host for DIRECT_DATABASE_URL, retaining credentials/database and certificate verification",
+    "Repair local DNS A-record resolution and prefer working IPv4 dynamically on this network; preserve hostname/SNI and avoid permanent IP pinning"
+  ],
+  "sqlStatementsExecuted": 0,
+  "databaseWriteStatementsExecuted": 0,
+  "neonControlPlaneWrites": 0,
+  "migrationsApplied": false,
+  "configurationChangesApplied": false,
+  "protectedSourceFiles": {
+    "protectedFiles": 16,
+    "changed": []
+  },
+  "evidenceDirectory": "/var/folders/kn/51qtp42s3djbbb7hflzc630m0000gn/T/aadat-neon-diagnostic-wsQPNX"
+}

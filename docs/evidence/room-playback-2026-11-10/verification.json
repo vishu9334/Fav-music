@@ -1,0 +1,24 @@
+{
+  "bytes": 34161602,
+  "sha256": "5057440918ef16872f0a9e7976a15ba291e9bf4fcf0e76662802215a36489225",
+  "abis": [
+    "arm64-v8a"
+  ],
+  "privateFiles": [],
+  "hermes": "c61fbc03",
+  "apk": "artifacts/android/Fav-Music-room-playback-fixed-arm64.apk",
+  "package": "com.favmusic",
+  "signatureMatchesPrevious": true,
+  "installedOn": "CPH2599",
+  "install": "adb install -r: Success",
+  "startup": "MainActivity launched; no errors in sampled AndroidRuntime/ReactNativeJS logs",
+  "hermesRegisterComponentDefinitions": 2,
+  "cloudBuild": false,
+  "build": "Local Gradle, BUILD SUCCESSFUL in 42s",
+  "typecheck": "All four workspaces passed",
+  "tests": {
+    "passed": 1139,
+    "skipped": 3
+  },
+  "liveRoomPlayback": "BLOCKED: configured ngrok endpoint offline (HTTP 404, ERR_NGROK_3200); local backend port 4000 not listening. Phone displays authentication service unavailable."
+}

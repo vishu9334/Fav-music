@@ -1,0 +1,25 @@
+import React from 'react';
+import {createRequire} from 'node:module';
+const {renderToStaticMarkup}=createRequire(import.meta.url)('react-dom/server') as {renderToStaticMarkup:(node:React.ReactNode)=>string};
+import {describe,it,expect,vi} from 'vitest';
+const fixture=vi.hoisted(()=>({state:{status:'anonymous',user:null,message:null} as {status:string;user:null|{id:string;displayName:string;email:string};message:null},controller:{}}));
+vi.mock('react-native',()=>({View:'div',Text:'span',Pressable:'button',Image:'img',ScrollView:'div',KeyboardAvoidingView:'div',Platform:{OS:'android'},StyleSheet:{create:(v:unknown)=>v}}));
+vi.mock('../../design/GlassSurface',()=>({GlassSurface:({children}:{children:React.ReactNode})=>React.createElement('div',null,children)}));
+vi.mock('../../design/BrandLogo',()=>({BrandLogo:()=>React.createElement('img',{alt:'Fav Music logo'})}));
+vi.mock('react-native-safe-area-context',()=>({SafeAreaView:'main'}));
+vi.mock('expo-router',()=>({Link:'a',Redirect:({href}:{href:string})=>React.createElement('a',{href},'Authenticated Home')}));
+vi.mock('../auth.module',()=>({AuthModule:{isEnabled:()=>false,getController:()=>({getSnapshot:()=>fixture.state,subscribe:()=>()=>{},restore:async()=>{},logout:async()=>{}})}}));
+vi.mock('../components/account-collections.panel',()=>({AccountCollectionsPanel:()=>React.createElement('div',null,'Account collections')}));
+vi.mock('../components/profile-editor',()=>({ProfileEditor:()=>React.createElement('div',null,'Profile editor')}));
+vi.mock('../components/auth-loading.screen',()=>({AuthLoadingScreen:()=>React.createElement('div',null,'Loading securely')}));
+vi.mock('../components/google-signin.button',()=>({GoogleSignInButton:()=>null}));
+import Login from '../../../app/login';
+import Profile from '../../../app/profile';
+import {AuthScreen} from '../components/auth.screen';
+import {withAccountScreen} from '../components/account-access';
+describe('real account route integration',()=>{
+ it('uses the real auth screen before login and redirects verified login to Home',()=>{fixture.state={status:'anonymous',user:null,message:null};expect(renderToStaticMarkup(React.createElement(Login))).toContain('Account services are not available yet');expect(Profile).toBe(AuthScreen);fixture.state={status:'authenticated',user:{id:'10000000-0000-4000-8000-000000000001',displayName:'Verified User',email:'test@example.invalid'},message:null};expect(renderToStaticMarkup(React.createElement(Login))).toContain('Authenticated Home');});
+ it('has no guest access link and gates private screens while authentication is unavailable',()=>{fixture.state={status:'anonymous',user:null,message:null};const Private=withAccountScreen(()=>React.createElement('div',null,'Private account data'));const html=renderToStaticMarkup(React.createElement(Private));expect(html).toContain('Account services are not available yet');expect(html).not.toContain('Continue as guest');expect(html).not.toContain('Private account data');});
+ it('uses Fav Music branding and the existing-logo component without the rejected password caption',()=>{fixture.state={status:'anonymous',user:null,message:null};const html=renderToStaticMarkup(React.createElement(Login));expect(html).toContain('FAV MUSIC');expect(html).toContain('Fav Music logo');expect(html).not.toContain('password stays with Google');expect(html).not.toContain('AADAT MUSIC');});
+ it('shows real profile controls only for the verified identity',()=>{fixture.state={status:'authenticated',user:{id:'10000000-0000-4000-8000-000000000001',displayName:'Verified User',email:'test@example.invalid'},message:null};const html=renderToStaticMarkup(React.createElement(Profile));expect(html).toContain('Verified User');expect(html).toContain('Account collections');expect(html).toContain('Profile editor');expect(html).toContain('Sign out');});
+});

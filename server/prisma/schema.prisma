@@ -1,0 +1,469 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+// ----------------------------------------------------
+// USER IDENTITY & PREFERENCES
+// ----------------------------------------------------
+enum ChatRetentionPreference {
+  EPHEMERAL_SESSION_ONLY
+  PERSISTENT_HISTORY
+}
+
+enum UserRole {
+  USER
+  CONTENT_MODERATOR
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum AccountStatus {
+  ACTIVE
+  SUSPENDED
+  DEACTIVATED
+}
+
+enum TrackPublishStatus {
+  DRAFT
+  QUARANTINED
+  PROCESSING
+  PUBLISHED
+  UNPUBLISHED
+  ARCHIVED
+}
+
+enum AuditAction {
+  USER_ROLE_UPDATED
+  USER_STATUS_UPDATED
+  TRACK_QUARANTINED
+  TRACK_PUBLISHED
+  TRACK_DELETED
+  TRACK_METADATA_UPDATED
+  ROOM_TERMINATED
+  AFFINITY_ADJUSTED
+  SYSTEM_BOOTSTRAP
+  BREAK_GLASS_RECOVERY
+}
+
+model User {
+  accountLibrary AccountLibrary?
+  libraryReceipts LibraryMutationReceipt[]
+  id                      String                  @id @default(uuid())
+  email                   String                  @unique
+  displayName             String
+  avatarKey               String? // S3 Object Key
+  googleSub               String?                 @unique
+  chatRetentionPreference ChatRetentionPreference @default(EPHEMERAL_SESSION_ONLY)
+  createdAt               DateTime                @default(now())
+  updatedAt               DateTime                @updatedAt
+
+  // Administrative RBAC & Lifecycle
+  role                    UserRole                @default(USER)
+  status                  AccountStatus           @default(ACTIVE)
+
+  // Room Authority Relations
+  hostedRooms             Room[]                  @relation("RoomHost")
+  originalControlledRooms Room[]                  @relation("RoomOriginalController")
+  activeControlledRooms   Room[]                  @relation("RoomActiveController")
+  roomParticipants        RoomParticipant[]
+  controlRequests         RoomControlRequest[]
+  persistentMessages      PersistentRoomMessage[] // Only persisted messages with consent
+
+  // Library & Music Relations
+  warehouseTracks  WarehouseTrack[]
+  instamusReels    InstaMusReel[]
+  savedCollections UserSavedCollection[]
+  listeningLogs    ListeningLog[]
+
+  // Admin & Catalog Audit Relations
+  adminAuditLogs   AdminAuditLog[]         @relation("AdminActor")
+  uploadedTracks   Track[]                 @relation("TrackUploader")
+
+  @@index([role, status])
+}
+
+// ----------------------------------------------------
+// GLOBAL CATALOG (Immutable by User Actions)
+// ----------------------------------------------------
+enum TimeAffinity {
+  DAWN
+  MORNING
+  AFTERNOON
+  EVENING
+  LATE_NIGHT
+}
+
+enum WeatherAffinity {
+  CLEAR_SUNNY
+  RAINY
+  CLOUDY
+  STORMY
+  SNOW_COLD
+}
+
+enum SeasonAffinity {
+  SPRING
+  SUMMER
+  MONSOON
+  AUTUMN
+  WINTER
+}
+
+model Track {
+  id              String  @id @default(uuid())
+  title           String
+  artistName      String
+  albumName       String?
+  durationSeconds Int
+  releaseYear     Int?
+  moodTags        String[] @default([])
+
+  // Local Batch 5 proposal only. No live schema changes have been approved/applied.
+  licenseReference   String? // Private evidence/reference; never exposed by catalog API
+  licenseAttribution String?
+  licenseVerifiedAt  DateTime?
+  licenseExpiresAt   DateTime?
+  publicStreamingAllowed Boolean @default(false)
+
+  // S3 Object Keys (Presigned on demand at API layer)
+  audioKey   String // e.g., "tracks/audio/uuid.mp3"
+  videoKey   String? // e.g., "tracks/video/uuid.mp4"
+  artworkKey String // e.g., "tracks/art/uuid.jpg"
+
+  // Contextual Tags for Non-LLM Smart Shuffle
+  timeAffinities    TimeAffinity[]
+  weatherAffinities WeatherAffinity[]
+  seasonAffinities  SeasonAffinity[]
+  energyScore       Float             @default(0.5) // 0.0 (Chill) to 1.0 (High Energy)
+  tempoBpm          Int?
+
+  createdAt DateTime @default(now())
+
+  // Catalog Lifecycle & Ownership
+  publishStatus   TrackPublishStatus @default(DRAFT)
+  uploadedById    String?
+  uploadedBy      User?              @relation("TrackUploader", fields: [uploadedById], references: [id], onDelete: SetNull)
+
+  warehouseTracks WarehouseTrack[]
+  instamusTrack   InstaMusTrack?
+  roomQueueItems  RoomQueueItem[]
+  collectionItems CollectionTrackItem[]
+  listeningLogs   ListeningLog[]
+  dailyMetrics    TrackDailyMetric[]
+
+  @@index([title, artistName])
+  @@index([publishStatus])
+  @@index([publishStatus, publicStreamingAllowed, id])
+}
+
+// ----------------------------------------------------
+// HYBRID MUSIC WAREHOUSE
+// ----------------------------------------------------
+enum WarehouseStatus {
+  ACTIVE
+  ARCHIVED
+  HIDDEN
+}
+
+model WarehouseTrack {
+  id          String          @id @default(uuid())
+  userId      String
+  trackId     String
+  status      WarehouseStatus @default(ACTIVE)
+  isFavorite  Boolean         @default(false)
+  listenCount Int             @default(0)
+  skipCount   Int             @default(0)
+  archivedAt  DateTime?
+  addedAt     DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  track Track @relation(fields: [trackId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, trackId])
+  @@index([userId, status])
+}
+
+// ----------------------------------------------------
+// INSTAMUS REEL INGESTION
+// ----------------------------------------------------
+enum ReelMatchStatus {
+  PENDING
+  MATCHED
+  UNMATCHED
+  EXTRACTION_FAILED
+}
+
+model InstaMusTrack {
+  id             String   @id @default(uuid())
+  trackId        String   @unique
+  originalTitle  String
+  originalArtist String
+  createdAt      DateTime @default(now())
+
+  track Track          @relation(fields: [trackId], references: [id], onDelete: Restrict)
+  reels InstaMusReel[]
+}
+
+model InstaMusReel {
+  id                String          @id @default(uuid())
+  userId            String
+  reelUrl           String
+  status            ReelMatchStatus @default(PENDING)
+  confidenceScore   Float?
+  instaMusTrackId   String?
+  extractedMetaJson String? // Scraped title/artist keywords for manual search fallback
+  isPrivate         Boolean         @default(true)
+  errorMessage      String?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  instaMusTrack InstaMusTrack? @relation(fields: [instaMusTrackId], references: [id], onDelete: SetNull)
+
+  @@index([userId, status])
+  @@index([reelUrl])
+}
+
+// ----------------------------------------------------
+// LISTENING ROOMS (Persistent Entity)
+// Note: High-frequency transient playback sync resides in Redis
+// ----------------------------------------------------
+enum RoomAccess {
+  PUBLIC
+  PRIVATE
+}
+
+enum RoomChatPolicy {
+  EPHEMERAL_SESSION_ONLY
+  PERSISTENT_LOG
+}
+
+model Room {
+  id           String         @id @default(uuid())
+  name         String
+  passcodeHash String?
+  access       RoomAccess     @default(PUBLIC)
+  chatPolicy   RoomChatPolicy @default(EPHEMERAL_SESSION_ONLY)
+
+  // Explicitly Separated Room Roles
+  hostUserId           String
+  originalControllerId String?
+  activeControllerId   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  hostUser           User  @relation("RoomHost", fields: [hostUserId], references: [id], onDelete: Restrict)
+  originalController User? @relation("RoomOriginalController", fields: [originalControllerId], references: [id], onDelete: SetNull)
+  activeController   User? @relation("RoomActiveController", fields: [activeControllerId], references: [id], onDelete: SetNull)
+
+  participants       RoomParticipant[]
+  controlRequests    RoomControlRequest[]
+  queue              RoomQueueItem[]
+  persistentMessages PersistentRoomMessage[]
+
+  @@index([hostUserId])
+}
+
+model RoomParticipant {
+  id           String   @id @default(uuid())
+  roomId       String
+  userId       String
+  hasConsented Boolean  @default(false) // Explicit consent for persistent chat
+  joinedAt     DateTime @default(now())
+
+  room Room @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([roomId, userId])
+}
+
+enum ControlRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  EXPIRED
+}
+
+model RoomControlRequest {
+  id          String               @id @default(uuid())
+  roomId      String
+  requesterId String
+  status      ControlRequestStatus @default(PENDING)
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+
+  room      Room @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  requester User @relation(fields: [requesterId], references: [id], onDelete: Cascade)
+
+  @@index([roomId, status])
+}
+
+model RoomQueueItem {
+  id          String   @id @default(uuid())
+  roomId      String
+  trackId     String
+  suggestedBy String
+  orderIndex  Int
+  addedAt     DateTime @default(now())
+
+  room  Room  @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  track Track @relation(fields: [trackId], references: [id], onDelete: Cascade)
+
+  @@unique([roomId, orderIndex])
+}
+
+/**
+ * ONLY for persistent messages when room policy is PERSISTENT_LOG AND user has consented.
+ * Temporary/ephemeral messages reside strictly in Redis and are NEVER saved to PostgreSQL.
+ */
+model PersistentRoomMessage {
+  id        String   @id @default(uuid())
+  roomId    String
+  senderId  String
+  content   String
+  createdAt DateTime @default(now())
+
+  room   Room @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  sender User @relation(fields: [senderId], references: [id], onDelete: Cascade)
+
+  @@index([roomId, createdAt])
+}
+
+// ----------------------------------------------------
+// SEASONAL COLLECTIONS & CONTEXTUAL RULES
+// ----------------------------------------------------
+model SeasonalCollectionDefinition {
+  id               String           @id @default(uuid())
+  nameTemplate     String // e.g. "Monsoon Reverie", "Crisp Winter Mornings"
+  seasonCondition  SeasonAffinity
+  weatherCondition WeatherAffinity?
+  timeCondition    TimeAffinity?
+  minEnergy        Float?
+  maxEnergy        Float?
+  createdAt        DateTime         @default(now())
+
+  savedSnapshots UserSavedCollection[]
+}
+
+model UserSavedCollection {
+  id           String   @id @default(uuid())
+  userId       String
+  definitionId String?
+  customName   String // User can rename freely
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user       User                          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  definition SeasonalCollectionDefinition? @relation(fields: [definitionId], references: [id], onDelete: SetNull)
+  items      CollectionTrackItem[]
+
+  @@index([userId])
+}
+
+model CollectionTrackItem {
+  id           String @id @default(uuid())
+  collectionId String
+  trackId      String
+  orderIndex   Int
+
+  collection UserSavedCollection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+  track      Track               @relation(fields: [trackId], references: [id], onDelete: Cascade)
+
+  @@unique([collectionId, orderIndex])
+}
+
+model ListeningLog {
+  id              String   @id @default(uuid())
+  eventId         String?  @unique // Client UUIDv4 for idempotent ingestion
+  userId          String
+  trackId         String
+  playedAt        DateTime @default(now())
+  durationSec     Int
+  wasSkipped      Boolean  @default(false)
+  completed       Boolean  @default(false) // Reached >= 90% duration
+  playbackContext String?  // e.g. "DISCOVERY", "ROOM", "WAREHOUSE"
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  track Track @relation(fields: [trackId], references: [id], onDelete: Cascade)
+
+  @@index([userId, playedAt])
+  @@index([trackId, playedAt])
+  @@index([playedAt])
+}
+
+// ----------------------------------------------------
+// ADMINISTRATIVE AUDIT LOG (Immutable Ledger)
+// ----------------------------------------------------
+model AdminAuditLog {
+  id         String      @id @default(uuid())
+  adminId    String
+  action     AuditAction
+  targetType String // "USER", "TRACK", "ROOM", "SYSTEM"
+  targetId   String
+  ipAddress  String
+  userAgent  String
+  metadata   Json? // Diff snapshot
+  createdAt  DateTime    @default(now())
+
+  admin User @relation("AdminActor", fields: [adminId], references: [id], onDelete: Restrict)
+
+  @@index([adminId, createdAt])
+  @@index([targetType, targetId])
+  @@index([createdAt])
+}
+
+// ----------------------------------------------------
+// DURABLE ANALYTICS ROLLUPS
+// ----------------------------------------------------
+model DailyPlatformMetric {
+  id                 String   @id @default(uuid())
+  date               DateTime @unique @db.Date
+  dauExact           Int
+  totalPlays         Int
+  totalListenSeconds BigInt
+  uniqueTracksPlayed Int
+  newRegistrations   Int
+  createdAt          DateTime @default(now())
+}
+
+model TrackDailyMetric {
+  id                 String   @id @default(uuid())
+  date               DateTime @db.Date
+  trackId            String
+  playCount          Int // Qualified plays (>= 30s)
+  uniqueListeners    Int
+  totalListenSeconds BigInt
+  skipCount          Int
+  completionCount    Int
+  createdAt          DateTime @default(now())
+
+  track Track @relation(fields: [trackId], references: [id], onDelete: Cascade)
+
+  @@unique([date, trackId])
+  @@index([date, playCount(sort: Desc)])
+}
+
+// Whole-library CAS prevents lost updates; personal state is canonical here, not dual-written.
+model AccountLibrary {
+  userId String @id
+  user User @relation(fields: [userId], references: [id], onDelete: Restrict)
+  revision Int @default(0)
+  data Json
+  updatedAt DateTime @updatedAt
+}
+model LibraryMutationReceipt {
+  userId String
+  user User @relation(fields: [userId], references: [id], onDelete: Restrict)
+  mutationId String
+  payloadHash String
+  appliedRevision Int
+  createdAt DateTime @default(now())
+  @@id([userId, mutationId])
+}

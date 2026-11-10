@@ -1,0 +1,7 @@
+{
+  "apps/mobile/src/components/app/AppTabBar.tsx": "dcaa60900eaf1aab3b9948f4d1f10df7b66e25a6b91e5fd688329ebd61a517ec",
+  "apps/mobile/src/components/room/RoomSharedPlayer.tsx": "057f16506dbdac0dd8839fd0ac5031275b7a33e6af51607f359cf308dc16528b",
+  "apps/mobile/src/components/room/RoomSongSearch.tsx": "5df01022b6915eeca9dce58218ef4e91794aa2b5c51f6ebd69bc0f978f237f86",
+  "apps/mobile/src/services/room/room-playback-bridge.ts": "a019afbcae676019b3f232d09ad3275bcea398a0391d25ec4021ee0fa3681182",
+  "apps/mobile/src/services/room/room-socket.client.ts": "68d45a6ff3e2adc0392117627046c4070da1473c44d2124822b1fd73fec94b3f"
+}

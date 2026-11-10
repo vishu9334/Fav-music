@@ -1,0 +1,13 @@
+{
+  "httpStatus": 401,
+  "tlsVerifyResult": 0,
+  "expiredAt": "2026-11-07T04:03:42.265000+00:00",
+  "expiredKeyDenied": true,
+  "keyPrinted": false,
+  "errors": [
+    {
+      "message": "Development catalog access is missing or expired.",
+      "code": "DEVELOPMENT_ACCESS_DENIED"
+    }
+  ]
+}

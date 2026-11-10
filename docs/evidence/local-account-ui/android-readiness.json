@@ -1,0 +1,10 @@
+{
+  "readinessHttp": 200,
+  "realAuthenticationEnabled": true,
+  "accountApiRejectsAnonymous": true,
+  "credentialsSent": false,
+  "newApkInstalled": false,
+  "pass": true,
+  "serial": "X4GACUMZMVEQY5XO",
+  "at": "2026-11-07T08:51:18.095Z"
+}

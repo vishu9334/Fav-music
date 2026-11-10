@@ -1,0 +1,56 @@
+{
+  "verifiedWebSourceProject": "aadt-music",
+  "alignedClientIds": true,
+  "otherBackendEnvironmentValuesUnchanged": true,
+  "newClientIdInBundle": true,
+  "oldClientIdAbsent": true,
+  "newClientIdInHermes": true,
+  "privateSecretHits": [],
+  "archiveSourceMismatches": [],
+  "archiveFiles": 335,
+  "protectedSourceChanges": [],
+  "hermesVersion": 96,
+  "registerComponentDefinitions": 1,
+  "canonicalStartup": true,
+  "freshAttempt": {
+    "time": "2026-11-07 16:34:19.881 IST",
+    "nativeCode": "10",
+    "userConfirmedMessage": "Google sign-in isn\u2019t set up correctly for this app. Please contact support."
+  },
+  "change": {
+    "at": "2026-11-07T11:05:19.676Z",
+    "sourceType": "Downloaded Google Web OAuth JSON; only public fields used",
+    "projectId": "aadt-music",
+    "previousClientId": "558308870104-04371glm33beh2990nqba8l9c51mdvpd.apps.googleusercontent.com",
+    "verifiedWebClientId": "558308870104-f9smr1ta0ict2fch5o4ce1gja5na7qfq.apps.googleusercontent.com",
+    "previousClientType": "Not verified",
+    "changes": [
+      {
+        "file": "server/.env",
+        "key": "GOOGLE_CLIENT_ID",
+        "otherVariablesUnchanged": true
+      },
+      {
+        "file": "apps/mobile/.env.local",
+        "key": "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID",
+        "otherVariablesUnchanged": true
+      },
+      {
+        "file": "eas.json",
+        "key": "build.preview-local-account.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID"
+      }
+    ],
+    "secretCopied": false,
+    "servicesRestarted": false,
+    "buildsSubmitted": 0
+  },
+  "focusedTestsPassed": 50,
+  "typeScript": "PASS all workspaces",
+  "metro": "PASS, 2951 modules and 30 assets",
+  "currentDeviceAndBackend": "Remain on old public client ID; no restart or new build performed",
+  "remaining": [
+    "Confirm Android OAuth client package and installed signing SHA-1 in aadt-music Google project",
+    "Separate approval for one existing-local-backend restart and one corrected-ID APK",
+    "Genuine device Google login remains unverified after this configuration change"
+  ]
+}

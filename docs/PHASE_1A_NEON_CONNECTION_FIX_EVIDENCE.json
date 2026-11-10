@@ -1,0 +1,78 @@
+{
+  "checkedOn": "2026-11-06",
+  "directHostname": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+  "pooledUrlUnchanged": true,
+  "otherEnvironmentValuesPreserved": true,
+  "directCredentialsDatabaseAndQueryPreserved": true,
+  "connections": [
+    {
+      "kind": "pooled",
+      "hostname": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "authenticated": true,
+      "elapsedMs": 1873,
+      "tlsAuthorized": true,
+      "tlsProtocol": "TLSv1.3",
+      "remoteFamily": "IPv4"
+    },
+    {
+      "kind": "direct",
+      "hostname": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "authenticated": true,
+      "elapsedMs": 581,
+      "tlsAuthorized": true,
+      "tlsProtocol": "TLSv1.3",
+      "remoteFamily": "IPv4"
+    }
+  ],
+  "preflight": {
+    "status": "PASS",
+    "completed": true,
+    "statementsExecuted": 20,
+    "transactionReadOnly": "on",
+    "postgresVersion": "18.6 (ac70818)",
+    "effectiveSchema": "public",
+    "connectPrivilege": true,
+    "publicUsagePrivilege": true,
+    "publicCreatePrivilege": true,
+    "publicRelations": 0,
+    "publicTypeRows": 0,
+    "targetDependencies": 0,
+    "ddlEventTriggers": 0,
+    "customDefaultAclRows": 0,
+    "hardwiredTableGrants": "owner only",
+    "history": "SKIPPED — history table absent",
+    "neonAuthTables": [
+      "account",
+      "invitation",
+      "jwks",
+      "member",
+      "organization",
+      "project_config",
+      "session",
+      "user",
+      "verification"
+    ]
+  },
+  "databaseWriteStatementsExecuted": 0,
+  "migrationsApplied": false,
+  "activeMigrationDirectoryExists": false,
+  "protectedFilesChecked": 16,
+  "protectedFilesChanged": [],
+  "tests": {
+    "passed": 276,
+    "skipped": 3,
+    "fullSuite": "PASS",
+    "typecheck": "PASS — all four workspaces",
+    "backendBuild": "PASS"
+  },
+  "runtime": {
+    "localApiPid": 18301,
+    "activation": "rebuilt API restarted; see private server.log"
+  },
+  "remainingMigrationBlockers": [
+    "No migration/baselining write approval",
+    "Isolated migration rehearsal and verified recovery point not completed",
+    "Native Prisma migration-engine networking not verified; Node helper is scoped to pg clients"
+  ],
+  "evidenceDirectory": "/var/folders/kn/51qtp42s3djbbb7hflzc630m0000gn/T/aadat-neon-fix-c4FxFB"
+}

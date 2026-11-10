@@ -1,0 +1,12 @@
+packages:
+  - 'packages/*'
+  - 'server'
+  - 'apps/*'
+
+allowBuilds:
+  '@prisma/client': true
+  '@prisma/engines': true
+  dtrace-provider: true
+  esbuild: true
+  prisma: true
+  protobufjs: true

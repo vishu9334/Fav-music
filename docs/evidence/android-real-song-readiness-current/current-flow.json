@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-07T01:37:35.593Z",
+  "endpoint": "https://anyway-pdf-obligation-suggests.trycloudflare.com/graphql",
+  "credentialsSent": false,
+  "fakeIdentitySupplied": false,
+  "mobileCatalogFlag": false,
+  "authFlag": false,
+  "verifiedAuthMarker": false,
+  "checks": [
+    {
+      "name": "health-and-auth",
+      "status": 200,
+      "payload": {
+        "data": {
+          "health": {
+            "status": "ok",
+            "version": "0.1.0"
+          },
+          "authCapabilities": {
+            "service": "aadat-music",
+            "version": 1,
+            "authenticationEnabled": false,
+            "cloudCollectionsEnabled": false
+          }
+        }
+      }
+    },
+    {
+      "name": "mobile-catalog-request",
+      "status": 401,
+      "payload": {
+        "errors": [
+          {
+            "message": "Authentication required",
+            "extensions": {
+              "code": "UNAUTHORIZED"
+            }
+          }
+        ],
+        "data": null
+      }
+    },
+    {
+      "name": "protected-user-api",
+      "status": 401,
+      "payload": {
+        "errors": [
+          {
+            "message": "Authentication required",
+            "extensions": {
+              "code": "UNAUTHORIZED"
+            }
+          }
+        ],
+        "data": null
+      }
+    }
+  ]
+}

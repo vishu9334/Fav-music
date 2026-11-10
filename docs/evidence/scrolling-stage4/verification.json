@@ -1,0 +1,148 @@
+{
+  "stage": "Stage 4 only — scrolling stability",
+  "recordedAt": "2026-11-07T19:49:46.828Z",
+  "status": "LOCAL PASS; UPDATED-APK AND ANDROID PERFORMANCE ACCEPTANCE PENDING",
+  "rootCauses": [
+    "Audio artwork drag/momentum completion directly selected another track; video momentum completion selected/autoplayed another item and also accepted programmatic ends.",
+    "DemoCatalog.upsert deleted and reinserted unchanged IDs, replacing row references, reordering lists and notifying all subscribers on no-op cache/thumbnail updates.",
+    "One global catalog result/cursor was shared by mounted screens. Repeated query loads reset loaded pages; Search switched to a different data source while Load More was loading.",
+    "Fresh per-row callbacks and global-revision subscriptions invalidated memoization. Virtualized image remounts could repeatedly force thumbnail renewal.",
+    "Pagination could repeatedly fetch the same request/cursor and used slice(-500), dropping the visible prefix. History keys included global indices and changed when events were prepended.",
+    "InstaMus put every match in the FlatList header, bypassing virtualization. Video session lifetime depended on the entire metadata array rather than playback-source identity."
+  ],
+  "changes": [
+    "Carousel scrolling is presentation-only. Explicit card taps and existing Previous/Next controls retain selection; original Stage 1 transport/queue code is unchanged.",
+    "Scroll interaction refs reject drag, momentum and immediate release presses without queuing deferred playback. Common song rows, Player, Library, History and InstaMus use the guard.",
+    "Query-keyed catalog snapshots retain loaded IDs, row objects and cursors across recent navigation. Focus controls debounce/request ownership; identical requests join one promise.",
+    "Metadata updates retain insertion order and unchanged object references, with no notification for identical data. Canonical page-cache keys ignore object property order.",
+    "Load More retains the visible prefix and data while loading/failing. Failed pagination retries resume the failed cursor. Repeated pages/cursors stop; bounded query caches and a 500-track window avoid unbounded memory.",
+    "Stable memoized row callbacks, bounded FlatList batches and independent bounded scroll-position metadata preserve rendering/position without React state updates per scroll frame.",
+    "Thumbnail renewal coalesces and is limited to once per song/minute across remounts. Stale artwork responses cannot overwrite newer art.",
+    "InstaMus matches/notes are native virtualized rows with stable keys. History keys remain stable when a different event is prepended.",
+    "Provider resource/collection page requests use bounded single-flight caching and stable append/deduplication. Existing explicit Load More controls remain; Home discovery has an explicit Load More footer.",
+    "Video metadata/artwork updates no longer dispose/reinitialize the native session. Video discovery consumes its own query snapshot."
+  ],
+  "changedSourceAndTests": {
+    "apps/mobile/src/store/createCatalogStore.ts": "96d751a8796342ada189a3000f572918a4f74da32c4aa7841c490ac9e5f462b8",
+    "apps/mobile/src/store/useCatalogStore.ts": "31aa8c584edc69b91ad3df5ee9819df6efd5d5f5d0662c60fd4c74719e166fe8",
+    "apps/mobile/src/catalog/demo-catalog.ts": "9af90c02d728af07d458890fdb4a75c3bff101970a00bd4000b81d00c91c9e5d",
+    "apps/mobile/src/catalog/catalog-client.service.ts": "5f5361dcabbfe6d511fcb6e5c8cd246c1d361ad427c21d5cdb096b47533f5c28",
+    "apps/mobile/src/catalog/use-catalog-page.ts": "515e2ca43866c9a2c45fb1aa4ac74f7242099252cfa57e474b3153de2e64893d",
+    "apps/mobile/src/catalog/artwork-recovery.ts": "bab1711ddc9a1715afe1f5f809147c6ea60458610cab58091e41da6e147e4d7b",
+    "apps/mobile/src/catalog/page-requests.ts": "f4f21291289488337e398ff3d8b50e8b2402289614426b5b78f4f1e5bdca2191",
+    "apps/mobile/src/components/lists/scroll-interaction.ts": "114ba1ed8392372ea63fbf8e1657c981d76fc16aa91ac869c93be44432444611",
+    "apps/mobile/src/components/lists/use-list-interaction.ts": "f25a8248d042c872eb90cbc22cdaf7be46f69be67c516b3c02099da69bf517ae",
+    "apps/mobile/src/components/lists/history-rows.ts": "15e837f96e788803ccbdf6c23895fbb3506fb86670200ccdec5bbe9ab880f7e9",
+    "apps/mobile/src/components/lists/instamus-rows.ts": "78172831d86d75a003bd7b29dee38408323a9abdd2614ddf81bb9e10a6910400",
+    "apps/mobile/src/components/catalog/SongList.tsx": "83e5e5375839eabab4162f327dad4918167aa07ed564c4a9c9371c7f3f1aff0e",
+    "apps/mobile/src/components/catalog/CatalogNotice.tsx": "996e998a7fa615b007eab0a710811aafd5f2e2f74b8a71151e04541a0cfc2f40",
+    "apps/mobile/src/components/carousel/ArtworkCarousel.tsx": "ee404d6da8a588dee2317200ac265d721d8f41a93f5e961798a097b8a94dc2dc",
+    "apps/mobile/src/components/app/AppLifecycle.tsx": "b1e2379607b3f118c72aa4e0684cd1416994cbef8bddce6b1cba4728178b681e",
+    "apps/mobile/src/video/VideoPosterCarousel.tsx": "4c5eadd17f6889253c00fd32db0502ce19b03f0c2b128540432985cef883105a",
+    "apps/mobile/src/video/NativeVideoSession.tsx": "a1d607482a3bc59fbf49a7d317467abe272d45d6a8f3e0dabd7b547bdb40b047",
+    "apps/mobile/src/video/video-session-key.ts": "7433954ba3aa302880d47c62cf971461de665af0f60d62db633b85e8d682c7c9",
+    "apps/mobile/src/screens/HomeScreen.tsx": "efeb8edfa9f78a759a93258ccef09e8d23a68dd1e55deb40ea8c287ffdf4fff0",
+    "apps/mobile/src/screens/SearchScreen.tsx": "d652596c69953967abc8fd3e3e0c9c4ce5c55109be4d4337767b542ff133f665",
+    "apps/mobile/src/screens/DiscoveryScreen.tsx": "c741f62074aaadc75de3eb5882c468d2e708b29744f3360310bf887e832f1ddd",
+    "apps/mobile/src/screens/CollectionScreen.tsx": "e1169ad3e03e3c1e42950623fd1df423061d656a60c7dc4c009416b196d53ed2",
+    "apps/mobile/src/screens/LibraryScreen.tsx": "f92bbbef8e9fe5262ca3af67857aff7e6c6286d418360818f03b0bb144e970d6",
+    "apps/mobile/src/screens/PlayerScreen.tsx": "6bd1d985a2b7786e218c4292841c15e15d2719b880d78523355172d55e7d6b45",
+    "apps/mobile/src/screens/HistoryScreen.tsx": "8a8e8af0d46e2b9485761dc487381832e52cb91f94856e6f1fd3dba3cf5a2adb",
+    "apps/mobile/src/screens/InstaMusScreen.tsx": "68e92a76150eefe8d891b8ada94dec07de997f2b58a186f2431306517c7bb371",
+    "apps/mobile/src/screens/ProviderBrowseScreen.tsx": "e2213102673be88a09287dffd87731881319a92212f04d8e093c22af5aee1fe2",
+    "apps/mobile/src/screens/ProviderCollectionScreen.tsx": "803fd927cffd79d00fdbaa8354da8dc63cce290a7da5b273880eb7fac8e8ee92",
+    "apps/mobile/src/screens/VideoScreen.tsx": "8661fd1a275758fc91e24366ceac4240dc501388d055a28c40cbe798527dc563",
+    "apps/mobile/src/store/__tests__/catalog-store.test.ts": "fceaf4b3a3ef0b075211541c89367f5db8cc08223c8f45acbdfc46e6eac9caa4",
+    "apps/mobile/src/catalog/__tests__/registry-stability.test.ts": "45bd4bd8540ffa77420c2ff967e8f5cb1dfaefe3c8f2068be63b3231ffff8ddf",
+    "apps/mobile/src/catalog/__tests__/artwork-recovery.test.ts": "473b78027cd7d99b5b4a3cd4588091ef4e9daa942e7f21511f6047e8a009126e",
+    "apps/mobile/src/catalog/__tests__/page-requests.test.ts": "4ec835eef050c579a6e86379433f3830018c240ffd15c840c6545a2c81273b83",
+    "apps/mobile/src/catalog/__tests__/catalog-streaming.test.ts": "cd29c10a1d24e086b5c0a7f86ff3ecb7d9eff6ff001efb8eda961778290847db",
+    "apps/mobile/src/components/lists/__tests__/scroll-interaction.test.ts": "a78180b914c50148d9357f82e74a8ff17c08cfc27852e7a66a7c07baa3740965",
+    "apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx": "683884306788aaf5558072d52d540415c0fa83858a7fc70932efb628ff339c3f",
+    "apps/mobile/src/video/__tests__/video-session-key.test.ts": "e3bc642bb97de7733c46edc28da5e7901bdcf9cbcd0e2e1b7855d8ab56d2bf91"
+  },
+  "verification": {
+    "beforeFix": {
+      "failedTests": 2,
+      "scope": "Actual registry reorder/reference/no-op publication regressions",
+      "log": "/tmp/fav-stage4/before-tests.log"
+    },
+    "focused": {
+      "status": "PASS",
+      "tests": 158,
+      "files": 15,
+      "log": "/tmp/fav-stage4/focused-tests.log",
+      "scope": [
+        "Scroll gesture/programmatic-event isolation and explicit taps",
+        "Stable row props/callbacks, unique keys and bounded virtualized batches",
+        "Concurrent and repeated page requests, independent queries, cached navigation, repeated-cursor termination, failure/retry and 500-track prefix retention",
+        "No-op metadata publication and canonical query-cache hits",
+        "Bounded thumbnail recovery and stale response rejection",
+        "Video source/presentation identity separation",
+        "Stage 1 rapid selection, Pause/Stop/Play, queue recovery, Next/Previous, Seek and audio/video handoff regressions"
+      ]
+    },
+    "mobileTypeScript": "PASS",
+    "productionMetro": "PASS",
+    "hermes": {
+      "status": "PASS",
+      "version": 96,
+      "registerComponentDefinitions": 1,
+      "canonicalStartup": true
+    },
+    "performanceContracts": {
+      "unchangedCachePageReads": 100,
+      "extraRegistryNotifications": 0,
+      "concurrentThumbnailFailures": 40,
+      "renewalsWithinMinute": 1,
+      "songListInitialBatch": 8,
+      "songListRenderBatch": 8,
+      "songListWindowSize": 5,
+      "carouselInitialBatch": 3,
+      "carouselWindowSize": 3,
+      "cachedCatalogQueries": 8,
+      "maxLoadedTracksPerQuery": 500,
+      "scrollPositions": 32,
+      "instaMusMatchesRepresentedAsVirtualizedData": 500
+    },
+    "protectedFilesUnchanged": {
+      "apps/mobile/src/services/playback/AudioPlaybackService.ts": true,
+      "apps/mobile/src/services/playback/MediaPlaybackCoordinator.ts": true,
+      "apps/mobile/src/services/playback/playback-service.ts": true,
+      "apps/mobile/src/store/usePlayerStore.ts": true,
+      "apps/mobile/src/store/useLibraryStore.ts": true,
+      "apps/mobile/src/library/library.service.ts": true,
+      "assest/icon.png": true,
+      "assest/adaptive-icon.png": true,
+      "assest/favicon.png": true,
+      "assest/Fav music.png": true,
+      "apps/mobile/src/sharing/share-link.service.ts": true,
+      "apps/mobile/src/components/app/ShareButton.tsx": true,
+      "packages/contracts/src/dtos/catalog-api.dto.ts": true,
+      "packages/contracts/src/graphql/schema.ts": true,
+      "server/src/modules/catalog/services/provider-catalog.service.ts": true
+    }
+  },
+  "android": {
+    "status": "PENDING",
+    "updatedApkBuilt": false,
+    "deviceInputsPerformed": false,
+    "limits": "The Stage 4 source is not in an installed APK. Tests use mocked native/UI boundaries and isolated metadata repositories. No device flicker/FPS/memory measurements or real-scroll playback PASS is claimed."
+  },
+  "remainingAcceptance": [
+    "Repeated fast/slow vertical and horizontal scrolls while Playing and Paused: no start/skip/restart",
+    "Audio/video explicit cover taps and transport controls after scrolling; preserve intended state",
+    "Load More, network failure/retry, back-navigation and filter/query return: no duplicate rows and retained position",
+    "Low-end Android frame pacing, thumbnail failures, rotation and native list recycling"
+  ],
+  "restrictions": {
+    "gitCommands": 0,
+    "apkBuilds": 0,
+    "easBuilds": 0,
+    "backendChanges": false,
+    "databaseMigrations": 0,
+    "liveDatabaseWrites": 0,
+    "cloudChanges": false,
+    "servicesStartedOrRestarted": 0
+  }
+}

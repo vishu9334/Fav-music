@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-06T18:37:55.401Z",
+  "redis": {
+    "writes": false,
+    "host": "redis-10761.crce276.ap-south-1-3.ec2.cloud.redislabs.com",
+    "dns": [
+      {
+        "address": "64:ff9b::dcf:c5c9",
+        "family": 6
+      },
+      {
+        "address": "13.207.197.201",
+        "family": 4
+      }
+    ],
+    "ping": "PONG",
+    "status": "ready"
+  },
+  "tunnel": {
+    "writes": false,
+    "host": "massachusetts-colleges-silicon-utc.trycloudflare.com",
+    "systemDnsError": "ENOTFOUND",
+    "httpsDns": {
+      "http": 200,
+      "status": 3,
+      "answers": []
+    }
+  }
+}

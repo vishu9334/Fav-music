@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-06T22:02:27.368Z",
+  "target": "Existing pooled DATABASE_URL used by Fastify",
+  "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+  "sql": "SELECT 1 AS alive",
+  "startupReadOnlyOptions": false,
+  "readOnlyQuery": true,
+  "userOrSchemaRecordsRead": false,
+  "schemaOrDataWrites": false,
+  "alive": 1,
+  "tlsAuthorized": true,
+  "tlsProtocol": "TLSv1.3",
+  "status": "PASS"
+}

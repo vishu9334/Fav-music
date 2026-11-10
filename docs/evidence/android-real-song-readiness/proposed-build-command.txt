@@ -1,0 +1,1 @@
+EAS_NO_VCS=1 EAS_PROJECT_ROOT="$PWD" EXPO_NO_DOTENV=1 ./apps/mobile/node_modules/.bin/eas build --profile preview --platform android --non-interactive --freeze-credentials

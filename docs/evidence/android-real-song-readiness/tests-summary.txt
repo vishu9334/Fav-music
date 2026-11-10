@@ -1,0 +1,9 @@
+ ✓ apps/mobile/src/sharing/__tests__/incoming-share.test.ts (3 tests) 6ms
+ ✓ apps/mobile/src/auth/__tests__/auth-collection-binding.test.ts (1 test) 3ms
+ ↓ server/src/__tests__/gate3b-connectivity.test.ts (3 tests | 3 skipped)
+
+ Test Files  55 passed | 1 skipped (56)
+      Tests  599 passed | 3 skipped (602)
+   Start at  23:50:32
+   Duration  3.44s (transform 1.62s, setup 0ms, collect 11.22s, tests 5.59s, environment 5ms, prepare 3.10s)
+

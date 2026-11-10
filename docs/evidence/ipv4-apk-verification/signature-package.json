@@ -1,0 +1,5 @@
+{
+  "signingMatchesPreviousApk": true,
+  "signerSha256": "68d73d8f184ebc07825c85376353ab93e0710a1e8792d7f3344916127da13edb",
+  "package": "package: name='com.favmusic' versionCode='1' versionName='1.0.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'"
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "Fav Music branding, Google button and sign-in lifecycle follow-up",
+  "date": "2026-11-07",
+  "deviceEvidence": {
+    "installedBuild": "3ceccc2f-8b2e-4c4f-b316-b27028211473",
+    "pickerOpened": "15:25:34 IST",
+    "pickerReturned": "15:25:36 IST",
+    "userReportedResult": "Returned to Login after choosing account",
+    "nativeOAuthStatus": "Not retained; root provider failure unverified",
+    "newSourceInstalled": false
+  },
+  "confirmedBug": "Foreground restore could overwrite failed/cancelled/offline sign-in results; reproduced before fix",
+  "fix": "Only authenticated sessions automatically restore on activity resume; initial restoration and renewal retained",
+  "tests": {
+    "fullSuite": {
+      "passed": 680,
+      "skipped": 3,
+      "liveNeonAccess": false
+    },
+    "finalFocusedAfterCaptionRemoval": {
+      "passed": 9
+    },
+    "allWorkspaceTypeScript": "PASS",
+    "finalMobileTypeScript": "PASS",
+    "productionMetro": {
+      "result": "PASS",
+      "modules": 2951,
+      "assets": 30
+    },
+    "hermes": {
+      "hermesBytecodeVersion": 96,
+      "bytes": 5721138,
+      "registerComponentDefinitions": 1,
+      "registerComponentClosureAndDefinitionReferences": 2,
+      "registerRootComponentDefinitions": 1
+    }
+  },
+  "source": {
+    "archiveFiles": 335,
+    "privateSecretHits": [],
+    "archiveSourceMismatch": [],
+    "protectedFilesUnchanged": true,
+    "protectedFileChanges": [],
+    "bundle": {
+      "branding": true,
+      "removedCaption": true,
+      "correctEndpoint": true,
+      "correctGoogleAudience": true,
+      "authEnabled": true,
+      "canonicalEntry": true,
+      "existingIconPackaged": true
+    }
+  },
+  "changedFiles": [
+    "app.json",
+    "apps/mobile/app.json",
+    "apps/mobile/src/design/branding.ts",
+    "apps/mobile/src/design/BrandLogo.tsx",
+    "apps/mobile/src/components/app/AppHeader.tsx",
+    "apps/mobile/src/auth/components/account-presentation.tsx",
+    "apps/mobile/src/auth/components/auth.screen.tsx",
+    "apps/mobile/src/auth/components/auth-loading.screen.tsx",
+    "apps/mobile/src/auth/components/google-signin.button.tsx",
+    "apps/mobile/src/auth/components/auth-session-lifecycle.tsx",
+    "apps/mobile/src/auth/controllers/auth.controller.ts",
+    "apps/mobile/src/auth/adapters/native-google-auth.provider.ts",
+    "apps/mobile/src/auth/adapters/native-auth.transport.ts",
+    "apps/mobile/src/auth/repositories/graphql-auth.repository.ts",
+    "apps/mobile/src/sharing/share-link.service.ts",
+    "apps/mobile/src/screens/SharedContentScreen.tsx",
+    "apps/mobile/src/development/AccountLayoutReview.tsx",
+    "apps/mobile/src/auth/__tests__/session-lifecycle.test.ts",
+    "apps/mobile/src/auth/__tests__/auth-races.test.ts",
+    "apps/mobile/src/auth/__tests__/native-adapters.test.ts",
+    "apps/mobile/src/auth/__tests__/account-routes.test.ts",
+    "apps/mobile/src/auth/__tests__/auth-service.test.ts",
+    "apps/mobile/src/development/__tests__/account-layout-review.test.ts",
+    "docs/AADAT_UI_UX_SPEC.md"
+  ],
+  "restrictedActions": {
+    "newBuild": false,
+    "backendChanges": false,
+    "databaseChanges": false,
+    "cloudChanges": false,
+    "gitCommands": false
+  },
+  "remaining": [
+    "Explicit approval for one new APK; previous one-build approval consumed",
+    "Fresh HTTPS readiness before submission without service or cloud changes",
+    "Genuine Google sign-in result and allowlisted native status on CPH2599",
+    "Authenticated local persistence and real-song device acceptance"
+  ]
+}

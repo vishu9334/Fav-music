@@ -1,0 +1,35 @@
+{
+  "bytes": 34159766,
+  "sha256": "2ef7d86c3a557d059e72dff04b346960faf6d5ddc2b550ff6dbf8e3d39bc3bde",
+  "abis": [
+    "arm64-v8a"
+  ],
+  "privateFiles": [],
+  "hermesMagic": "c61fbc03",
+  "apk": "artifacts/android/Fav-Music-name-room-code-arm64.apk",
+  "package": "com.favmusic",
+  "signatureMatchesPrevious": true,
+  "install": "adb install -r: Success",
+  "hermesRegisterComponentDefinitions": 2,
+  "build": "Local Gradle, BUILD SUCCESSFUL in 26s",
+  "easBuild": false,
+  "tests": {
+    "passed": 1158,
+    "skipped": 3
+  },
+  "typecheck": "All four workspaces passed",
+  "databaseSchemaChanges": false,
+  "existingRoomIdsChanged": false,
+  "device": "CPH2599",
+  "deviceAcceptance": {
+    "privateRoomCreated": "VIKU44",
+    "format": "first two letters of first and last name plus two digits",
+    "headerCodeVisible": true,
+    "shareShowsCodeWithoutUsernameOrUserId": true,
+    "lowercaseRejoin": "viku44 successfully rejoined VIKU44",
+    "messagesSent": 0,
+    "invitationsSent": 0
+  },
+  "runtime": "Updated existing local backend; previously approved ngrok endpoint left running",
+  "legacyRooms": "Existing IDs unchanged; legacy UUID joins remain accepted"
+}

@@ -1,0 +1,13 @@
+{
+  "reportKeyHits": 0,
+  "checks": [
+    {
+      "path": "eas.json",
+      "previousProfilesUnchanged": true
+    },
+    {
+      "path": "apps/mobile/eas.json",
+      "previousProfilesUnchanged": true
+    }
+  ]
+}

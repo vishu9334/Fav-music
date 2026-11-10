@@ -1,0 +1,33 @@
+{
+  "serial": "X4GACUMZMVEQY5XO",
+  "origin": "https://anyway-pdf-obligation-suggests.trycloudflare.com",
+  "device": "CPH2599",
+  "transport": "Unchanged app AuthHttpClient.java; Android platform TLS",
+  "catalogHttpStatus": 200,
+  "results": [
+    {
+      "id": "f5e75856-4598-8a85-8509-3e90deb1afe4",
+      "title": "Believer",
+      "artistName": "Imagine Dragons",
+      "durationSeconds": 204
+    },
+    {
+      "id": "407d6426-d997-8421-aacf-0b03399ae8e6",
+      "title": "Believer",
+      "artistName": "Imagine Dragons",
+      "durationSeconds": 219
+    },
+    {
+      "id": "afebb609-e0dc-8cd3-9171-d91f8ca2436f",
+      "title": "Believer (Kaskade Remix)",
+      "artistName": "Imagine Dragons, Kaskade",
+      "durationSeconds": 190
+    }
+  ],
+  "keyPersisted": false,
+  "apkInstalled": false,
+  "audiblePlaybackVerified": false,
+  "ordinaryAccountApiHttpStatus": 401,
+  "pass": true,
+  "temporaryFileRemoved": true
+}

@@ -1,0 +1,39 @@
+// Auth-only rehearsal snapshot; no production schema or database is changed.
+datasource db {
+  provider = "postgresql"
+}
+
+enum ChatRetentionPreference {
+  EPHEMERAL_SESSION_ONLY
+  PERSISTENT_HISTORY
+}
+
+enum UserRole {
+  USER
+  CONTENT_MODERATOR
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum AccountStatus {
+  ACTIVE
+  SUSPENDED
+  DEACTIVATED
+}
+
+model User {
+  id                      String                  @id @default(uuid())
+  email                   String                  @unique
+  displayName             String
+  avatarKey               String? // S3 Object Key
+  googleSub               String?                 @unique
+  chatRetentionPreference ChatRetentionPreference @default(EPHEMERAL_SESSION_ONLY)
+  createdAt               DateTime                @default(now())
+  updatedAt               DateTime                @updatedAt
+
+  // Administrative RBAC & Lifecycle
+  role                    UserRole                @default(USER)
+  status                  AccountStatus           @default(ACTIVE)
+
+  @@index([role, status])
+}

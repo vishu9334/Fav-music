@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-07",
+  "ownerConfirmedAndroidPackageAndSHA1Match": true,
+  "approval": "Approve conditional restart + one APK",
+  "localFastifyRestart": {
+    "result": "PASS",
+    "successfulRestarts": 1,
+    "oldPid": 97893,
+    "newPid": 59150,
+    "publicGoogleWebClientId": "558308870104-f9smr1ta0ict2fch5o4ce1gja5na7qfq.apps.googleusercontent.com",
+    "privateDatabase": "aadat_local",
+    "postgresPort": 56315,
+    "redisPort": 56316,
+    "daemonRestarts": 0
+  },
+  "hostReadiness": {
+    "at": "2026-11-07T11:11:57.839Z",
+    "readinessHttp": 200,
+    "graphqlHttp": 200,
+    "authenticationEnabled": true,
+    "cloudCollectionsEnabled": true,
+    "anonymousRejected": true,
+    "credentialsSent": false,
+    "pass": true
+  },
+  "androidCredentialFreeReadiness": {
+    "readinessHttp": 200,
+    "realAuthenticationEnabled": true,
+    "accountApiRejectsAnonymous": true,
+    "credentialsSent": false,
+    "newApkInstalled": false,
+    "pass": true,
+    "at": "2026-11-07T11:12:17.623Z"
+  },
+  "build": {
+    "result": "BLOCKED: EAS monthly Free-plan Android build quota exhausted",
+    "submissionAttempts": 1,
+    "createdBuilds": 0,
+    "newBuildId": null,
+    "newAPK": null,
+    "quotaResetReportedByEAS": "2026-12-01",
+    "noGitLookupObserved": true,
+    "paidPlanEnabled": false,
+    "automaticRetry": false,
+    "remoteBuildHistoryConfirmedNoNewBuild": true
+  },
+  "device": {
+    "installedBuildId": "e93df3dd-56f4-41d5-8133-fc63acaa12a6",
+    "stillEmbedsPreviousClientId": true,
+    "newInstallationPerformed": false,
+    "correctedClientLoginAcceptance": "BLOCKED: corrected-ID APK not built",
+    "musicAcceptance": "BLOCKED behind genuine authentication"
+  },
+  "restrictions": {
+    "NeonChanges": false,
+    "schemaOrDataMigration": false,
+    "GoogleConsoleChanges": false,
+    "S3Changes": false,
+    "newTunnel": false,
+    "redisOrPostgresRestart": false,
+    "extraBuilds": 0
+  },
+  "remaining": "Restore EAS build availability before resuming the existing one-build approval; no paid-resource change is authorized."
+}

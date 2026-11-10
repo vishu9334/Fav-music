@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-06T18:09:07.499Z",
+  "origin": "https://saavn.bycomsolutions.com",
+  "auth": "No credentials; ordinary JSON Accept header; no restriction bypass",
+  "results": [
+    {
+      "path": "/api/playlists?id=156710699&page=3&limit=10",
+      "status": 200,
+      "ms": 851,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 41735,
+      "accessDenied": false,
+      "rawMetadataFile": "end-0.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/playlists?id=82914609&page=2&limit=10",
+      "status": 200,
+      "ms": 598,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 43512,
+      "accessDenied": false,
+      "rawMetadataFile": "end-1.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "text": "",
+    "description": "Seek slider, 0:02 of 5:21",
+    "bounds": "[132,107][948,135]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.SeekBar"
+  },
+  {
+    "text": "0:02",
+    "description": "",
+    "bounds": "[132,147][207,196]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "5:21",
+    "description": "",
+    "bounds": "[884,147][948,196]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Previous track",
+    "bounds": "[234,325][378,469]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "",
+    "description": "Play",
+    "bounds": "[450,307][630,487]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "",
+    "description": "Next track",
+    "bounds": "[702,325][846,469]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Native state: PAUSED",
+    "description": "",
+    "bounds": "[60,562][1020,622]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Stop (retain queue)",
+    "bounds": "[60,658][1020,796]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Stop (retain queue)",
+    "description": "",
+    "bounds": "[349,699][731,756]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Retry / resume playback",
+    "bounds": "[60,832][1020,970]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Retry / resume playback",
+    "description": "",
+    "bounds": "[299,873][782,930]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Close development access",
+    "bounds": "[60,1006][1020,1144]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Close development access",
+    "description": "",
+    "bounds": "[277,1047][804,1104]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Levitating by Dua Lipa",
+    "bounds": "[60,1186][1020,1437]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Levitating",
+    "description": "",
+    "bounds": "[108,1234][972,1311]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Dua Lipa · 2020 · 203s",
+    "description": "",
+    "bounds": "[108,1329][972,1389]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Levitating by Dua Lipa",
+    "bounds": "[60,1479][1020,1730]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Levitating",
+    "description": "",
+    "bounds": "[108,1527][972,1604]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Dua Lipa · 2026 · 203s",
+    "description": "",
+    "bounds": "[108,1622][972,1682]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Levitating (feat. DaBaby) by Dua Lipa",
+    "bounds": "[60,1772][1020,2023]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Levitating (feat. DaBaby)",
+    "description": "",
+    "bounds": "[108,1820][972,1897]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Dua Lipa · 2020 · 203s",
+    "description": "",
+    "bounds": "[108,1915][972,1975]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Levitating (feat. DaBaby) by Dua Lipa",
+    "bounds": "[60,2065][1020,2316]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  },
+  {
+    "text": "Levitating (feat. DaBaby)",
+    "description": "",
+    "bounds": "[108,2113][972,2190]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "Dua Lipa · 2020 · 203s",
+    "description": "",
+    "bounds": "[108,2208][972,2268]",
+    "clickable": "false",
+    "enabled": "true",
+    "class": "android.widget.TextView"
+  },
+  {
+    "text": "",
+    "description": "Play Levitating by Ashley Price",
+    "bounds": "[60,2358][1020,2364]",
+    "clickable": "true",
+    "enabled": "true",
+    "class": "android.widget.Button"
+  }
+]

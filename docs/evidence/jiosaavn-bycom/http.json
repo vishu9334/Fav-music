@@ -1,0 +1,137 @@
+{
+  "at": "2026-11-06T17:20:37.483Z",
+  "origin": "https://saavn.bycomsolutions.com",
+  "auth": "No credentials; ordinary JSON Accept header; no restriction bypass",
+  "results": [
+    {
+      "path": "/api/search/songs?query=Believer&page=0&limit=10",
+      "status": 200,
+      "ms": 804,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 80765,
+      "accessDenied": false,
+      "rawMetadataFile": "response-0.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/songs?ids=3IoDK8qI,4IoDK8qI,5IoDK8qI",
+      "status": 200,
+      "ms": 259,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 3209,
+      "accessDenied": false,
+      "rawMetadataFile": "response-1.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/songs/yDeAS8Eh/suggestions?limit=10",
+      "status": 200,
+      "ms": 534,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 49720,
+      "accessDenied": false,
+      "rawMetadataFile": "response-2.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/search/albums?query=Believer&page=0&limit=10",
+      "status": 200,
+      "ms": 575,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 23923,
+      "accessDenied": false,
+      "rawMetadataFile": "response-3.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/search/artists?query=Imagine%20Dragons&page=0&limit=10",
+      "status": 200,
+      "ms": 235,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 4597,
+      "accessDenied": false,
+      "rawMetadataFile": "response-4.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/search/playlists?query=Believer&page=0&limit=10",
+      "status": 200,
+      "ms": 261,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 59,
+      "accessDenied": false,
+      "rawMetadataFile": "response-5.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/swagger",
+      "status": 200,
+      "ms": 230,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 71010,
+      "accessDenied": false,
+      "rawMetadataFile": "response-6.json",
+      "success": null,
+      "topLevelFields": [
+        "openapi",
+        "info",
+        "servers",
+        "components",
+        "paths",
+        "webhooks"
+      ]
+    }
+  ]
+}

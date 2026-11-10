@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-06T22:03:26.392Z",
+  "checks": [
+    {
+      "path": "/health/live",
+      "status": 200,
+      "payload": {
+        "status": "alive",
+        "timestamp": "2026-11-06T22:03:26.386Z"
+      }
+    },
+    {
+      "path": "/health/ready",
+      "status": 200,
+      "payload": {
+        "status": "ready",
+        "timestamp": "2026-11-06T22:03:26.390Z",
+        "ready": true
+      }
+    },
+    {
+      "path": "/health",
+      "status": 200,
+      "payload": {
+        "status": "ok",
+        "uptimeSeconds": 209,
+        "timestamp": "2026-11-06T22:03:26.392Z",
+        "version": "0.1.0",
+        "services": {
+          "database": "up",
+          "cache": "up"
+        }
+      }
+    }
+  ]
+}

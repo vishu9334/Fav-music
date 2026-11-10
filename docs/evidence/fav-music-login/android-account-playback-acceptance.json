@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-07",
+  "device": "CPH2599",
+  "package": "com.favmusic",
+  "apk": "/tmp/fav-tunnel-local-apk/Fav-Music.apk",
+  "genuineGoogleLogin": {
+    "result": "PASS",
+    "evidence": "User explicitly confirmed login successful; protected account UI rendered; restart restored verified Profile without Google prompt",
+    "sdkSuccessMarkerCaptured": false
+  },
+  "audiblePlayback": {
+    "result": "PASS",
+    "evidence": "User explicitly confirmed music audible; real catalog/player and native MediaCodec/AudioTrack observed",
+    "initialObservedTrack": "Spring Snow \u2014 10cm",
+    "licensingScope": "Approved Saavn development integration; no production distribution licence claimed"
+  },
+  "pausePlay": {
+    "result": "PASS",
+    "pausedPositionMs": 74035,
+    "heldUntil": "2026-11-07T14:59:01.209Z",
+    "resumedState": "PLAYING",
+    "method": "Ownership-guarded native media controls; no mocked player state"
+  },
+  "nextPrevious": {
+    "result": "PASS",
+    "indices": [
+      7,
+      8,
+      7
+    ],
+    "titles": [
+      "Tumse Milne Ko Dil, null, null",
+      "Ae Mere Humsafar, null, null",
+      "Tumse Milne Ko Dil, null, null"
+    ]
+  },
+  "background": {
+    "result": "PASS",
+    "homeDurationSeconds": 10,
+    "estimatedMediaPositionBeforeMs": 90469,
+    "estimatedMediaPositionAfterMs": 100839,
+    "actualNativePausePositionMs": 100873,
+    "pauseResumeVerified": true,
+    "resumeLatencySeconds": 3.831,
+    "positionNote": "While playing, Android publishes a position/time base; advancing values are native timeline estimates, verified against actual position on pause."
+  },
+  "notification": {
+    "at": "2026-11-07T15:02:15.029Z",
+    "favMusicNotificationPresent": true
+  },
+  "sessionRestoration": {
+    "at": "2026-11-07T15:05:11.301Z",
+    "profileIdentityEmailPresent": false,
+    "signedInMessage": true,
+    "signOutVisible": false,
+    "loginButtonVisible": false,
+    "offlineErrorVisible": false,
+    "collectionLabels": [
+      "Profile &amp; privacy",
+      "Profile &amp; privacy",
+      "Save profile",
+      "Your account collections",
+      "Edits are saved safely on this device before account synchronization.",
+      "Account copy is synchronized.",
+      "Sync account collections",
+      "Warehouse"
+    ],
+    "buttons": [
+      "Open Fav Music navigation",
+      "Play a suitable random song",
+      "Open search",
+      "Open your account",
+      "Display name",
+      "Choose persistent chat history",
+      "Save profile",
+      "Sync account collections",
+      "Home",
+      "Search",
+      "Library",
+      "Warehouse"
+    ],
+    "sessionRestorationPassed": true,
+    "evidence": "App force-stop/relaunch; protected Profile and synchronized account collections rendered without Google prompt; source requires refreshed server session and me query."
+  },
+  "seek": {
+    "result": "PASS (manual device verification)",
+    "evidence": "User explicitly replied Seek working after requested real slider gesture to approximately 1:30",
+    "automatedNativeSeekPosition": "Not verified; standalone helper was killed and automated UI touch bounds were unreliable. No bypass attempted."
+  },
+  "searchAndCatalog": {
+    "catalogLoading": "PASS: real returned tracks/artists/albums/durations visible on protected Home/Search screens",
+    "arbitraryQueryAcceptance": "NOT COMPLETED in this run"
+  },
+  "notCompleted": [
+    "Controlled Believer/Levitating/Enemy query/playback sequence in this APK",
+    "Playlist/favourite/Warehouse editing and persistence round trip",
+    "Account switching/logout acceptance",
+    "Full UI/accessibility/landscape/video acceptance"
+  ],
+  "restrictions": {
+    "newTunnels": 1,
+    "localAPKsBuilt": 1,
+    "cloudAPKsBuilt": 0,
+    "paidPlan": false,
+    "backendRestart": false,
+    "migrations": false,
+    "NeonOrS3Changes": false,
+    "localUserData": "Normal genuine login/session/account synchronization only; no fabricated users or identities"
+  },
+  "appStability": {
+    "fatalExceptionObserved": false,
+    "note": "Private app-only logs; identity, email and credentials omitted from published evidence."
+  },
+  "overall": "PASS for corrected APK delivery, genuine login, audible playback, session restoration and tested core media controls; broader acceptance incomplete"
+}

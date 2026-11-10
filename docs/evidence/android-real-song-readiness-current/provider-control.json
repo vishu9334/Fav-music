@@ -1,0 +1,61 @@
+{
+  "at": "2026-11-07T01:38:03.517Z",
+  "scope": "Direct provider diagnostic; NOT a successful mobile/account GraphQL flow",
+  "providerMode": "jiosaavn-development",
+  "apiBase": "https://saavn.bycomsolutions.com/api",
+  "credentialsSent": false,
+  "songFilesSaved": false,
+  "tracks": [
+    {
+      "id": "BeXBcbVK",
+      "title": "Believer",
+      "artist": "Imagine Dragons",
+      "durationSeconds": 204,
+      "releaseYear": 2018,
+      "streamReturned": true,
+      "streamHost": "aac.saavncdn.com",
+      "streamSha256": "07112afd19d72c3e223644befb13e94970e69446253679e1133194eab9edabef",
+      "httpStatus": 206,
+      "contentType": "audio/mp4",
+      "contentRange": "bytes 0-1023/8521381",
+      "bytesInspected": 1024,
+      "bytesReceivedBeforeCancel": 1024,
+      "mp4Container": true,
+      "boundedStreamPass": true
+    },
+    {
+      "id": "3IoDK8qI",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "durationSeconds": 203,
+      "releaseYear": 2020,
+      "streamReturned": true,
+      "streamHost": "aac.saavncdn.com",
+      "streamSha256": "ce8b156408b95a8f154c3ee0db150cdba7fb30651efe29f860a9113826b377a2",
+      "httpStatus": 206,
+      "contentType": "audio/mp4",
+      "contentRange": "bytes 0-1023/8198941",
+      "bytesInspected": 1024,
+      "bytesReceivedBeforeCancel": 1024,
+      "mp4Container": true,
+      "boundedStreamPass": true
+    },
+    {
+      "id": "drvhW8ob",
+      "title": "Enemy (from the series Arcane League of Legends)",
+      "artist": "Jid, Imagine Dragons, Arcane, League of Legends",
+      "durationSeconds": 173,
+      "releaseYear": 2021,
+      "streamReturned": true,
+      "streamHost": "aac.saavncdn.com",
+      "streamSha256": "97b65736f12f6e7d961ebf281acef75674b0905302e46109964d30405697d591",
+      "httpStatus": 206,
+      "contentType": "audio/mp4",
+      "contentRange": "bytes 0-1023/6942320",
+      "bytesInspected": 1024,
+      "bytesReceivedBeforeCancel": 1024,
+      "mp4Container": true,
+      "boundedStreamPass": true
+    }
+  ]
+}

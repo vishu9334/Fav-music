@@ -1,0 +1,17 @@
+{
+  "host": "redis-17687.crce286.ap-south-1-1.ec2.cloud.redislabs.com",
+  "port": 17687,
+  "configuredTls": false,
+  "credentialsSent": false,
+  "redisCommandsSent": false,
+  "handshake": "FAIL",
+  "error": "ERR_SSL_WRONG_VERSION_NUMBER",
+  "checkedAtUtc": "2026-11-06T19:04:29.379067+00:00",
+  "configurationFile": "server/.env",
+  "urlPresentAndParsable": true,
+  "redisTlsFlagPresent": false,
+  "configurationModified": false,
+  "backendRestarted": false,
+  "tunnelCreated": false,
+  "easSubmitted": false
+}

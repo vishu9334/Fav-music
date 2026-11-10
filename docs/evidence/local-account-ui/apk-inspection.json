@@ -1,0 +1,21 @@
+{
+  "sha256": "7e57c663236c648a8629f4f33614e187d95a0d2939ef432ab99be8f4b03d0218",
+  "bytes": 74238724,
+  "package": "com.favmusic",
+  "signatureMatches": true,
+  "modules": {
+    "com/favmusic/auth/AuthHttpClient$CatalogIpv4TlsFactory": true,
+    "com/favmusic/auth/AadatAuthModule": true,
+    "com/reactnativegooglesignin/RNGoogleSigninModule": true,
+    "expo/modules/blur/BlurModule": true,
+    "expo/modules/video/VideoModule": true,
+    "expo/modules/securestore/SecureStoreModule": true,
+    "com/doublesymmetry/trackplayer/module/MusicModule": true,
+    "com/doublesymmetry/trackplayer/service/MusicService": true
+  },
+  "hermes": true,
+  "correctEndpoint": true,
+  "correctGoogleAudience": true,
+  "privateEnvironmentFiles": [],
+  "pass": true
+}

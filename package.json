@@ -1,0 +1,26 @@
+{
+  "name": "aadat-music-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "main": "apps/mobile/index.tsx",
+  "description": "Android-first music platform monorepo",
+  "scripts": {
+    "typecheck": "pnpm -r run typecheck",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1",
+      "react-native": "0.76.6"
+    }
+  },
+  "packageManager": "pnpm@9.15.5"
+}
+

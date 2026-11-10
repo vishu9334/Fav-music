@@ -1,0 +1,73 @@
+{
+  "preparedOn": "2026-11-06",
+  "liveSqlExecuted": false,
+  "databaseWritesExecuted": false,
+  "migrationsApplied": false,
+  "prismaSqlGeneration": "offline: --from-empty --to-schema --script",
+  "draftSha256": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+  "candidateSha256": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+  "candidateExactCopy": true,
+  "prismaCreateDefinitionsCompared": 7,
+  "prismaCreateDefinitionsMatch": true,
+  "schemaSha256": "2077e9951cae1178aca2818abf7464110bc72f2d842aae08c1255ef0b91bebb4",
+  "activeMigrationDirectoryExists": false,
+  "migrationLockProvider": "provider = \"postgresql\"",
+  "readOnlyFiles": [
+    {
+      "file": "docs/PHASE_1A_MIGRATION_PREFLIGHT_READONLY.sql",
+      "sha256": "35556085aa1ef7d3abd109c45e88829e48b606f202134efa9b0a252e9391628a",
+      "statementCount": 20,
+      "statementKinds": [
+        "BEGIN",
+        "SET",
+        "SET",
+        "SET",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "WITH",
+        "COMMIT"
+      ],
+      "explicitReadOnly": true,
+      "allowedStatementKindsOnly": true,
+      "forbiddenOperationsAbsent": true,
+      "localTimeouts": 3,
+      "endsWithCommit": true
+    },
+    {
+      "file": "docs/PHASE_1A_MIGRATION_HISTORY_READONLY.sql",
+      "sha256": "3fb4bd3b70ddfe93777fff27032aa5493e4e5576a2d1c9170215878531a7effd",
+      "statementCount": 6,
+      "statementKinds": [
+        "BEGIN",
+        "SET",
+        "SET",
+        "SET",
+        "SELECT",
+        "COMMIT"
+      ],
+      "explicitReadOnly": true,
+      "allowedStatementKindsOnly": true,
+      "forbiddenOperationsAbsent": true,
+      "localTimeouts": 3,
+      "endsWithCommit": true
+    }
+  ],
+  "candidateNoDmlOrDestructiveOrNeonReferences": true,
+  "liveConflictsAndPermissions": "NOT VERIFIED — awaiting approval",
+  "neonDataComparison": "NOT RUN — no live database contact in this task",
+  "postgresSqlParserOrDdlRehearsal": "NOT RUN — static validation only",
+  "protectedSourceFilesChecked": 16,
+  "protectedSourceFilesChanged": []
+}

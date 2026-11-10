@@ -1,0 +1,171 @@
+{
+  "at": "2026-11-06T17:22:09.928Z",
+  "scope": "Authorized bounded development checks; <=1 KiB inspected per exact returned URI; no audio files",
+  "results": [
+    {
+      "id": "BeXBcbVK",
+      "title": "Believer",
+      "artists": [
+        "Imagine Dragons"
+      ],
+      "qualities": [
+        {
+          "quality": "96kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "b9260d75858dadf4f57d14b5d1f1c252a1a8cf88af907022343065371bfd6ef7",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/2512656",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d70343100008cb7",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        },
+        {
+          "quality": "160kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "38492768296d32fcd9e4ec638dfd4d7f18792a4808f5a9bd39ac89d5d7c81871",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/4230882",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d70343100008cd7",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        },
+        {
+          "quality": "320kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "07112afd19d72c3e223644befb13e94970e69446253679e1133194eab9edabef",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/8521381",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d70343100008d17",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        }
+      ]
+    },
+    {
+      "id": "3IoDK8qI",
+      "title": "Levitating",
+      "artists": [
+        "Dua Lipa"
+      ],
+      "qualities": [
+        {
+          "quality": "96kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "ad55717c3839d8740c59b289453b3ba1dc7db01b8ffcdce5fbc05045a42fe456",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/2499174",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d70343100008c47",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        },
+        {
+          "quality": "160kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "2809df2f0ee1b997da023b126ae427d0a3ba3c3c9d11ab38a93c91b232797cb1",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/4131722",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d70343100008c57",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        },
+        {
+          "quality": "320kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "ce8b156408b95a8f154c3ee0db150cdba7fb30651efe29f860a9113826b377a2",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/8198941",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d70343100008c8b",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        }
+      ]
+    },
+    {
+      "id": "drvhW8ob",
+      "title": "Enemy (from the series Arcane League of Legends)",
+      "artists": [
+        "Jid",
+        "Imagine Dragons",
+        "Arcane",
+        "League of Legends"
+      ],
+      "qualities": [
+        {
+          "quality": "96kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "6bb2087851cce1588b2f01520e6da92bc32904d12845d0229d983c72fc1825ef",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/2113284",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d703431000077bb",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        },
+        {
+          "quality": "160kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "0f25ade96db8a9ed2ca0825894470d6edb7a1fa393b5bb3bf03f781fa7760192",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/3498630",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d703431000077db",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        },
+        {
+          "quality": "320kbps",
+          "status": 206,
+          "host": "aac.saavncdn.com",
+          "urlSha256": "97b65736f12f6e7d961ebf281acef75674b0905302e46109964d30405697d591",
+          "contentType": "audio/mp4",
+          "contentRange": "bytes 0-1023/6942320",
+          "redirect": null,
+          "bytesInspected": 1024,
+          "firstChunkBytes": 1024,
+          "headerHex": "0000001c6674797069736f6d0000020069736f6d69736f326d7034310000780b",
+          "recognizedAudioContainer": "ISO-BMFF MP4",
+          "accessible": true,
+          "audioFileSaved": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "hermesCompiled": true,
+  "registerComponentDefinitions": 1,
+  "registerComponentReferences": 9,
+  "bundleTail": "rientation[\"LANDSCAPE_SECONDARY\"] = \"landscape-secondary\";\n  })(WebOrientation || (exports.WebOrientation = WebOrientation = {}));\n},2931,[]);\n__r(167);\n__r(0);",
+  "demoStreamStringsBundled": false,
+  "protectedAssetsAndRuntimeUnchanged": {
+    "assest/icon.png": true,
+    "assest/Fav music.png": true,
+    "assest/favicon.png": true,
+    "assest/adaptive-icon.png": true,
+    "apps/mobile/index.tsx": true,
+    "metro.config.js": true,
+    "apps/mobile/metro.config.js": true,
+    "pnpm-workspace.yaml": true
+  },
+  "metroModules": 2932,
+  "metroAssets": 29
+}

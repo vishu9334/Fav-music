@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Fav Music",
+    "slug": "aadat-music",
+    "version": "1.0.0",
+    "icon": "./assest/icon.png",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "scheme": "aadatmusic",
+    "newArchEnabled": false,
+    "android": {
+      "package": "com.favmusic",
+      "adaptiveIcon": {
+        "foregroundImage": "./assest/adaptive-icon.png",
+        "backgroundColor": "#09090b"
+      },
+      "permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.WAKE_LOCK",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "intentFilters": [
+        {
+          "action": "SEND",
+          "category": [
+            "DEFAULT"
+          ],
+          "data": [
+            {
+              "mimeType": "text/plain"
+            }
+          ]
+        }
+      ],
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "favicon": "./assest/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-dev-client",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.9.25"
+          }
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "configureAndroidBackup": true
+        }
+      ],
+      "./apps/mobile/plugins/with-auth-transport",
+      "./apps/mobile/plugins/with-android-architectures"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "be1ffc50-0de2-4b0e-a0d1-ad3ea5e543ee"
+      }
+    },
+    "owner": "vishalkumarptn32"
+  }
+}

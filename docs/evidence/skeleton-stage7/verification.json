@@ -1,0 +1,111 @@
+{
+  "stage": 7,
+  "status": "LOCAL_PASS_ANDROID_PENDING",
+  "components": [
+    "SongListSkeleton",
+    "ArtworkSkeleton",
+    "SongCardSkeleton",
+    "PlaylistListSkeleton",
+    "CategoryGridSkeleton",
+    "SavedLinksSkeleton"
+  ],
+  "screens": [
+    "Home",
+    "Search",
+    "Library",
+    "Warehouse",
+    "InstaMus",
+    "Season/decade/personal collections",
+    "Discovery",
+    "Playlist details",
+    "Listening history",
+    "Provider browse/collection"
+  ],
+  "behavior": [
+    "Skeletons occupy missing content slots only; existing FlatList data/keys/scroll bindings remain intact",
+    "160 ms appearance delay avoids fast-response flashing while reserving placeholder geometry",
+    "One native opacity pulse per group; no per-frame React state or per-item loops; isInteraction=false",
+    "Static reduced-motion treatment; stop/cancel timers and animations on background, blur and unmount",
+    "Retain loaded songs/playlists/saved links on background refresh/pagination; small existing inline loaders and disabled Load More controls",
+    "Terminal errors/retry and completed empty states replace pending presentation",
+    "Known category navigation remains visible; reusable grid/card skeletons are available for asynchronous content rather than hiding synchronous categories"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 50,
+      "files": 4,
+      "command": "pnpm exec vitest run apps/mobile/src/components/loading/__tests__/skeleton.test.tsx apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx apps/mobile/src/store/__tests__/catalog-store.test.ts",
+      "coverage": [
+        "Skeleton geometry at small widths and large font scale",
+        "Motion delay, reduced motion, native-driver budget and lifecycle cleanup",
+        "Accessible busy region with noninteractive hidden shapes",
+        "Screen initial/loading/empty/error presentation",
+        "Cached content retention and pagination/scroll/playback isolation"
+      ],
+      "limits": "Native components/animation are mocked; store tests use isolated test fixtures. No live API or actual Android visual/FPS/TalkBack validation in this task."
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "command": "pnpm --filter @aadat/mobile typecheck",
+      "exitCode": 0
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "modules": 2971,
+      "exitCode": 0,
+      "apkBuild": false,
+      "command": "pnpm exec expo export:embed --eager --platform android --dev false --bundle-output /tmp/fav-stage7/index.android.bundle --assets-dest /tmp/fav-stage7/assets"
+    },
+    "scope": {
+      "modifiedExistingUiFiles": [
+        "apps/mobile/src/screens/CollectionScreen.tsx",
+        "apps/mobile/src/screens/DiscoveryScreen.tsx",
+        "apps/mobile/src/screens/HistoryScreen.tsx",
+        "apps/mobile/src/screens/HomeScreen.tsx",
+        "apps/mobile/src/screens/InstaMusScreen.tsx",
+        "apps/mobile/src/screens/LibraryScreen.tsx",
+        "apps/mobile/src/screens/PlaylistScreen.tsx",
+        "apps/mobile/src/screens/ProviderBrowseScreen.tsx",
+        "apps/mobile/src/screens/ProviderCollectionScreen.tsx",
+        "apps/mobile/src/screens/SearchScreen.tsx",
+        "apps/mobile/src/screens/WarehouseScreen.tsx",
+        "apps/mobile/src/components/catalog/CatalogNotice.tsx",
+        "apps/mobile/src/components/catalog/SongList.tsx"
+      ],
+      "protectedFileHashesChecked": 57,
+      "protectedFileHashes": "PASS",
+      "existingEventHandlersQueriesAndArtworkBindings": "UNCHANGED",
+      "intentionalSharedUiChanges": [
+        "apps/mobile/src/components/catalog/CatalogNotice.tsx",
+        "apps/mobile/src/components/catalog/SongList.tsx"
+      ]
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "No updated APK built/installed. Native appearance, pulse smoothness, screen-reader and low-end device performance remain unverified."
+    }
+  },
+  "changedSourceAndTestHashes": {
+    "apps/mobile/src/screens/CollectionScreen.tsx": "515f4900c45bd5b8066e2825dd059afd278394fd995069d66b36f09ce7449af6",
+    "apps/mobile/src/screens/DiscoveryScreen.tsx": "18bf94004bed0a7806cc2151ef173da26252a640976c8ab4a1a2920f034117ce",
+    "apps/mobile/src/screens/HistoryScreen.tsx": "bb72a35ad8909d540deafbd776b63c89da11557ac45929f09d2f65ae747e08b9",
+    "apps/mobile/src/screens/HomeScreen.tsx": "87bf79e62e8d868d77f43b928873f6ed2997747b00bb4a1e36d2248ef9df9419",
+    "apps/mobile/src/screens/InstaMusScreen.tsx": "2c71f18ec1008f26d1b1efaed499269ce25a8adab7be5f79f413043125404383",
+    "apps/mobile/src/screens/LibraryScreen.tsx": "05784d35f85d6d367e8bb292fd12d9004881e196c5bfb30367732d94c039c8a1",
+    "apps/mobile/src/screens/PlaylistScreen.tsx": "487361b38ca19277db53352d0c2652531fcdba8f22914656c8c8b9d2fda7c16e",
+    "apps/mobile/src/screens/ProviderBrowseScreen.tsx": "66c65992f452b5b6415e167024a189391f7ceb44e18354ec117976aa325a8ca9",
+    "apps/mobile/src/screens/ProviderCollectionScreen.tsx": "ad09686fd8cf0dfade0aed8ad59c949ad1af120bbbf60d2663db2a90db42626a",
+    "apps/mobile/src/screens/SearchScreen.tsx": "24ac3854ad447ace38fb21ccd919899a43ac2b9125100af1d7e05f2a863d4590",
+    "apps/mobile/src/screens/WarehouseScreen.tsx": "dfabefa8bca433e49e1080d5c323fe3a58fa9467c4f63e3ce8027e496e685e91",
+    "apps/mobile/src/components/catalog/CatalogNotice.tsx": "490bdf17ff2e2db77cf864a2a23404c1f9abe0394b49262fb552eb64f18be4ea",
+    "apps/mobile/src/components/catalog/SongList.tsx": "233319bf55086e6c6ada82587b704c0723a58f34722fd69e9478fc48896541de",
+    "apps/mobile/src/components/loading/Skeleton.tsx": "69bbde5a732f5828b7b64654bc73bec5ff13e2ee9fbf9676caa284bc76ad827d",
+    "apps/mobile/src/components/loading/skeleton-motion.ts": "fde3545f65b1fef8909a46b4d71aaa24ff7fa1539314879293b855bbfa632d6e",
+    "apps/mobile/src/components/loading/loading-state.ts": "121aa51b32af3fa45684dddeea5c9d2b5378c5fd085dd21833936caf2e1c44f5",
+    "apps/mobile/src/components/loading/__tests__/skeleton.test.tsx": "486f165dd251aa574795be3c1ed9dd41e5eb3207e4725bc283c69af1ea2a52d8",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx": "5e2a8ce126f1ff579816e40c54798f6558848e75d77ba02237347b57df6102e2",
+    "apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx": "8af26f9a68352f0d56d98481891dbe2673b4c9bb97195319342404969ce4e5d2"
+  },
+  "restrictedOperations": "No Git commands, APK/EAS build, database/backend/cloud change or service restart."
+}

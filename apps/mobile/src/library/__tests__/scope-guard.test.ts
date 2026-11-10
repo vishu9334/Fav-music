@@ -1,0 +1,12 @@
+import {describe,it,expect} from 'vitest';
+import {createLibraryStore} from '../../store/useLibraryStore';
+import {accountLibraryRepositories} from '../account-library.service';
+import {CollectionScopeGuard} from '../scope-guard';
+import type {IDocumentStorage} from '../library.contract';
+const A='10000000-0000-4000-8000-000000000001',B='10000000-0000-4000-8000-000000000002',reel='https://www.instagram.com/reel/Scope1/';
+class Storage implements IDocumentStorage{files=new Map<string,string>();reads:string[]=[];async read(n:string){this.reads.push(n);return this.files.get(n)??null;}async write(n:string,v:string){this.files.set(n,v);}}
+describe('production account access and delayed callbacks',()=>{
+ it('locks signed-out data without reading or altering legacy guest files',async()=>{const docs=new Storage();docs.files.set('aadat-library-v1-0.json','preserved-original');const store=createLibraryStore(undefined,accountLibraryRepositories(docs),true);await store.getState().initialize();expect(store.getState()).toMatchObject({status:'locked',scope:null});expect(docs.reads).toEqual([]);expect(docs.files.get('aadat-library-v1-0.json')).toBe('preserved-original');});
+ it('invalidates an old destructive dialog when switching A to B, even for the same reel URL',async()=>{const docs=new Storage(),store=createLibraryStore(undefined,accountLibraryRepositories(docs),true);await store.getState().activateAccount(A);await store.getState().saveInstaMus(reel,'Account A',null);const guard=new CollectionScopeGuard(store.getState),remove=()=>guard.run(()=>store.getState().removeInstaMus(reel));await store.getState().activateAccount(B);await store.getState().saveInstaMus(reel,'Account B',null);const before=[...docs.files];await remove();expect(store.getState().data.instamus[0]?.query).toBe('Account B');expect([...docs.files]).toEqual(before);await store.getState().activateAccount(A);expect(store.getState().data.instamus[0]?.query).toBe('Account A');});
+ it('keeps expiry-to-locked callbacks from mutating legacy data',async()=>{const docs=new Storage(),store=createLibraryStore(undefined,accountLibraryRepositories(docs),true);await store.getState().activateAccount(A);await store.getState().saveInstaMus(reel,'A',null);const guard=new CollectionScopeGuard(store.getState);await store.getState().activateAccount(null);await guard.run(()=>store.getState().removeInstaMus(reel));expect(store.getState().status).toBe('locked');await store.getState().activateAccount(A);expect(store.getState().data.instamus).toHaveLength(1);});
+});

@@ -1,0 +1,15 @@
+{
+  "preview": {
+    "project": {
+      "readOnlyCheck": "PASS",
+      "variablesFound": false
+    },
+    "account": {
+      "readOnlyCheck": "PASS",
+      "variablesFound": false
+    }
+  },
+  "buildProfileHasEnv": false,
+  "easNoVcs": true,
+  "absoluteProjectRoot": true
+}

@@ -1,0 +1,22 @@
+{
+  "normal": [
+    {
+      "file": "raw/apps_mobile_assets_video_motiontest.mp4",
+      "sha256": "f94e09e1fc052c68647af15dcea3e1ebf61ab571fdca2f74d63ca500e5e82b2a"
+    },
+    {
+      "file": "raw/apps_mobile_assets_video_colourtest.mp4",
+      "sha256": "818a0fd72e03763cc3d5fbe268286f5f58e4a1c1152a7db047fe676d3f9b9c7b"
+    }
+  ],
+  "diagnostic": [
+    {
+      "file": "raw/apps_mobile_assets_video_motiontest.mp4",
+      "sha256": "f94e09e1fc052c68647af15dcea3e1ebf61ab571fdca2f74d63ca500e5e82b2a"
+    },
+    {
+      "file": "raw/apps_mobile_assets_video_colourtest.mp4",
+      "sha256": "818a0fd72e03763cc3d5fbe268286f5f58e4a1c1152a7db047fe676d3f9b9c7b"
+    }
+  ]
+}

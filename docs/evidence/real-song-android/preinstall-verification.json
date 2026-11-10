@@ -1,0 +1,72 @@
+{
+  "preserved": [
+    {
+      "path": "server/.env",
+      "unchanged": true
+    },
+    {
+      "path": "apps/mobile/.env.local",
+      "unchanged": true
+    },
+    {
+      "path": "server/prisma/schema.prisma",
+      "unchanged": true
+    },
+    {
+      "path": "assest/icon.png",
+      "unchanged": true
+    },
+    {
+      "path": "assest/adaptive-icon.png",
+      "unchanged": true
+    },
+    {
+      "path": "assest/favicon.png",
+      "unchanged": true
+    },
+    {
+      "path": "assest/Fav music.png",
+      "unchanged": true
+    },
+    {
+      "path": "server/src/modules/catalog/catalog.module.ts",
+      "unchanged": true
+    },
+    {
+      "path": "server/src/modules/catalog/controllers/catalog-graphql.controller.ts",
+      "unchanged": true
+    },
+    {
+      "path": "apps/mobile/src/auth/components/account-access.tsx",
+      "unchanged": true
+    }
+  ],
+  "apkInspection": {
+    "modules": {
+      "com/doublesymmetry/trackplayer/module/MusicModule": true,
+      "com/doublesymmetry/trackplayer/service/MusicService": true,
+      "com/favmusic/auth/AadatAuthModule": true,
+      "com/favmusic/auth/AuthHttpClient": true,
+      "com/swmansion/reanimated/ReanimatedModule": true,
+      "com/horcrux/svg/SvgPackage": true,
+      "com/swmansion/gesturehandler/RNGestureHandlerPackage": true
+    },
+    "dexFiles": 4,
+    "hermesBundle": true,
+    "bundleBytes": 3494912,
+    "containsDiagnosticMode": true,
+    "containsApprovedEndpoint": true,
+    "privateKeyHits": [],
+    "secretPaths": [],
+    "nativeLibraries": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "pass": true
+  },
+  "apkRegistryDefinitions": 1,
+  "installationAttempt": "not started: adb device not found",
+  "newBuildsSubmitted": 1
+}

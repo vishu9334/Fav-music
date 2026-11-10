@@ -1,0 +1,227 @@
+{
+  "status": true,
+  "serverTime": 1793975519573,
+  "searchQuery": "Aadat",
+  "results": [
+    {
+      "id": "iYMcgidY",
+      "title": "Aadat",
+      "image": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-500x500.jpg"
+      },
+      "album": "Aadat",
+      "description": "Aadat · Ninja",
+      "more_info": {
+        "singers": "Ninja",
+        "language": "Punjabi",
+        "album_id": "1297527"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat/GTEmUhNZU2o",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=iYMcgidY",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=1297527"
+      }
+    },
+    {
+      "id": "4zhrKCA8",
+      "title": "Aadat",
+      "image": "https://c.saavncdn.com/525/Aadat-Punjabi-2025-20261014171001-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/525/Aadat-Punjabi-2025-20261014171001-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/525/Aadat-Punjabi-2025-20261014171001-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/525/Aadat-Punjabi-2025-20261014171001-500x500.jpg"
+      },
+      "album": "Aadat",
+      "description": "Aadat · Ninja",
+      "more_info": {
+        "singers": "Ninja",
+        "language": "Punjabi",
+        "album_id": "81997094"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat/RBIDQz9zdgs",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=4zhrKCA8",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=81997094"
+      }
+    },
+    {
+      "id": "j6f8ZBVQ",
+      "title": "Aadat",
+      "image": "https://c.saavncdn.com/651/Aadat-Punjabi-2015-20261015125008-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/651/Aadat-Punjabi-2015-20261015125008-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/651/Aadat-Punjabi-2015-20261015125008-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/651/Aadat-Punjabi-2015-20261015125008-500x500.jpg"
+      },
+      "album": "Aadat",
+      "description": "Aadat · Ninja",
+      "more_info": {
+        "singers": "Ninja",
+        "language": "Punjabi",
+        "album_id": "82052012"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat/Gl4NCS5yYWI",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=j6f8ZBVQ",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=82052012"
+      }
+    },
+    {
+      "id": "yGu4RTxb",
+      "title": "Aadat (Feat. AP Dhillon)",
+      "image": "https://c.saavncdn.com/167/51-GLORIOUS-DAYS-Hindi-2025-20251204181542-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/167/51-GLORIOUS-DAYS-Hindi-2025-20251204181542-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/167/51-GLORIOUS-DAYS-Hindi-2025-20251204181542-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/167/51-GLORIOUS-DAYS-Hindi-2025-20251204181542-500x500.jpg"
+      },
+      "album": "51 GLORIOUS DAYS",
+      "description": "51 GLORIOUS DAYS · Yo Yo Honey Singh, AP Dhillon, Shinda Kahlon",
+      "more_info": {
+        "singers": "Yo Yo Honey Singh, AP Dhillon, Shinda Kahlon",
+        "language": "Hindi",
+        "album_id": "68315546"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat-feat.-ap-dhillon/CS8eBSZkT1E",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=yGu4RTxb",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=68315546"
+      }
+    },
+    {
+      "id": "4H9295BK",
+      "title": "Aadat (Rock Version)",
+      "image": "https://c.saavncdn.com/444/Aadat-Rock-Version-Hindi-2024-20240930123132-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/444/Aadat-Rock-Version-Hindi-2024-20240930123132-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/444/Aadat-Rock-Version-Hindi-2024-20240930123132-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/444/Aadat-Rock-Version-Hindi-2024-20240930123132-500x500.jpg"
+      },
+      "album": "Aadat (Rock Version)",
+      "description": "Aadat (Rock Version) · Ovais Kareem, pranjal, Debashish",
+      "more_info": {
+        "singers": "Ovais Kareem, pranjal, Debashish",
+        "language": "Hindi",
+        "album_id": "58651731"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat-rock-version/RCBSA00FdXg",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=4H9295BK",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=58651731"
+      }
+    },
+    {
+      "id": "t12Egq1R",
+      "title": "Aadat Se Majboor",
+      "image": "https://c.saavncdn.com/618/Ladies-Vs-Ricky-Bahl-Hindi-2011-20190329181812-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/618/Ladies-Vs-Ricky-Bahl-Hindi-2011-20190329181812-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/618/Ladies-Vs-Ricky-Bahl-Hindi-2011-20190329181812-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/618/Ladies-Vs-Ricky-Bahl-Hindi-2011-20190329181812-500x500.jpg"
+      },
+      "album": "Ladies Vs Ricky Bahl",
+      "description": "Ladies Vs Ricky Bahl · Salim-Sulaiman, Benny Dayal, Ranveer Singh",
+      "more_info": {
+        "singers": "Salim-Sulaiman, Benny Dayal, Ranveer Singh",
+        "language": "Hindi",
+        "album_id": "1035618"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat-se-majboor/BFlZdBNBBmE",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=t12Egq1R",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=1035618"
+      }
+    },
+    {
+      "id": "VAJSNf8M",
+      "title": "Aadat",
+      "image": "https://c.saavncdn.com/243/Aadat-Punjabi-2025-20250131183612-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/243/Aadat-Punjabi-2025-20250131183612-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/243/Aadat-Punjabi-2025-20250131183612-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/243/Aadat-Punjabi-2025-20250131183612-500x500.jpg"
+      },
+      "album": "Aadat",
+      "description": "Aadat · R Nait",
+      "more_info": {
+        "singers": "R Nait",
+        "language": "Punjabi",
+        "album_id": "61654061"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat/JikhYjpWD34",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=VAJSNf8M",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=61654061"
+      }
+    },
+    {
+      "id": "CiqcSx9y",
+      "title": "Aadat",
+      "image": "https://c.saavncdn.com/380/Aadat-Punjabi-2021-20260312094153-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/380/Aadat-Punjabi-2021-20260312094153-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/380/Aadat-Punjabi-2021-20260312094153-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/380/Aadat-Punjabi-2021-20260312094153-500x500.jpg"
+      },
+      "album": "Aadat",
+      "description": "Aadat · Sucha Yaar",
+      "more_info": {
+        "singers": "Sucha Yaar",
+        "language": "Punjabi",
+        "album_id": "73299129"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat/MwEaUidIDko",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=CiqcSx9y",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=73299129"
+      }
+    },
+    {
+      "id": "Se_d8231",
+      "title": "Aadat",
+      "image": "https://c.saavncdn.com/370/Aadat-Hindi-2023-20240102153534-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/370/Aadat-Hindi-2023-20240102153534-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/370/Aadat-Hindi-2023-20240102153534-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/370/Aadat-Hindi-2023-20240102153534-500x500.jpg"
+      },
+      "album": "Aadat",
+      "description": "Aadat · Priyanka Singh",
+      "more_info": {
+        "singers": "Priyanka Singh",
+        "language": "Hindi",
+        "album_id": "50837662"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat/Iw00VUwCBAI",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=Se_d8231",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=50837662"
+      }
+    },
+    {
+      "id": "_KhfafPB",
+      "title": "Aadat (Tere Kolon Door Rehan Di Aadat Pay Gai)",
+      "image": "https://c.saavncdn.com/098/Aadat-Punjabi-2012-20260202211842-150x150.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/098/Aadat-Punjabi-2012-20260202211842-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/098/Aadat-Punjabi-2012-20260202211842-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/098/Aadat-Punjabi-2012-20260202211842-500x500.jpg"
+      },
+      "album": "Aadat",
+      "description": "Aadat · Kanth Kaler",
+      "more_info": {
+        "singers": "Kanth Kaler",
+        "language": "Punjabi",
+        "album_id": "12449238"
+      },
+      "perma_url": "https://www.jiosaavn.com/song/aadat-tere-kolon-door-rehan-di-aadat-pay-gai/LyMDVxVWZ3E",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=_KhfafPB",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=12449238"
+      }
+    }
+  ]
+}

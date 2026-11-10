@@ -1,0 +1,35 @@
+{
+  "buildId": "e93df3dd-56f4-41d5-8133-fc63acaa12a6",
+  "device": "CPH2599",
+  "serial": "X4GACUMZMVEQY5XO",
+  "installation": "PASS",
+  "installedAt": "2026-11-07 16:10:34 IST",
+  "startup": "PASS; no observed fatal exception in captured app Logcat",
+  "branding": "PASS; Fav Music name and existing logo visible",
+  "googleButton": "PASS rendering; 280dp x 48dp accessible bounds",
+  "removedCaption": "PASS; absent from screenshot and actual APK",
+  "googleSignIn": {
+    "result": "FAIL",
+    "nativeStatus": "10",
+    "meaning": "DEVELOPER_ERROR: application/OAuth configuration mismatch",
+    "observedAt": "2026-11-07 16:11:03.667 IST",
+    "errorRemainsVisible": true,
+    "particularConsoleFieldMismatch": "Not verified; Google Cloud OAuth registration not accessible in this task"
+  },
+  "oauthRegistrationRequired": {
+    "package": "com.favmusic",
+    "sha1": "B5:A9:23:A7:18:57:3F:17:77:5D:95:D8:DD:D3:C1:39:36:AD:00:6A",
+    "sha256": "68:D7:3D:8F:18:4E:BC:07:82:5C:85:37:63:53:AB:93:E0:71:0A:1E:87:92:D7:F3:34:49:16:12:7D:A1:3E:DB"
+  },
+  "protectedScreens": "BLOCKED by genuine Google failure; no bypass attempted",
+  "realSaavnPlayback": "BLOCKED in this authenticated APK; not tested",
+  "accountPersistence": "BLOCKED; authenticated acceptance not reached",
+  "acceptanceActionsStoppedOnCriticalFailure": true,
+  "additionalBuilds": 0,
+  "databaseOrCloudChanges": false,
+  "googleReferences": [
+    "https://developers.google.com/android/reference/com/google/android/gms/common/api/CommonStatusCodes",
+    "https://react-native-google-signin.github.io/docs/troubleshooting",
+    "https://codelabs.developers.google.com/sign-in-with-google-android"
+  ]
+}

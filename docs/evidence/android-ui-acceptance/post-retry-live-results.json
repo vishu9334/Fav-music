@@ -1,0 +1,134 @@
+{
+  "origin": "https://anyway-pdf-obligation-suggests.trycloudflare.com",
+  "keyPrinted": false,
+  "fakeUserContext": false,
+  "liveDatabaseWrites": false,
+  "tracks": [
+    {
+      "id": "f5e75856-4598-8a85-8509-3e90deb1afe4",
+      "title": "Believer",
+      "artist": "Imagine Dragons",
+      "year": 2018,
+      "duration": 204,
+      "returnedCount": 10,
+      "hasNextPage": true,
+      "nextPageCount": 10,
+      "stream": {
+        "status": 206,
+        "contentType": "audio/mp4",
+        "contentRange": "bytes 0-1023/8521381",
+        "receivedFirstChunkBytes": 1024,
+        "inspectedBytes": 1024,
+        "mp4Ftyp": true,
+        "urlSha256": "07112afd19d72c3e223644befb13e94970e69446253679e1133194eab9edabef"
+      }
+    },
+    {
+      "id": "b9e404d7-f40a-862c-ac0e-b899333f98d0",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "year": 2020,
+      "duration": 203,
+      "returnedCount": 10,
+      "hasNextPage": true,
+      "nextPageCount": 10,
+      "stream": {
+        "status": 206,
+        "contentType": "audio/mp4",
+        "contentRange": "bytes 0-1023/8198941",
+        "receivedFirstChunkBytes": 1024,
+        "inspectedBytes": 1024,
+        "mp4Ftyp": true,
+        "urlSha256": "ce8b156408b95a8f154c3ee0db150cdba7fb30651efe29f860a9113826b377a2"
+      }
+    },
+    {
+      "id": "1debe94a-cb09-8aff-a6b3-ba7e1128d18e",
+      "title": "Enemy (from the series Arcane League of Legends)",
+      "artist": "Jid, Imagine Dragons, Arcane, League of Legends",
+      "year": 2021,
+      "duration": 173,
+      "returnedCount": 10,
+      "hasNextPage": true,
+      "nextPageCount": 10,
+      "stream": {
+        "status": 206,
+        "contentType": "audio/mp4",
+        "contentRange": "bytes 0-1023/6942320",
+        "receivedFirstChunkBytes": 1024,
+        "inspectedBytes": 1024,
+        "mp4Ftyp": true,
+        "urlSha256": "97b65736f12f6e7d961ebf281acef75674b0905302e46109964d30405697d591"
+      }
+    }
+  ],
+  "negative": [
+    {
+      "name": "missing-key",
+      "status": 401,
+      "errors": [
+        {
+          "message": "Development catalog access is missing or expired.",
+          "code": "DEVELOPMENT_ACCESS_DENIED"
+        }
+      ]
+    },
+    {
+      "name": "wrong-key",
+      "status": 401,
+      "errors": [
+        {
+          "message": "Development catalog access is missing or expired.",
+          "code": "DEVELOPMENT_ACCESS_DENIED"
+        }
+      ]
+    },
+    {
+      "name": "account-type",
+      "status": 400,
+      "errors": [
+        {
+          "message": "Invalid or unavailable development catalog request.",
+          "code": "DEVELOPMENT_CATALOG_ERROR"
+        }
+      ]
+    },
+    {
+      "name": "mutation",
+      "status": 400,
+      "errors": [
+        {
+          "message": "Invalid or unavailable development catalog request."
+        }
+      ]
+    },
+    {
+      "name": "video",
+      "status": 400,
+      "errors": [
+        {
+          "message": "Invalid or unavailable development catalog request.",
+          "code": "DEVELOPMENT_CATALOG_ERROR"
+        }
+      ]
+    },
+    {
+      "name": "ordinary-account-api",
+      "status": 401
+    }
+  ],
+  "accessExpiresAt": "2026-11-07T07:00:14.270Z",
+  "provider": {
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true,
+    "resourceKinds": [
+      "albums",
+      "artists",
+      "playlists"
+    ],
+    "remotePagination": true,
+    "videoSupported": false,
+    "recognitionSupported": false
+  },
+  "pass": true
+}

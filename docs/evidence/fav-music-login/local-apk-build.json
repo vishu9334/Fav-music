@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-07",
+  "result": "PASS: local APK built",
+  "method": "eas build --local; no cloud build submitted",
+  "profile": "preview-local-account",
+  "apkPath": "/tmp/fav-local-apk/Fav-Music.apk",
+  "cloudBuildQuotaUsed": false,
+  "cloudBuildId": null,
+  "java": "Temurin 17.0.21",
+  "buildToolsInstalledDuringBuild": "34.0.0 (required by native dependency)",
+  "gradle": "8.10.2",
+  "gradleResult": "BUILD SUCCESSFUL in 9m 32s; 1075 tasks executed",
+  "sourceChanges": [
+    ".easignore: exclude Android Studio/editor state"
+  ],
+  "gitLookupObserved": false,
+  "databaseOrBackendChanges": false,
+  "apkInspection": {
+    "sha256": "e0f8c61101c2a505f068dac3b470480c660574396101b80296a6c7d95a1e1dcd",
+    "bytes": 68283532,
+    "package": "com.favmusic",
+    "signatureMatches": true,
+    "modules": {
+      "com/favmusic/auth/AuthHttpClient$CatalogIpv4TlsFactory": true,
+      "com/favmusic/auth/AadatAuthModule": true,
+      "com/reactnativegooglesignin/RNGoogleSigninModule": true,
+      "expo/modules/blur/BlurModule": true,
+      "expo/modules/video/VideoModule": true,
+      "expo/modules/securestore/SecureStoreModule": true,
+      "com/doublesymmetry/trackplayer/module/MusicModule": true,
+      "com/doublesymmetry/trackplayer/service/MusicService": true
+    },
+    "hermes": true,
+    "correctEndpoint": true,
+    "correctGoogleAudience": true,
+    "privateEnvironmentFiles": [],
+    "pass": true
+  },
+  "apkSecurity": {
+    "buffersScanned": 5,
+    "privateSecretHits": 0,
+    "newGoogleWebClientId": true,
+    "oldGoogleClientIdAbsent": true,
+    "hermesVersion": 96,
+    "registerComponentDefinitions": 1,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ]
+  },
+  "autolinking": {
+    "nativePackageListGenerated": true,
+    "googleSignIn": true,
+    "trackPlayer": true,
+    "secureStoreAndBlurUseExpo": true,
+    "nativePackageCount": 9
+  },
+  "archive": {
+    "archiveFiles": 326,
+    "privateSecretHits": [],
+    "ideStateExcluded": true
+  },
+  "actualArchitectures": "Universal APK: arm64-v8a, armeabi-v7a, x86, x86_64; requested environment ABI did not narrow the generated project",
+  "deviceAcceptance": "BLOCKED before genuine Google login: configured backend hostname NXDOMAIN",
+  "installation": "PASS: adb install -r returned Success",
+  "previousPackageInstalled": false,
+  "startup": "Native Login screen opens; visible offline/secure-connection error",
+  "appPid": 24318,
+  "backendConnection": {
+    "configuredHost": "anyway-pdf-obligation-suggests.trycloudflare.com",
+    "hostResult": "ENOTFOUND",
+    "independentGoogleDNSStatus": 3,
+    "independentCloudflareDNSStatus": 3,
+    "alternateExistingTunnel": {
+      "at": "2026-11-07T14:33:16.357Z",
+      "host": "massachusetts-colleges-silicon-utc.trycloudflare.com",
+      "resolver": "dns.google",
+      "http": 200,
+      "dnsStatus": 3,
+      "answers": 0
+    },
+    "localBackendLivenessHttp": 200,
+    "newTunnelCreated": false
+  },
+  "readinessGap": "Fresh public HTTPS recheck was missed before local build; new APK build success is not backend acceptance."
+}

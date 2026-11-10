@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-06T15:21:06.563Z",
+  "authorization": "Explicit user approval: bounded development stream test",
+  "scope": "Three exact API-returned URLs; inspect at most 1024 bytes per URL; cancel; no audio files",
+  "results": [
+    {
+      "id": "225f2d04-7d79-80e4-953e-4af5bc64e9eb",
+      "providerId": "iYMcgidY",
+      "title": "Aadat",
+      "artist": "Ninja",
+      "quality": "320_KBPS",
+      "host": "aac.saavncdn.com",
+      "status": 404,
+      "contentType": "application/octet-stream",
+      "contentRange": null,
+      "bytesInspected": 0,
+      "firstChunkReceived": 0,
+      "prefixHex": null,
+      "audioFileSaved": false
+    },
+    {
+      "id": "1f122aed-006b-8f65-84da-3e5168b091a8",
+      "providerId": "8taj1DCo",
+      "title": "Rain",
+      "artist": "DIVINE",
+      "quality": "320_KBPS",
+      "host": "aac.saavncdn.com",
+      "status": 404,
+      "contentType": "application/octet-stream",
+      "contentRange": null,
+      "bytesInspected": 0,
+      "firstChunkReceived": 0,
+      "prefixHex": null,
+      "audioFileSaved": false
+    },
+    {
+      "id": "37662751-96fc-807d-962f-51e963733d03",
+      "providerId": "46An-G70",
+      "title": "Happy",
+      "artist": "Karthik",
+      "quality": "320_KBPS",
+      "host": "aac.saavncdn.com",
+      "status": 404,
+      "contentType": "application/octet-stream",
+      "contentRange": null,
+      "bytesInspected": 0,
+      "firstChunkReceived": 0,
+      "prefixHex": null,
+      "audioFileSaved": false
+    }
+  ]
+}

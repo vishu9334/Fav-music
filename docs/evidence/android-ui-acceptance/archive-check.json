@@ -1,0 +1,10 @@
+{
+  "method": "Actual installed EAS NoVcsClient.makeShallowCopyAsync, explicit absolute EAS_PROJECT_ROOT; no Git or upload",
+  "files": 328,
+  "unsafePaths": [],
+  "missingRequired": [],
+  "symlinks": [],
+  "serverIncluded": false,
+  "legacyAndroidIncluded": false,
+  "manifestSha256": "d31ab27b55f239edb69cf1ec6148fb7380d407a6cfa76150b2aab96213f63397"
+}

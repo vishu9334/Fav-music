@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-06T15:48:31.748Z",
+  "adapterChecks": [
+    {
+      "id": "iYMcgidY",
+      "metadata": {
+        "status": 200,
+        "age": "4432",
+        "cache": "HIT",
+        "revalidationRequested": true
+      },
+      "exactProviderSelection": true
+    },
+    {
+      "id": "8taj1DCo",
+      "metadata": {
+        "status": 200,
+        "age": "3801",
+        "cache": "HIT",
+        "revalidationRequested": true
+      },
+      "exactProviderSelection": true
+    },
+    {
+      "id": "46An-G70",
+      "metadata": {
+        "status": 200,
+        "age": "3798",
+        "cache": "HIT",
+        "revalidationRequested": true
+      },
+      "exactProviderSelection": true
+    }
+  ],
+  "cdn": {
+    "status": 404,
+    "headers": {
+      "server": null,
+      "date": "Fri, 06 Nov 2026 15:48:31 GMT",
+      "content-type": "application/octet-stream",
+      "content-length": "0",
+      "cache-control": null,
+      "expires": null,
+      "last-modified": null,
+      "www-authenticate": null,
+      "x-cache": null,
+      "x-amz-error-code": null
+    },
+    "redirect": null
+  }
+}

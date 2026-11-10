@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Local IDE state is not a mobile build input
+.idea/
+.vscode/
+*.iml
+
+# Local Builds
+apps/mobile/android/
+apps/mobile/.expo/
+apps/mobile/dist/
+apps/mobile/build/
+*.apk
+*.aab
+
+# Environment & Secrets (Never upload secrets to mobile build)
+.env
+.env.*
+*.env
+*.env.*
+**/.env
+**/.env.*
+*.pem
+*.key
+
+# Server Backend & Docs (Not needed by mobile cloud builder)
+server/
+**/server/**
+docs/
+**/docs/**
+
+# Temporary & Logs
+*.log
+.DS_Store
+Thumbs.db
+
+
+# Backend-local catalog identity journals are never mobile build inputs
+.aadat-music/

@@ -1,0 +1,25 @@
+{
+  "host": "127.0.0.1",
+  "port": 6379,
+  "commands": [
+    "PING",
+    "INFO server",
+    "INFO keyspace",
+    "CONFIG GET bind protected-mode port tls-port databases"
+  ],
+  "configurationWrites": false,
+  "servicesStarted": false,
+  "ping": "PONG",
+  "version": "8.6.2",
+  "keyspaceSections": [
+    "db0:keys=160,expires=0,avg_ttl=0,subexpiry=0"
+  ],
+  "config": {
+    "tls-port": "0",
+    "protected-mode": "yes",
+    "port": "6379",
+    "bind": "127.0.0.1 ::1",
+    "databases": "16"
+  },
+  "status": "PASS"
+}

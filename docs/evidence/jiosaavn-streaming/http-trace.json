@@ -1,0 +1,19 @@
+{
+  "startedAt": "2026-11-06T15:38:46.634Z",
+  "scope": "Metadata + authorized bounded GET; inspect <=1024 bytes per returned URI; no audio files",
+  "tracks": [],
+  "errors": [
+    {
+      "id": "iYMcgidY",
+      "message": "Metadata HTTP 500"
+    },
+    {
+      "id": "8taj1DCo",
+      "message": "Metadata HTTP 500"
+    },
+    {
+      "id": "46An-G70",
+      "message": "Metadata HTTP 500"
+    }
+  ]
+}

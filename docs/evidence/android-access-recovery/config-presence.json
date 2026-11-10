@@ -1,0 +1,10 @@
+{
+  "redisUrlPresent": true,
+  "redisScheme": "redis:",
+  "redisHost": "redis-10761.crce276.ap-south-1-3.ec2.cloud.redislabs.com",
+  "redisPort": "10761",
+  "redisTlsConfigured": false,
+  "globalTlsVerificationDisabled": false,
+  "authEnabled": false,
+  "cloudPersistenceEnabled": false
+}

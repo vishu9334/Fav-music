@@ -1,0 +1,105 @@
+{
+  "unchanged": [
+    "server/.env",
+    "apps/mobile/.env.local",
+    "server/prisma/schema.prisma",
+    "server/src/modules/catalog/catalog.module.ts",
+    "server/src/modules/catalog/controllers/catalog-graphql.controller.ts",
+    "apps/mobile/src/auth/components/account-access.tsx",
+    "apps/mobile/src/auth/services/auth-config.ts",
+    "apps/mobile/src/store/useLibraryStore.ts",
+    "app.json",
+    "apps/mobile/app.json",
+    "metro.config.js",
+    "apps/mobile/metro.config.js",
+    "pnpm-lock.yaml",
+    "assest/icon.png",
+    "assest/adaptive-icon.png",
+    "assest/favicon.png",
+    "assest/Fav music.png"
+  ],
+  "changed": [
+    "apps/mobile/src/services/playback/AudioPlaybackService.ts",
+    "eas.json",
+    "apps/mobile/eas.json",
+    "apps/mobile/index.tsx",
+    "server/src/index.ts",
+    "server/scripts/local-redis-development.mjs"
+  ],
+  "archive": {
+    "method": "Actual installed EAS NoVcsClient.makeShallowCopyAsync, explicit absolute EAS_PROJECT_ROOT; no Git or upload",
+    "files": 308,
+    "unsafePaths": [],
+    "missingRequired": [],
+    "symlinks": [],
+    "serverIncluded": false,
+    "legacyAndroidIncluded": false,
+    "manifestSha256": "186fc2c198584c33cef9be17cd185715776216281ff8e1d1b8d763a1f7821aa1"
+  },
+  "privateKeyHits": [],
+  "keyFileMode": "600",
+  "expiresAt": "2026-11-07T04:03:42.265Z",
+  "bundles": [
+    {
+      "variant": "normal",
+      "modules": 2932,
+      "assets": 29,
+      "hermesBytes": 5670405,
+      "hermesSha256": "72ad11b36442f651b45719f6dbf2fc9bbdb4cab940b5b6dc2589e97e5c76f715",
+      "registryDefinitions": 1,
+      "mainRegistrations": 1,
+      "entryRuns": [
+        "__r(167);",
+        "__r(0);"
+      ],
+      "containsPrivateKey": false,
+      "hasDiagnosticEndpoint": false,
+      "expectedDiagnostic": false
+    },
+    {
+      "variant": "diagnostic",
+      "modules": 2935,
+      "assets": 29,
+      "hermesBytes": 5695961,
+      "hermesSha256": "5a15d0c18026a7107cc521f3d6e6ce9601420527e7ab56edd033ed1d68238787",
+      "registryDefinitions": 1,
+      "mainRegistrations": 1,
+      "entryRuns": [
+        "__r(167);",
+        "__r(0);"
+      ],
+      "containsPrivateKey": false,
+      "hasDiagnosticEndpoint": true,
+      "expectedDiagnostic": true
+    }
+  ],
+  "autolinkDependencies": [
+    "@babel/runtime",
+    "@react-native-google-signin/google-signin",
+    "expo",
+    "expo-build-properties",
+    "expo-dev-client",
+    "expo-file-system",
+    "expo-linking",
+    "expo-router",
+    "expo-screen-orientation",
+    "expo-secure-store",
+    "expo-status-bar",
+    "expo-video",
+    "lucide-react-native",
+    "query-string",
+    "react",
+    "react-dom",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context",
+    "react-native-screens",
+    "react-native-svg",
+    "react-native-track-player",
+    "zustand"
+  ],
+  "autolinkCount": 24,
+  "live": true,
+  "android": true
+}

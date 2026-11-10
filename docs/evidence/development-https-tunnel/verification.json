@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-07",
+  "timezone": "Asia/Calcutta",
+  "approvedTunnelCreationInvocations": 1,
+  "uniqueGeneratedOrigins": [
+    "https://anyway-pdf-obligation-suggests.trycloudflare.com"
+  ],
+  "registeredConnectionEvents": 2,
+  "tunnelPid": 72346,
+  "publicGraphqlEndpoint": "https://anyway-pdf-obligation-suggests.trycloudflare.com/graphql",
+  "hostHttps": "PASS",
+  "androidHttps": "PASS",
+  "androidDevice": "CPH2599",
+  "androidSerial": "X4GACUMZMVEQY5XO",
+  "androidCipher": "TLS_AES_128_GCM_SHA256",
+  "androidTemporaryFileRemoved": true,
+  "credentialsSent": false,
+  "onlyDevelopmentMobileEndpointChanged": true,
+  "serverProductionRedisSettingsPreserved": true,
+  "authEnabled": false,
+  "catalogEnabled": false,
+  "cloudPersistenceEnabled": false,
+  "authVerifiedMarkerSet": false,
+  "normalLocalRedisRateCountersOnly": true,
+  "sqlExecuted": false,
+  "applicationRecordOrSessionWrites": false,
+  "migrationS3OrEasOperations": false,
+  "androidAppPlaybackVerified": false
+}

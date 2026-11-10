@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-07T12:59:03.595Z",
+  "plan": "Free",
+  "periodEnd": "2026-12-01T00:00:00.000Z",
+  "metrics": [
+    {
+      "service": "BUILDS",
+      "type": "BUILD",
+      "value": 15,
+      "limit": 30,
+      "android": {
+        "value": 15,
+        "limit": 15,
+        "__typename": "EstimatedUsagePlatformDetail"
+      }
+    },
+    {
+      "service": "LOCAL_BUILDS",
+      "type": "BUILD",
+      "value": 0,
+      "limit": 10
+    }
+  ],
+  "requestedAction": "Exactly one corrected-ID EAS cloud Android APK",
+  "androidCloudBuildsUsed": 15,
+  "androidCloudBuildLimit": 15,
+  "androidCloudBuildsRemaining": 0,
+  "buildSubmitted": false,
+  "paidUpgradePerformed": false,
+  "result": "BLOCKED: no remaining Android cloud build allowance",
+  "quotaResetAsiaKolkata": "2026-12-01 05:30 IST"
+}

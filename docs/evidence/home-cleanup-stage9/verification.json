@@ -1,0 +1,87 @@
+{
+  "stage": 9,
+  "status": "LOCAL_PASS_ANDROID_PENDING",
+  "audit": {
+    "alreadyAbsentInHomeSource": [
+      "173 tracks and similar decorative counts",
+      "Discover your music",
+      "A space that's yours",
+      "Leading dot before the music card title"
+    ],
+    "remainingClutterFound": [
+      "Find your rhythm. promotional Home headline",
+      "Find your feeling feature heading",
+      "Your space navigation group caption",
+      "Extra background/border around Home header logo",
+      "Reserved hero whitespace when no artwork is displayed"
+    ]
+  },
+  "changes": [
+    "Remove redundant Home headline while preserving library errors/retry",
+    "Use Explore and Songs as meaningful section titles",
+    "Omit the first menu group caption and its heading spacing, preserving all routes",
+    "Remove the Home-only logo frame; preserve the 44dp hit target, original logo and other header styling",
+    "Tighten hero spacing; use intrinsic text-only height on small screens/large fonts; preserve artwork bounds/typography/palette",
+    "Keep useful Home sections exposed as accessible headings"
+  ],
+  "changedSourceFiles": [
+    "apps/mobile/src/screens/HomeScreen.tsx",
+    "apps/mobile/src/components/app/AppHeader.tsx",
+    "apps/mobile/src/components/app/FeatureLinks.tsx"
+  ],
+  "changedTestFiles": [
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx",
+    "apps/mobile/src/components/app/__tests__/home-header.test.tsx"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 43,
+      "files": 3,
+      "command": "pnpm exec vitest run apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/components/app/__tests__/home-header.test.tsx apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx",
+      "coverage": [
+        "No requested visible slogans/decorative counts/leading dot",
+        "Home section headings and responsive no-artwork spacing",
+        "Unframed Home logo and retained hit target/menu behavior",
+        "Exact Play queue, Load More and feature/category navigation",
+        "Library/catalog failure and retry feedback",
+        "Earlier loading, seasonal copy and scroll/playback isolation regressions"
+      ],
+      "limits": "Native rendering and state use mocks/captured metadata. Header tests have no authenticated session and do not bypass the app authentication guard. No live API/device interaction was performed."
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "command": "pnpm --filter @aadat/mobile typecheck",
+      "exitCode": 0
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "modules": 2974,
+      "exitCode": 0,
+      "apkBuild": false
+    },
+    "scope": {
+      "changedSourceFiles": [
+        "apps/mobile/src/screens/HomeScreen.tsx",
+        "apps/mobile/src/components/app/AppHeader.tsx",
+        "apps/mobile/src/components/app/FeatureLinks.tsx"
+      ],
+      "existingEventHandlersQueriesArtworkNavigationDataAndAccessibilityLabels": "UNCHANGED",
+      "protectedHashes": "PASS",
+      "protectedFiles": 69,
+      "protectedAreas": "Other screens, player/catalog/stores, lists/skeletons, Stage 8 navigation, logo and all icon assets"
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "No updated APK built or installed; actual native Home appearance, layout and accessibility acceptance remain unverified."
+    }
+  },
+  "hashes": {
+    "apps/mobile/src/screens/HomeScreen.tsx": "a96e7511e36ac1c655ab0c086a1aa18999454772deccabd60e664a1987feb6f7",
+    "apps/mobile/src/components/app/AppHeader.tsx": "4cf667de72226330329ff0daf87251ed3ef5f02564d0791e13f61f87f9ed3139",
+    "apps/mobile/src/components/app/FeatureLinks.tsx": "6303dc98db46c7ccbd984b80317a756e791ba5eada39fd07c4d1540a19fa111c",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx": "a5a2855b1620d8828eb8ebbcffe4a789a757bc6db07f704e157b3df5d5b9824b",
+    "apps/mobile/src/components/app/__tests__/home-header.test.tsx": "3bc4d3e15ef0cdafe03901e569585a22a5c4e26efd46a4c4c29375b360e66ab0"
+  },
+  "restrictions": "No Git commands, APK/EAS builds, backend/database/cloud changes or service restarts."
+}

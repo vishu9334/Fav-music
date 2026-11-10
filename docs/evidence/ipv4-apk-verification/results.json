@@ -1,0 +1,19 @@
+{
+  "buildId": "3e9fdaf2-ca14-4e3d-8645-82ef240eca79",
+  "apkUrl": "https://expo.dev/artifacts/eas/JwTqcC63aAvYDdFLuqIRKM1LNW5b57wNCyDrl7sUxcQ.apk",
+  "submittedBuilds": 1,
+  "installed": true,
+  "ipv4FactoryInApk": true,
+  "realCatalogCount": 10,
+  "selectedSong": "Believer — Imagine Dragons (2018, 3:24)",
+  "mainRegistered": true,
+  "aacDecoder": true,
+  "audioTrackStarted": true,
+  "fatalException": false,
+  "screenshotProgress": "0:37 of 3:24",
+  "audibleConfirmation": "PASS — user confirmed: Yes, music is audible",
+  "logCaptureStopped": true,
+  "sourceOrDatabaseChanges": false,
+  "catalogAndAudiblePlayback": "PASS on CPH2599",
+  "completedAt": "2026-11-07T06:31:18.098Z"
+}

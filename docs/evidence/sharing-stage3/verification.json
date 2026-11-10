@@ -1,0 +1,197 @@
+{
+  "stage": "Stage 3 only — real track sharing",
+  "recordedAt": "2026-11-07T18:46:52.440Z",
+  "status": "LOCAL PASS; SERVICE ACTIVATION AND ANDROID/RECIPIENT ACCEPTANCE PENDING",
+  "authorization": {
+    "backendSharingMetadataCodeAndTests": "Explicitly approved: Approve sharing metadata code only",
+    "serviceRestart": false,
+    "permanentSharingDomain": "Not supplied; use actual provider browser page plus installed-app custom link",
+    "additionalUserRequest": "Show a clear sorry/song-not-found message for unavailable InstaMus/shared songs without pretending recognition exists"
+  },
+  "rootCauses": [
+    "Outgoing shares contained only an app-required custom scheme, with no usable browser fallback.",
+    "Existing providerUrl was dropped by ProviderCatalogService before GraphQL/mobile, losing the exact public song page.",
+    "Track menus relied entirely on the bounded metadata registry, so an evicted song could lose its share entry despite retained player/list metadata.",
+    "Share button state alone was not a synchronous duplicate guard; delayed lookup/navigation needed lifecycle and identity validation."
+  ],
+  "implemented": [
+    "Nullable public shareUrl projected from the existing MusicProvider providerUrl through Track and CatalogSong GraphQL types; no database schema or identity change.",
+    "Dedicated authenticated metadata query checks exact canonical ID and fresh availability before sharing, without changing normal discovery/playback queries.",
+    "Native share title/text contain actual title/artist, exact provider HTTPS song page and exact canonical-ID Fav Music deep link; playback URLs and credentials are rejected.",
+    "Same-song share requests coalesce; conflicting requests report busy; stale/unmounted requests cannot open a delayed native sheet.",
+    "Track menu fallback uses the actual selected player/list track when registry metadata is evicted; all normal track menus reuse the same sharing action.",
+    "Incoming custom links remain protected by real authentication; exact IDs are looked up for review. Loading, retry, missing songs, identity substitution and stale account/payload results are handled.",
+    "Play from shared review waits for the intended queue and guards against duplicate/wrong/stale navigation; opening a link never automatically plays or saves.",
+    "Existing Android text-share ingress recognizes one validated track deep link in addition to existing reel ingress.",
+    "Sorry, this song was not found. is used for missing tracks and completed current InstaMus manual searches with zero matches/no further pages; loading, failed, stale and partial searches are not called missing."
+  ],
+  "changedSourceTestsAndFixtures": {
+    "apps/mobile/src/sharing/share-link.service.ts": "0216bbbbc2fa8269bf8c6ce6cc1124073f538e8692562860095376b52b17d010",
+    "apps/mobile/src/sharing/track-page-url.ts": "3f01fffaf4e579f4e6a7d976d2d72395119fabcc93d6a09a598af00e26289001",
+    "apps/mobile/src/sharing/catalog-track-share.source.ts": "7c213e0f78d09c5c1ae92096440b7301a0901d75829adaef40de329d4b09a183",
+    "apps/mobile/src/sharing/shared-content.loader.ts": "1c6398b9fe4146cdd5d284d30b04d8ada6e589acb4dd64d42f14375e52a18972",
+    "apps/mobile/src/sharing/sharing.ts": "46de67af5560007244a4010105923dede9ff7fa4a924b46a3ab674d83c59fcc1",
+    "apps/mobile/src/sharing/track-availability.ts": "d001b9bb16a7892e75ea5b5afb5b71093d530f17e7f450764ee7f2d6d19bbbb8",
+    "apps/mobile/src/sharing/incoming-share.ts": "95787e816c2a5a030c3baebf674b6145955a6eaa242fb1c31fa891b3100c3645",
+    "apps/mobile/src/sharing/IncomingShareLifecycle.tsx": "66b5fa02de7fc405e6a8cf5a5785f145519f54794fb4e17ef26bb7a01e8fa5d9",
+    "apps/mobile/src/catalog/catalog-api.ts": "36b09c8d37b3384962167a6b057decf01f221433160b3eeb4f934f14fa2d1763",
+    "apps/mobile/src/catalog/graphql-catalog.repository.ts": "b867801f98b63da39ed19a321c41ca5a27c0aacc988c6b61d3947efccb2f43ad",
+    "apps/mobile/src/components/app/ShareButton.tsx": "7f5c69374ac80f792a1c724e15d8eb3cbd3ca6a891afdd0d596f4d15c2f5ac64",
+    "apps/mobile/src/components/library/LibrarySheets.tsx": "8ebe77f9197addd751a9a9e16c0e9de73ae23f668044c6f5024066b5d66c64b4",
+    "apps/mobile/src/components/catalog/SongList.tsx": "0ee8ded0fbbebdb86b58f5596303dd083d05ec5f8d8da480ed519c6f6cbccce4",
+    "apps/mobile/src/screens/PlayerScreen.tsx": "7509afa866396d955d9449440f7e61393f74d408d615320156daefb3fbd3f28c",
+    "apps/mobile/src/screens/LibraryScreen.tsx": "66c3646f2e0efac676045ec9f66bb1f142e87d953b7d96791df7e8516483ff62",
+    "apps/mobile/src/screens/SharedContentScreen.tsx": "839eea066c361bf1c88f9fdb276770caf442bf9ce0678d38526627fa692e8086",
+    "apps/mobile/src/screens/InstaMusScreen.tsx": "340ec68fdbf1101344626862fca7faee861b8f4301c31169e2f88626510a7f39",
+    "packages/contracts/src/dtos/catalog-api.dto.ts": "48882ddd7bfbc0391fc790421150f85e43e1dc32cab69b20e6ca40f64baf08a5",
+    "packages/contracts/src/graphql/schema.ts": "8518ef3be1ab42fdb722ec8ba5d08848289e4e93a29a36e9b5a838012097fc10",
+    "server/src/modules/catalog/services/provider-catalog.service.ts": "74f2dd8da342a05ce4fe1c6b693007464959b3cb6e712237ce37db015f7b3b9f",
+    "apps/mobile/src/sharing/__tests__/share-links.test.ts": "31ef03aef80c6bf71b953505ace0313b6fb4ac7d84a80069f0dda187733933ab",
+    "apps/mobile/src/sharing/__tests__/real-track-sharing.test.ts": "5127abaff5b4ca61b5d41d274bf54d4ac9f867edac09d1d7bae6a5d0c93c6d37",
+    "apps/mobile/src/sharing/__tests__/shared-content.test.ts": "94f16cb5d48d19d05f826c5dec9a31f4ab8e8162ddee8a9150b344aee733321e",
+    "apps/mobile/src/sharing/__tests__/shared-review.test.tsx": "19b711173bd2bd7e667f92700e29f236bc72355738254ea3e17f44bf4b958b83",
+    "apps/mobile/src/sharing/__tests__/native-share.test.ts": "8c65f4cc43840d233be9d3052098f86adb5e1e208150b8de1d24ad72e480035c",
+    "apps/mobile/src/sharing/__tests__/track-availability.test.ts": "c06209781c0eb8c7e70aa479590a48a9adaaacf9a2769401eaa7f6f3e2d2bad9",
+    "apps/mobile/src/sharing/__tests__/fixtures/real-track-pages.json": "f2b3c2c21ad4200465c2a67b71fc9b804413204938d944afce2743c27cf7d019",
+    "server/src/infrastructure/music-provider/__tests__/track-sharing-metadata.test.ts": "7094b5b044b0ed179db285ad9c4a7808cc187d0c76361362ff2ec106a3cc3652",
+    "server/src/infrastructure/music-provider/__tests__/provider.test.ts": "ac3a8a05f30cbefd12def5a7a49ef2de1422704e9ceae0f26f5ccc91b9190c0d"
+  },
+  "generatedContracts": "packages/contracts/dist refreshed by local TypeScript compilation",
+  "backendPatch": {
+    "path": "docs/evidence/sharing-stage3/backend-metadata.patch",
+    "applied": true,
+    "scope": "Three source files; corresponding focused tests added/updated under approved metadata scope"
+  },
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "files": 13,
+      "tests": 112,
+      "log": "/tmp/fav-stage3/focused-tests.log",
+      "scope": "Isolated provider/GraphQL contracts, captured real metadata, mocked native/UI behavior and authentication-guard regressions; no live backend or real recipient interaction"
+    },
+    "typeScript": {
+      "mobile": "PASS",
+      "server": "PASS",
+      "contractsCompilation": "PASS"
+    },
+    "metro": "PASS",
+    "hermes": {
+      "status": "PASS",
+      "version": 96,
+      "singletonCount": 1,
+      "canonicalStartup": true
+    },
+    "livePublicProviderMetadata": {
+      "at": "2026-11-07T18:24:48.297Z",
+      "status": 200,
+      "tracks": [
+        {
+          "id": "BeXBcbVK",
+          "title": "Believer",
+          "artists": [
+            "Imagine Dragons"
+          ],
+          "providerUrl": "https://www.jiosaavn.com/song/believer/Mg0zcxdSYXg"
+        },
+        {
+          "id": "SdZc6-ST",
+          "title": "Believer",
+          "artists": [
+            "Imagine Dragons"
+          ],
+          "providerUrl": "https://www.jiosaavn.com/song/believer/IwwxUkIdZGc"
+        }
+      ]
+    },
+    "browserHeadChecks": [
+      {
+        "id": "BeXBcbVK",
+        "title": "Believer",
+        "url": "https://www.jiosaavn.com/song/believer/Mg0zcxdSYXg",
+        "status": 200,
+        "finalUrl": "https://www.jiosaavn.com/song/believer/Mg0zcxdSYXg",
+        "contentType": "text/html; charset=utf-8"
+      },
+      {
+        "id": "SdZc6-ST",
+        "title": "Believer",
+        "url": "https://www.jiosaavn.com/song/believer/IwwxUkIdZGc",
+        "status": 200,
+        "finalUrl": "https://www.jiosaavn.com/song/believer/IwwxUkIdZGc",
+        "contentType": "text/html; charset=utf-8"
+      }
+    ],
+    "browserHtmlChecks": [
+      {
+        "providerId": "BeXBcbVK",
+        "requested": "https://www.jiosaavn.com/song/believer/Mg0zcxdSYXg",
+        "status": 200,
+        "finalUrl": "https://www.jiosaavn.com/song/believer/Mg0zcxdSYXg",
+        "contentType": "text/html; charset=utf-8",
+        "htmlBytesInspected": 65536,
+        "title": "Believer Song Download | Evolve @JioSaavn",
+        "canonical": "https://www.jiosaavn.com/song/believer/Mg0zcxdSYXg",
+        "containsSongTitle": true,
+        "containsPrimaryArtist": true,
+        "mediaRequested": false
+      },
+      {
+        "providerId": "SdZc6-ST",
+        "requested": "https://www.jiosaavn.com/song/believer/IwwxUkIdZGc",
+        "status": 200,
+        "finalUrl": "https://www.jiosaavn.com/song/believer/IwwxUkIdZGc",
+        "contentType": "text/html; charset=utf-8",
+        "htmlBytesInspected": 65536,
+        "title": "Believer - Song Download from Believer @ JioSaavn",
+        "canonical": "https://www.jiosaavn.com/song/believer/IwwxUkIdZGc",
+        "containsSongTitle": true,
+        "containsPrimaryArtist": true,
+        "mediaRequested": false
+      }
+    ],
+    "iconsUnchanged": {
+      "assest/icon.png": true,
+      "assest/adaptive-icon.png": true,
+      "assest/favicon.png": true,
+      "assest/Fav music.png": true
+    },
+    "stage2CoreUnchanged": {
+      "apps/mobile/src/store/useLibraryStore.ts": true,
+      "apps/mobile/src/library/library.service.ts": true,
+      "apps/mobile/src/components/library/LikeButton.tsx": true,
+      "apps/mobile/src/components/kobra/MorphingHeart.tsx": true
+    }
+  },
+  "navigationCoverage": {
+    "inspected": [
+      "Home",
+      "Search",
+      "Player",
+      "Library",
+      "Liked Tracks/Favourites/Bookmarks",
+      "Playlists",
+      "Warehouse",
+      "InstaMus"
+    ],
+    "flow": "SongList or explicit track menu → shared TrackActionsSheet → authenticated fresh metadata → NativeShareGateway",
+    "installedApp": "aadatmusic:///shared?payload=… → existing Expo Router /shared route protected by withAccountScreen; exact-ID review and explicit Play",
+    "withoutApp": "Exact provider HTTPS song page in the same message; two live pages returned matching canonical/title metadata with HTTP 200"
+  },
+  "remaining": [
+    "Running backend was not restarted or deployed. Its old schema may reject shareUrl until the approved source is compiled/activated under separate service-start authorization.",
+    "No updated APK was built or installed. Actual Android chooser, cancellation, target-app URL formatting, cold/warm links, login-resume payload retention, exact-track playback and no-app recipient fallback require device testing.",
+    "No owned permanent sharing domain or published Play Store listing was supplied. There is no claimed single universal HTTPS Fav Music app/install link; provider page and custom app link are separate options.",
+    "Provider page verification inspected bounded HTML only; no provider audio/video was requested or downloaded. No Instagram recognition provider was added."
+  ],
+  "restrictedActions": {
+    "gitCommands": 0,
+    "apkBuilds": 0,
+    "easBuilds": 0,
+    "backendRestarts": 0,
+    "databaseMigrations": 0,
+    "liveDatabaseWrites": 0,
+    "cloudChanges": false,
+    "paidResources": false
+  }
+}

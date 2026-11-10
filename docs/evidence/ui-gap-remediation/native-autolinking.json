@@ -1,0 +1,23 @@
+[
+  {
+    "packageName": "expo-blur",
+    "packageVersion": "14.0.3",
+    "modules": [
+      "expo.modules.blur.BlurModule"
+    ]
+  },
+  {
+    "packageName": "expo-screen-orientation",
+    "packageVersion": "8.0.4",
+    "modules": [
+      "expo.modules.screenorientation.ScreenOrientationModule"
+    ]
+  },
+  {
+    "packageName": "expo-video",
+    "packageVersion": "2.0.6",
+    "modules": [
+      "expo.modules.video.VideoModule"
+    ]
+  }
+]

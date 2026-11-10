@@ -1,0 +1,415 @@
+{
+  "checkedOn": "2026-11-06",
+  "nativeDirectConnectivity": {
+    "status": "PASS",
+    "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+    "operation": "migrate diff --from-config-datasource --to-empty --exit-code",
+    "exitCode": 0,
+    "elapsedMs": 4429,
+    "stdout": "No difference detected.",
+    "strictTls": true,
+    "readOnlyStartupRequested": true
+  },
+  "nativePooledConnectivity": {
+    "status": "FAIL",
+    "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+    "operation": "migrate diff --from-config-datasource --to-empty --exit-code",
+    "exitCode": 1,
+    "signal": null,
+    "elapsedMs": 668,
+    "errorCodes": [
+      "P1001"
+    ],
+    "exactError": "Loaded Prisma config from server/prisma.config.ts.\n\nError: P1001\n\nCan't reach database server at `ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech:5432`\n\nPlease make sure your database server is running at `ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech:5432`.",
+    "stdout": "",
+    "nativeVerified": false,
+    "strictTls": true,
+    "readOnlyStartupRequested": true,
+    "usedPhysicalAliasForDiagnosticOnly": false
+  },
+  "nativeComputeAliasDiagnostic": {
+    "host": "ep-calm-paper-ao3neqs5-j0k.c-2.ap-southeast-1.aws.neon.tech",
+    "operation": "migrate diff --from-config-datasource --to-empty --exit-code",
+    "exitCode": 0,
+    "signal": null,
+    "elapsedMs": 4424,
+    "errorCodes": [],
+    "exactError": "Loaded Prisma config from server/prisma.config.ts.",
+    "stdout": "No difference detected.",
+    "nativeVerified": true,
+    "strictTls": true,
+    "readOnlyStartupRequested": true,
+    "usedPhysicalAliasForDiagnosticOnly": true
+  },
+  "directIntrospection": {
+    "operation": "db pull --print --schemas public",
+    "exitCode": 1,
+    "elapsedMs": 5289,
+    "errorCodes": [
+      "P4001"
+    ],
+    "exactError": "Loaded Prisma config from server/prisma.config.ts.\n\nError: \nP4001 The introspected database was empty:\n\nprisma db pull could not create any models in your schema.prisma file and you will not be able to generate Prisma Client with the prisma generate command.\n\nTo fix this, you have two options:\n\n- manually create a table in your database.\n- make sure the database connection URL inside the datasource block in schema.prisma points to a database that is not empty (it must contain at least one table).\n\nThen you can run prisma db pull again.",
+    "fileWriteRequested": false,
+    "connectivityStatus": "PASS — connected; public schema empty"
+  },
+  "nodeControls": [
+    {
+      "kind": "direct",
+      "pass": true,
+      "elapsedMs": 1651,
+      "tlsAuthorized": true,
+      "remoteFamily": "IPv4",
+      "metadata": {
+        "read_only": "on",
+        "schema_name": "public",
+        "public_table_count": 0
+      }
+    },
+    {
+      "kind": "pooled",
+      "pass": true,
+      "elapsedMs": 1124,
+      "tlsAuthorized": true,
+      "remoteFamily": "IPv4",
+      "metadata": {
+        "read_only": "on",
+        "schema_name": "public",
+        "public_table_count": 0
+      }
+    }
+  ],
+  "libpqIpv4Control": {
+    "exitCode": 0,
+    "elapsedMs": 852,
+    "strictTlsHostname": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+    "dynamicIpv4": "3.0.167.45",
+    "stdout": "on|public|0",
+    "stderr": ""
+  },
+  "dns": [
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "systemResults": [
+        {
+          "method": "lookupAll",
+          "pass": true,
+          "result": [
+            {
+              "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+              "family": 6
+            },
+            {
+              "address": "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+              "family": 6
+            },
+            {
+              "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+              "family": 6
+            },
+            {
+              "address": "3.0.167.45",
+              "family": 4
+            },
+            {
+              "address": "18.138.49.39",
+              "family": 4
+            },
+            {
+              "address": "13.251.17.193",
+              "family": 4
+            }
+          ],
+          "elapsedMs": 68
+        },
+        {
+          "method": "lookup4",
+          "pass": true,
+          "result": {
+            "address": "3.0.167.45",
+            "family": 4
+          },
+          "elapsedMs": 34
+        },
+        {
+          "method": "lookup6",
+          "pass": true,
+          "result": {
+            "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+            "family": 6
+          },
+          "elapsedMs": 66
+        },
+        {
+          "method": "resolve4",
+          "pass": false,
+          "code": "EREFUSED",
+          "elapsedMs": 33
+        },
+        {
+          "method": "resolve6",
+          "pass": false,
+          "code": "EREFUSED",
+          "elapsedMs": 48
+        }
+      ],
+      "verifiedHttpsIpv4": {
+        "pass": true,
+        "addresses": [
+          "3.0.167.45",
+          "18.138.49.39",
+          "13.251.17.193"
+        ]
+      }
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "systemResults": [
+        {
+          "method": "lookupAll",
+          "pass": false,
+          "code": "ENOTFOUND",
+          "elapsedMs": 134
+        },
+        {
+          "method": "lookup4",
+          "pass": false,
+          "code": "ENOTFOUND",
+          "elapsedMs": 130
+        },
+        {
+          "method": "lookup6",
+          "pass": false,
+          "code": "ENOTFOUND",
+          "elapsedMs": 134
+        },
+        {
+          "method": "resolve4",
+          "pass": false,
+          "code": "EREFUSED",
+          "elapsedMs": 55
+        },
+        {
+          "method": "resolve6",
+          "pass": false,
+          "code": "EREFUSED",
+          "elapsedMs": 55
+        }
+      ],
+      "verifiedHttpsIpv4": {
+        "pass": true,
+        "addresses": [
+          "13.251.17.193",
+          "3.0.167.45",
+          "18.138.49.39"
+        ]
+      }
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-j0k.c-2.ap-southeast-1.aws.neon.tech",
+      "systemResults": [
+        {
+          "method": "lookupAll",
+          "pass": true,
+          "result": [
+            {
+              "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+              "family": 6
+            },
+            {
+              "address": "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+              "family": 6
+            },
+            {
+              "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+              "family": 6
+            },
+            {
+              "address": "3.0.167.45",
+              "family": 4
+            },
+            {
+              "address": "18.138.49.39",
+              "family": 4
+            },
+            {
+              "address": "13.251.17.193",
+              "family": 4
+            }
+          ],
+          "elapsedMs": 205
+        },
+        {
+          "method": "lookup4",
+          "pass": true,
+          "result": {
+            "address": "3.0.167.45",
+            "family": 4
+          },
+          "elapsedMs": 205
+        },
+        {
+          "method": "lookup6",
+          "pass": true,
+          "result": {
+            "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+            "family": 6
+          },
+          "elapsedMs": 206
+        },
+        {
+          "method": "resolve4",
+          "pass": false,
+          "code": "EREFUSED",
+          "elapsedMs": 55
+        },
+        {
+          "method": "resolve6",
+          "pass": false,
+          "code": "EREFUSED",
+          "elapsedMs": 54
+        }
+      ],
+      "verifiedHttpsIpv4": {
+        "pass": true,
+        "addresses": [
+          "3.0.167.45",
+          "18.138.49.39",
+          "13.251.17.193"
+        ]
+      }
+    }
+  ],
+  "ipv4Tls": [
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "address": "3.0.167.45",
+      "family": 4,
+      "pass": true,
+      "stage": "tls_verified",
+      "elapsedMs": 307,
+      "authorized": true,
+      "protocol": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384"
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "address": "13.251.17.193",
+      "family": 4,
+      "pass": true,
+      "stage": "tls_verified",
+      "elapsedMs": 309,
+      "authorized": true,
+      "protocol": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384"
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-j0k.c-2.ap-southeast-1.aws.neon.tech",
+      "address": "3.0.167.45",
+      "family": 4,
+      "pass": true,
+      "stage": "tls_verified",
+      "elapsedMs": 303,
+      "authorized": true,
+      "protocol": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384"
+    }
+  ],
+  "ipv6Tcp": [
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "dnsStatus": 0,
+      "addresses": [
+        "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+        "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+        "2406:da18:1a49:ee0c:907e:8460:f78d:65e7"
+      ],
+      "probes": [
+        {
+          "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+          "pass": true,
+          "elapsedMs": 98
+        },
+        {
+          "address": "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+          "pass": true,
+          "elapsedMs": 96
+        },
+        {
+          "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+          "pass": true,
+          "elapsedMs": 99
+        }
+      ]
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "dnsStatus": 0,
+      "addresses": [
+        "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+        "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+        "2406:da18:1a49:ee15:82a7:99c5:abf7:9839"
+      ],
+      "probes": [
+        {
+          "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+          "pass": true,
+          "elapsedMs": 100
+        },
+        {
+          "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+          "pass": true,
+          "elapsedMs": 99
+        },
+        {
+          "address": "2406:da18:1a49:ee15:82a7:99c5:abf7:9839",
+          "pass": true,
+          "elapsedMs": 99
+        }
+      ]
+    }
+  ],
+  "ipv6Tls": [
+    {
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "address": "2406:da18:1a49:ee2b:eed0:670c:ea4c:1d7a",
+      "family": 6,
+      "pass": true,
+      "stage": "tls_verified",
+      "elapsedMs": 302,
+      "authorized": true,
+      "protocol": "TLSv1.3"
+    },
+    {
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "address": "2406:da18:1a49:ee0c:907e:8460:f78d:65e7",
+      "family": 6,
+      "pass": true,
+      "stage": "tls_verified",
+      "elapsedMs": 301,
+      "authorized": true,
+      "protocol": "TLSv1.3"
+    }
+  ],
+  "currentDiagnosis": "Native direct diff and introspection now connect safely; pooled native still fails P1001 with local DNS ENOTFOUND/EREFUSED while HTTPS DNS and strict-TLS numeric-address controls pass. Prior direct and IPv6 failures were not reproduced in this check.",
+  "originalP1001CauseQualification": "Earlier individual socket traces unavailable; prior DNS/IPv6 observations were historical and not proof of a persistent engine defect.",
+  "engineConnectionBehavior": {
+    "prismaVersion": "7.10.1",
+    "engineCommit": "d1b3f377ca835d73fd50954a5e22128b9ebdd6b8",
+    "nativeDriver": "Rust Quaint/tokio-postgres + native TLS",
+    "nodeFactoryNotUsed": true,
+    "libpqHostaddrControlNotAPrismaConfigurationFix": true
+  },
+  "configurationChanges": [],
+  "liveWriteStatements": 0,
+  "resourcesCreated": 0,
+  "migrationsExecuted": 0,
+  "baseliningExecuted": 0,
+  "applicationUserRowsRead": false,
+  "remainingBlocks": [
+    "All live writes remain blocked by user instruction",
+    "Hosted recovery snapshot/restore verification not authorized or completed",
+    "DNS reliability remains intermittent; recheck stable direct native connectivity before any separately approved migration",
+    "public.User is absent; authentication persistence remains unapplied"
+  ],
+  "privateEvidenceDirectory": "/var/folders/kn/51qtp42s3djbbb7hflzc630m0000gn/T/aadat-prisma-native-diag-kQjuF4"
+}

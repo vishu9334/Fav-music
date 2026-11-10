@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-06T18:25:10.970Z",
+  "host": "massachusetts-colleges-silicon-utc.trycloudflare.com",
+  "path": "/graphql",
+  "credentialsSent": false,
+  "operation": "query AndroidReadiness { __typename } (no user records/schema writes)",
+  "error": "TypeError",
+  "message": "fetch failed",
+  "causeCode": "ENOTFOUND"
+}

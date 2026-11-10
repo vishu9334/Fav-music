@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-06T22:00:27.794Z",
+  "credentialsSent": false,
+  "authMutationsCalled": false,
+  "checks": [
+    {
+      "name": "liveness",
+      "path": "/health/live",
+      "httpStatus": 200,
+      "payload": {
+        "status": "alive",
+        "timestamp": "2026-11-06T22:00:27.825Z"
+      }
+    },
+    {
+      "name": "readiness",
+      "path": "/health/ready",
+      "httpStatus": 200,
+      "payload": {
+        "status": "ready",
+        "timestamp": "2026-11-06T22:00:27.831Z",
+        "ready": true
+      }
+    },
+    {
+      "name": "health",
+      "path": "/health",
+      "httpStatus": 200,
+      "payload": {
+        "status": "ok",
+        "uptimeSeconds": 30,
+        "timestamp": "2026-11-06T22:00:27.833Z",
+        "version": "0.1.0",
+        "services": {
+          "database": "up",
+          "cache": "up"
+        }
+      }
+    },
+    {
+      "name": "graphql-health-capabilities",
+      "path": "/graphql",
+      "httpStatus": 200,
+      "payload": {
+        "data": {
+          "health": {
+            "status": "ok",
+            "version": "0.1.0"
+          },
+          "authCapabilities": {
+            "service": "aadat-music",
+            "version": 1,
+            "authenticationEnabled": false,
+            "cloudCollectionsEnabled": false
+          }
+        }
+      }
+    },
+    {
+      "name": "catalog-account-guard",
+      "path": "/graphql",
+      "httpStatus": 401,
+      "payload": {
+        "errors": [
+          {
+            "message": "Authentication required",
+            "extensions": {
+              "code": "UNAUTHORIZED"
+            }
+          }
+        ],
+        "data": null
+      }
+    },
+    {
+      "name": "account-guard",
+      "path": "/graphql",
+      "httpStatus": 401,
+      "payload": {
+        "errors": [
+          {
+            "message": "Authentication required",
+            "extensions": {
+              "code": "UNAUTHORIZED"
+            }
+          }
+        ],
+        "data": null
+      }
+    }
+  ]
+}

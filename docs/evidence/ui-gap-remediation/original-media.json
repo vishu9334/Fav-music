@@ -1,0 +1,48 @@
+[
+  {
+    "path": "apps/mobile/assets/video/motion-test.mp4",
+    "bytes": 461764,
+    "sha256": "f94e09e1fc052c68647af15dcea3e1ebf61ab571fdca2f74d63ca500e5e82b2a",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "44100"
+      }
+    ],
+    "format": {
+      "duration": "8.000000"
+    }
+  },
+  {
+    "path": "apps/mobile/assets/video/colour-test.mp4",
+    "bytes": 57008,
+    "sha256": "818a0fd72e03763cc3d5fbe268286f5f58e4a1c1152a7db047fe676d3f9b9c7b",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "44100"
+      }
+    ],
+    "format": {
+      "duration": "6.000000"
+    }
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-07T01:14:28.308Z",
+  "origin": "https://anyway-pdf-obligation-suggests.trycloudflare.com",
+  "probeId": "aadat-https-871d74a9-05b1-4dd1-9a75-2bece5c0d831",
+  "credentialsSent": false,
+  "redirectsAllowed": false,
+  "checks": [
+    {
+      "path": "/health/live",
+      "httpStatus": 200,
+      "payload": {
+        "status": "alive",
+        "timestamp": "2026-11-07T01:14:29.052Z"
+      },
+      "pass": true
+    },
+    {
+      "path": "/health/ready",
+      "httpStatus": 200,
+      "payload": {
+        "status": "ready",
+        "timestamp": "2026-11-07T01:14:29.503Z",
+        "ready": true
+      },
+      "pass": true
+    },
+    {
+      "path": "/graphql",
+      "httpStatus": 200,
+      "payload": {
+        "data": {
+          "health": {
+            "status": "ok",
+            "version": "0.1.0"
+          },
+          "authCapabilities": {
+            "service": "aadat-music",
+            "version": 1,
+            "authenticationEnabled": false,
+            "cloudCollectionsEnabled": false
+          }
+        }
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

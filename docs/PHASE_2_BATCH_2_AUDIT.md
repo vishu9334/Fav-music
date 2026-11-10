@@ -1,0 +1,13 @@
+# Phase 2 Batch 2 — audit and implementation scope
+
+The Batch 1 tabs, player, three-track demo search, independent collections, local playlist editing and alternating-file persistence are implemented. Reuse them. AudioPlaybackService, background notification commands, player store, native entry, Metro singleton settings and icons are preservation boundaries.
+
+The user confirmed Hybrid Warehouse means **local collections + future cloud sync**, not local audio-file import. Combine explicitly saved, liked, favourite and bookmarked tracks in one local Warehouse. Use the existing shared ACTIVE/ARCHIVED/HIDDEN status vocabulary for reversible personal removal, restore and hiding; never delete catalog tracks or other collections. Cloud synchronization stays unavailable while authentication/Neon writes are on hold.
+
+Existing Warehouse and InstaMus backend modules contain dependency composition only. GraphQL declares ingestion/status operations but declarations do not implement them. Automated Instagram recognition/extraction cannot truthfully be exposed as working. Batch 2 implements validated reel links, persisted discovery notes, manual demo-catalog search and explicitly selected track bookmarks. It performs no scraping, audio extraction, downloads or backend calls.
+
+The existing `aadatmusic` URL scheme is configured in both Expo configs and the native Android manifest. Reuse Expo Router for cold/warm custom-scheme links and React Native Share for outgoing text. Add a reviewed shared-content route with bounded, versioned, catalog-ID-only payloads, and explicit Play/Save actions. Verified HTTPS App Links need an owned domain and hosted association files; native Android ACTION_SEND reception also needs native integration. Neither is currently implemented or required to exercise pasted links/custom-scheme links locally.
+
+Playlist naming will use deterministic title/artist/album rules and uniqueness suffixes. Suggestions are editable, with no AI and no automatic renaming. Extend the existing repository/service/store rather than introduce a competing library store. Read Batch 1 v1 local documents with safe defaults and write v2 on the next explicit edit. Keeping a distinct data version prevents the older app from silently rewriting new metadata. The existing two-slot journal filenames/envelope remain compatible. No database schema migration is involved.
+
+Validate domain/store regressions, all-workspace TypeScript, production Metro/Hermes and protected-file hashes. Native share-sheet dispatch, external-app routing and new-screen rendering require physical Android acceptance later. Implement Batch 2 only and stop for review.

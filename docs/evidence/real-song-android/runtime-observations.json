@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-07T02:31:58.946Z",
+  "package": "com.favmusic",
+  "appPid": "6374",
+  "mainRegistered": true,
+  "aacDecoderObserved": true,
+  "audioTrackStartCount": 12,
+  "audioTrackPauseCount": 12,
+  "criticalLines": [],
+  "physicalAudibility": "awaiting user confirmation",
+  "automatedControls": "paused pending coordination with manual phone actions"
+}

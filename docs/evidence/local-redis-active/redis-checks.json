@@ -1,0 +1,29 @@
+{
+  "host": "127.0.0.1",
+  "port": 6379,
+  "database": 15,
+  "probeDataWrites": false,
+  "ping": "PONG",
+  "keyspace": [
+    "db0:keys=160,expires=0,avg_ttl=0,subexpiry=0",
+    "db15:keys=1,expires=1,avg_ttl=25306,subexpiry=0"
+  ],
+  "database15Clients": [
+    {
+      "id": "9",
+      "database": "15",
+      "ageSeconds": "72",
+      "lastCommand": "evalsha"
+    },
+    {
+      "id": "10",
+      "database": "15",
+      "ageSeconds": "0",
+      "lastCommand": "client|list"
+    }
+  ],
+  "config": {
+    "protected-mode": "yes",
+    "bind": "127.0.0.1 ::1"
+  }
+}

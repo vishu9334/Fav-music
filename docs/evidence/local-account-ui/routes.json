@@ -1,0 +1,47 @@
+{
+  "mainRoutes": [
+    {
+      "route": "player",
+      "guarded": true
+    },
+    {
+      "route": "collection",
+      "guarded": true
+    },
+    {
+      "route": "playlist",
+      "guarded": true
+    },
+    {
+      "route": "instamus",
+      "guarded": true
+    },
+    {
+      "route": "shared",
+      "guarded": true
+    },
+    {
+      "route": "discovery",
+      "guarded": true
+    },
+    {
+      "route": "history",
+      "guarded": true
+    },
+    {
+      "route": "videos",
+      "guarded": true
+    },
+    {
+      "route": "provider-browse",
+      "guarded": true
+    },
+    {
+      "route": "provider-collection",
+      "guarded": true
+    }
+  ],
+  "tabsGuarded": true,
+  "loginRealAuth": true,
+  "profileRealAuth": true
+}

@@ -1,0 +1,33 @@
+{
+  "host": "anyway-pdf-obligation-suggests.trycloudflare.com",
+  "credentialsSent": false,
+  "hostnameVerification": true,
+  "checks": [
+    {
+      "ip": "2606:4700:99e2:4005:75de:d84:6810:e684",
+      "family": "IPv6",
+      "tls": "TLSv1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256",
+      "pass": false,
+      "failureStage": "HTTP_HEADERS",
+      "error": "SocketTimeoutException"
+    },
+    {
+      "ip": "104.16.231.132",
+      "family": "IPv4",
+      "tls": "TLSv1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256",
+      "status": "HTTP/1.1 200 OK",
+      "pass": true
+    },
+    {
+      "ip": "104.16.230.132",
+      "family": "IPv4",
+      "tls": "TLSv1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256",
+      "status": "HTTP/1.1 200 OK",
+      "pass": true
+    }
+  ],
+  "temporaryFileRemoved": true
+}

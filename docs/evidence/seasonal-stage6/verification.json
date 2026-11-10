@@ -1,0 +1,82 @@
+{
+  "stage": 6,
+  "status": "LOCAL_PASS_ANDROID_PENDING",
+  "screens": [
+    "Home: Seasons entry heading and spacing",
+    "Collection: Spring, Summer, Monsoon, Autumn, Winter",
+    "Search and Discovery: seasonal-filter song rows only"
+  ],
+  "changes": [
+    "Clear Seasons heading",
+    "Compact seasonal category header; no duplicated empty-card heading",
+    "Seasonal rows show artwork, title, artist and existing functional controls; omit extra album/duration metadata",
+    "Accessible No songs yet state separated from initial loading, errors and retry"
+  ],
+  "preserved": [
+    "All five season values, classification rules and provider queries",
+    "Real catalog identities, artwork and track-selection bindings",
+    "Back, Play, Like, More, Load More and scroll keys",
+    "Existing nonseasonal list/header defaults",
+    "Existing responsive styles, playback, collections and four icon assets"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 52,
+      "files": 4,
+      "command": "pnpm exec vitest run apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/catalog/__tests__/real-provider-features.test.ts apps/mobile/src/store/__tests__/catalog-store.test.ts apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx",
+      "coverage": [
+        "All five category titles/empty states and Home navigation",
+        "Captured real Monsoon track Play and Load More; Like/More controls remain visible",
+        "Loading/error/retry without contradictory empty message",
+        "Default metadata and compact-header opt-in",
+        "Captured provider metadata season membership",
+        "Catalog caching/pagination and scroll/playback isolation"
+      ],
+      "limits": "UI uses mocked native components and captured provider metadata; no live network or device playback verification in this task."
+    },
+    "typeScript": {
+      "status": "PASS",
+      "command": "pnpm --filter @aadat/mobile typecheck"
+    },
+    "metro": {
+      "status": "PASS",
+      "modules": 2968,
+      "command": "pnpm exec expo export:embed --eager --platform android --dev false --bundle-output /tmp/fav-stage6/index.android.bundle --assets-dest /tmp/fav-stage6/assets"
+    },
+    "scopeComparison": {
+      "uiSourceFiles": [
+        "apps/mobile/src/screens/HomeScreen.tsx",
+        "apps/mobile/src/screens/CollectionScreen.tsx",
+        "apps/mobile/src/screens/SearchScreen.tsx",
+        "apps/mobile/src/screens/DiscoveryScreen.tsx",
+        "apps/mobile/src/components/app/ui.tsx",
+        "apps/mobile/src/components/catalog/SongList.tsx",
+        "apps/mobile/src/components/catalog/CatalogNotice.tsx"
+      ],
+      "eventBindingsDataAndScrollKeys": "UNCHANGED",
+      "artworkBindings": "UNCHANGED",
+      "categoryQueriesAndTrackSelectionMemos": "UNCHANGED",
+      "existingStyleDefinitions": "UNCHANGED",
+      "presentationChanges": "Season heading/spacing; opt-in compact header/metadata/empty state; initial loading presentation.",
+      "protectedSourceAndAssetCount": 78,
+      "protectedHashes": "PASS"
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "No updated APK built or installed; native visuals, layout, TalkBack and device interactions require acceptance testing."
+    }
+  },
+  "changedSourceAndTests": {
+    "apps/mobile/src/screens/HomeScreen.tsx": "13f509aceac4626fd217f30d8f194fa1db0d2fac21d40d5062906b0ae5a2754b",
+    "apps/mobile/src/screens/CollectionScreen.tsx": "7a103e8a5133730c4d8ec075ce751090d48cef395888d98066b7d33ddb618ba3",
+    "apps/mobile/src/screens/SearchScreen.tsx": "35153fe050d03b2791c58c3edf9ab3589225dad7d47c364e48220ea138b19f82",
+    "apps/mobile/src/screens/DiscoveryScreen.tsx": "d34b2e9835b842c71a26e2c3d0aee6b2ac3263326af213e94255bd1006a0f2f5",
+    "apps/mobile/src/components/app/ui.tsx": "d2f71ea2136d6ebec11a8679415cf545cedc0a2529cc319ba9b357472ee6a5d9",
+    "apps/mobile/src/components/catalog/SongList.tsx": "1aad1eafe53bb9c3b9f47d40e71507013fb533994e554a1694a37c491882104b",
+    "apps/mobile/src/components/catalog/CatalogNotice.tsx": "76b3f4e0d64b00e47c88969d5f4ca04f8a6df85cd4e66fae8e8b1de8141a2354",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx": "42b68ec47bbfc763cf0597fa9984f331aaa3d575423c7ae1b39136ef8dd5e164",
+    "apps/mobile/src/catalog/__tests__/real-provider-features.test.ts": "41618daf7504618bbde5855a882fc1ca0f91161bf79a8fda6d9d86268e3a1a62"
+  },
+  "restrictedOperations": "No Git commands, APK/EAS build, backend edits, service restarts, database or cloud changes."
+}

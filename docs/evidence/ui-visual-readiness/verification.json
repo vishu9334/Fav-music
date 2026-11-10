@@ -1,0 +1,46 @@
+{
+  "implementationFilesVerifiedUnchanged": 343,
+  "changedImplementationFiles": [],
+  "implementationHashManifestSha256": "d7bfa16aa9be8de74ef65115e27eb8afeea585e7389d12c5fdadbba8b3949329",
+  "typecheck": "PASS",
+  "tests": {
+    "passed": 641,
+    "skipped": 3,
+    "failed": 0
+  },
+  "bundles": [
+    {
+      "variant": "normal",
+      "modules": 2939,
+      "assets": 29,
+      "hermesBytes": 5685897,
+      "hermesSha256": "18e310a99e38762b0a47788fa065891e072f8028f1813913dec9c446b14e72cd",
+      "registryDefinitions": 1,
+      "rootRegistrations": 1,
+      "entryRuns": [
+        "__r(167);",
+        "__r(0);"
+      ]
+    },
+    {
+      "variant": "diagnostic",
+      "modules": 2942,
+      "assets": 29,
+      "hermesBytes": 5718553,
+      "hermesSha256": "e89d0f9112210b551c416474e602c1ec4aee61678cf8e37b7a1ea600228bbe1b",
+      "registryDefinitions": 1,
+      "rootRegistrations": 1,
+      "entryRuns": [
+        "__r(167);",
+        "__r(0);"
+      ]
+    }
+  ],
+  "newEasBuilds": 0,
+  "databaseOperations": 0,
+  "cloudConfigurationChanges": 0,
+  "newNativeVisualVerification": false,
+  "fullVisualReadiness": "FAIL",
+  "limitedDiagnosticCompilation": "PASS",
+  "allScreensAccessibleInOneCurrentProfile": false
+}

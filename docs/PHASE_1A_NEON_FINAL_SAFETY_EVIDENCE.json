@@ -1,0 +1,111 @@
+{
+  "checkedOn": "2026-11-06",
+  "liveMigrationReadiness": "FAIL / HOLD",
+  "nativePrisma": {
+    "status": "FAIL",
+    "attempts": [
+      {
+        "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+        "exitCode": 1,
+        "signal": null,
+        "elapsedMs": 624,
+        "errorCodes": [
+          "P1001"
+        ],
+        "schemaEmptyConfirmed": false,
+        "nodeConnectionHeldOpenDuringCheck": true,
+        "strictTls": true,
+        "readOnlyStartupRequested": true
+      }
+    ],
+    "systemDns": {
+      "pass": false,
+      "code": "ENOTFOUND"
+    },
+    "healthyNodeConnectionHeldDuringNativeCheck": true,
+    "diagnosis": "System DNS ENOTFOUND while verified IPv4 Node session and catalog reads succeed; idle compute excluded as sole cause"
+  },
+  "livePreflight": {
+    "status": "PASS",
+    "completedStatements": 20,
+    "transactionReadOnly": true,
+    "publicRelations": 0,
+    "publicTypeRows": 0,
+    "connectPrivilege": true,
+    "publicUsage": true,
+    "publicCreate": true,
+    "history": "ABSENT — conditional SELECT skipped",
+    "ddlEventTriggers": 0,
+    "customDefaultAclRows": 0,
+    "targetDependencies": 0,
+    "neonAuthTables": [
+      "account",
+      "invitation",
+      "jwks",
+      "member",
+      "organization",
+      "project_config",
+      "session",
+      "user",
+      "verification"
+    ]
+  },
+  "neonCatalogPreservation": {
+    "matchesPriorSuccessfulPreflight": true,
+    "currentMetadataSha256": "96e6b82855ca2889a18a3318a9bb2149ad1428bd9f6615912672e67af24bf668",
+    "priorMetadataSha256": "96e6b82855ca2889a18a3318a9bb2149ad1428bd9f6615912672e67af24bf668",
+    "groupsCompared": 10,
+    "userTableRowsRead": false,
+    "tableDataEqualityClaimed": false
+  },
+  "recovery": {
+    "controlPlane": {
+      "observedAt": "2026-11-06T04:18:40.363Z",
+      "projectId": "misty-darkness-00417111",
+      "historyRetentionSeconds": 21600,
+      "branch": {
+        "id": "br-winter-scene-aoerp4n6",
+        "name": "production",
+        "root": true,
+        "state": "ready",
+        "protected": false
+      },
+      "endpoint": {
+        "id": "ep-calm-paper-ao3neqs5",
+        "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+        "computeHost": "ep-calm-paper-ao3neqs5-j0k.c-2.ap-southeast-1.aws.neon.tech",
+        "stateBeforeRead": "idle",
+        "disabled": false
+      },
+      "snapshotCount": 0,
+      "snapshots": []
+    },
+    "observation": {
+      "observed_at": "2026-11-06T04:18:34.604Z",
+      "observed_wal_lsn": "0/1CA4FE8",
+      "read_only": "on"
+    },
+    "observedLsnIsNotNamedOrDurableRestorePoint": true,
+    "actualRestorationTestRun": false,
+    "productionSnapshotCreated": false,
+    "status": "PARTIAL — retention/branch/WAL observations verified; actual source snapshot/isolated restore not verified"
+  },
+  "artifact": {
+    "status": "PASS",
+    "identicalSha256": {
+      "draft": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+      "candidate": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+      "localAppliedHistory": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+      "localForwardScratchInit": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8",
+      "reportedRehearsal": "211948b3ace14b3e68f040fce2a9ad18fa4ee6abfbdce2f4a656a3c084a5ffa8"
+    },
+    "locallyApprovedOnly": true,
+    "activeServerMigrations": false
+  },
+  "sourceConfigEnvironmentChanged": [],
+  "liveWriteStatements": 0,
+  "neonControlPlaneWrites": 0,
+  "migrationExecuted": false,
+  "baseliningExecuted": false,
+  "privateEvidenceDirectory": "/var/folders/kn/51qtp42s3djbbb7hflzc630m0000gn/T/aadat-neon-safety-ZUmXF0"
+}

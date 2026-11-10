@@ -1,0 +1,34 @@
+{
+  "id": "iYMcgidY",
+  "method": "documented album lookup; same canonical provider ID",
+  "noAudioFilesSaved": true,
+  "result": [
+    {
+      "quality": "96_KBPS",
+      "uriSha256": "9c856685ba1b5cef4d08280e8669ef7bcc2450243d3d4d98f97c811e8e7c3573",
+      "sameAsSongEndpoint": false,
+      "status": 404,
+      "redirect": null,
+      "bytesInspected": 0,
+      "firstChunk": 0
+    },
+    {
+      "quality": "160_KBPS",
+      "uriSha256": "bf8a3674c0ed78b170c4e75ccac8a60336cace86bc1cc8f8bb0f1fdea3c1bbbb",
+      "sameAsSongEndpoint": false,
+      "status": 404,
+      "redirect": null,
+      "bytesInspected": 0,
+      "firstChunk": 0
+    },
+    {
+      "quality": "320_KBPS",
+      "uriSha256": "cd3a1df3c9bf2168e919c5d37311522f0500a49bbaeb8d6edb9789df38e327cc",
+      "sameAsSongEndpoint": false,
+      "status": 404,
+      "redirect": null,
+      "bytesInspected": 0,
+      "firstChunk": 0
+    }
+  ]
+}

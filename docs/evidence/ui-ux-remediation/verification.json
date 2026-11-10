@@ -1,0 +1,45 @@
+{
+  "bundles": [
+    {
+      "variant": "normal",
+      "modules": 2939,
+      "assets": 29,
+      "hermesBytes": 5685892,
+      "sha256": "439a9aa5aee44536723a4405e8d3710b489b582533782fefea7293df62a57f2e",
+      "registryDefinitions": 1,
+      "mainRegistrations": 1,
+      "entryRuns": [
+        "__r(167);",
+        "__r(0);"
+      ]
+    },
+    {
+      "variant": "diagnostic",
+      "modules": 2942,
+      "assets": 29,
+      "hermesBytes": 5718548,
+      "sha256": "569bb84b8549293f271e449924b18457c166c7d43878f6cd951940241eb24fc9",
+      "registryDefinitions": 1,
+      "mainRegistrations": 1,
+      "entryRuns": [
+        "__r(167);",
+        "__r(0);"
+      ]
+    }
+  ],
+  "privateKeyBundleHits": [],
+  "typecheck": "PASS",
+  "tests": {
+    "passed": 641,
+    "skipped": 3,
+    "failed": 0
+  },
+  "newEasBuilds": 0,
+  "nativeDeviceVisualVerification": "PENDING: no new APK authorized",
+  "references": [
+    "https://kobra.systems/components/video",
+    "https://kobra.systems/components/carousel",
+    "https://kobra.systems/components/morphing-icons"
+  ],
+  "referenceHoverInspected": true
+}

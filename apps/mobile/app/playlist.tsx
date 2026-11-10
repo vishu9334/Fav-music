@@ -1,0 +1,3 @@
+import Screen from '../src/screens/PlaylistScreen';
+import { withAccountScreen } from '../src/auth/components/account-access';
+export default withAccountScreen(Screen);

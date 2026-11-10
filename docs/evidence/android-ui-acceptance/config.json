@@ -1,0 +1,23 @@
+{
+  "profile": "preview-real-songs",
+  "distribution": "internal",
+  "artifact": "apk",
+  "package": "com.favmusic",
+  "projectId": "be1ffc50-0de2-4b0e-a0d1-ad3ea5e543ee",
+  "orientation": "default",
+  "keyboard": "resize",
+  "diagnosticMode": true,
+  "authEnabled": "false",
+  "catalogEnabled": "false",
+  "accountPersistenceEnabled": "false",
+  "endpoint": "https://anyway-pdf-obligation-suggests.trycloudflare.com/development/catalog/graphql",
+  "icons": {
+    "icon": "./assest/icon.png",
+    "adaptiveIcon": {
+      "foregroundImage": "./assest/adaptive-icon.png",
+      "backgroundColor": "#09090b"
+    },
+    "favicon": "./assest/favicon.png"
+  },
+  "privatePublicVariables": []
+}

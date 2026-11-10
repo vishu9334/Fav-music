@@ -1,0 +1,17 @@
+{
+  "id": "2c1c8465-9aec-46fc-abe2-4867c3174682",
+  "status": "FINISHED",
+  "platform": "ANDROID",
+  "distribution": "INTERNAL",
+  "buildProfile": "preview-real-songs",
+  "appIdentifier": "com.favmusic",
+  "sdkVersion": "52.0.0",
+  "appVersion": "1.0.0",
+  "appBuildVersion": "1",
+  "createdAt": "2026-11-07T02:10:19.259Z",
+  "updatedAt": "2026-11-07T02:21:27.607Z",
+  "artifacts": {
+    "buildUrl": "https://expo.dev/artifacts/eas/UVVaVNJadXtjyQSTrFWqss7GlDgmim5r5RTgdZueC-c.apk",
+    "applicationArchiveUrl": "https://expo.dev/artifacts/eas/UVVaVNJadXtjyQSTrFWqss7GlDgmim5r5RTgdZueC-c.apk"
+  }
+}

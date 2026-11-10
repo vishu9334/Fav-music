@@ -1,0 +1,58 @@
+{
+  "name": "@aadat/server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Modular-monolith backend for Aadat Music",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:connectivity": "TEST_LIVE_CONNECTIVITY=true vitest run src/__tests__/gate3b-connectivity.test.ts",
+    "start": "node dist/main.js",
+    "dev": "tsx watch src/main.ts",
+    "prisma:validate": "prisma validate",
+    "prisma:generate": "prisma generate",
+    "admin:bootstrap": "tsx src/modules/admin/cli/bootstrap.cli.ts",
+    "admin:recover-access": "tsx src/modules/admin/cli/recover.cli.ts",
+    "admin:generate-recovery-token": "tsx src/modules/admin/cli/generate-recovery-token.cli.ts"
+  },
+  "dependencies": {
+    "@aadat/contracts": "workspace:*",
+    "@aws-sdk/client-s3": "^3.1161.0",
+    "@aws-sdk/s3-presigned-post": "^3.1161.0",
+    "@aws-sdk/s3-request-presigner": "^3.1161.0",
+    "@fastify/cors": "^11.0.1",
+    "@fastify/helmet": "^13.0.1",
+    "@fastify/rate-limit": "^11.2.2",
+    "@prisma/adapter-pg": "7.10.1",
+    "@prisma/client": "7.10.1",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "google-auth-library": "^11.3.2",
+    "graphql": "^16.10.0",
+    "ioredis": "^6.0.0",
+    "jose": "^6.2.15",
+    "mercurius": "^16.12.1",
+    "pg": "^8.13.3",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "@aadat/config": "workspace:*",
+    "@prisma/config": "7.10.1",
+    "@types/node": "^22.10.1",
+    "@types/pg": "^8.11.11",
+    "aws-sdk-client-mock": "^4.1.0",
+    "prisma": "7.10.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.3"
+  }
+}

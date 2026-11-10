@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-07",
+  "timezone": "Asia/Calcutta",
+  "scopeA": "Approved conditionally; NOT EXECUTED because Redis TLS prerequisite fails",
+  "scopeB": "Approved and executed: PASS, metadata-only READ ONLY transaction",
+  "provider": "Redis Cloud (redislabs.com hostname)",
+  "subscriptionPlan": "UNVERIFIED",
+  "redisTls": "FAIL: configured plaintext listener; strict credential-free TLS handshake ERR_SSL_WRONG_VERSION_NUMBER",
+  "redisCredentialsSentThisTask": false,
+  "redisCommandsSentThisTask": false,
+  "providerSettingsChanged": false,
+  "backendRestarted": false,
+  "tunnelCreated": false,
+  "easBuildSubmitted": false,
+  "databaseSchemaOrDataWrites": false,
+  "applicationOrNeonAuthRowsRead": false,
+  "prismaHistoryRowsRead": false,
+  "runtimeConfigPreservation": {
+    "server/.env": true,
+    "apps/mobile/.env.local": true,
+    "app.json": true,
+    "apps/mobile/app.json": true,
+    "eas.json": true,
+    "server/prisma/schema.prisma": true,
+    "server/src/infrastructure/cache/implementations/redis-cache.service.ts": true
+  }
+}

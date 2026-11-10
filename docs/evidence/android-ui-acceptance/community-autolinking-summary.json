@@ -1,0 +1,26 @@
+{
+  "method": "Installed Expo SDK 52 react-native-config path used by settings.gradle; no CLI upgrades",
+  "dependencies": {
+    "react-native-track-player": {
+      "androidLinked": true,
+      "packageImportPath": "import com.doublesymmetry.trackplayer.TrackPlayer;"
+    },
+    "react-native-reanimated": {
+      "androidLinked": true,
+      "packageImportPath": "import com.swmansion.reanimated.ReanimatedPackage;"
+    },
+    "react-native-safe-area-context": {
+      "androidLinked": true,
+      "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;"
+    },
+    "react-native-svg": {
+      "androidLinked": true,
+      "packageImportPath": "import com.horcrux.svg.SvgPackage;"
+    },
+    "@react-native-google-signin/google-signin": {
+      "androidLinked": true,
+      "packageImportPath": "import com.reactnativegooglesignin.RNGoogleSigninPackage;"
+    }
+  },
+  "allRequiredAndroidLinked": true
+}

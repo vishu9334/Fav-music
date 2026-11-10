@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-07T06:26:14.781Z",
+  "label": "believer-progress",
+  "package": "com.favmusic",
+  "found": true,
+  "lines": [
+    "package=com.favmusic",
+    "active=true",
+    "state=PlaybackState {state=PLAYING(3), position=0, buffered position=16091, speed=1.0, updated=526995212, actions=6554039, custom actions=[Action:mName='stop, mIcon=2131230973, mExtras=null], active item id=0, error=null}",
+    "volumeType=LOCAL, controlType=ABSOLUTE, max=0, current=0, volumeControlId=null",
+    "metadata: size=8, description=Believer, null, null"
+  ]
+}

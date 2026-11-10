@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://jio.shnwaz.dev/api/search/songs?query=Aadat&page=0&limit=2",
+    "error": "URLError",
+    "detail": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "url": "https://jio.shnwaz.dev/api/limits",
+    "error": "URLError",
+    "detail": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "url": "https://jiosaavn-api-v3.vercel.app/song?id=iYMcgidY",
+    "status": 200,
+    "bytes": 1233,
+    "type": "application/json; charset=utf-8"
+  },
+  {
+    "url": "https://jiosaavn-api-v3.vercel.app/album?id=1297527",
+    "status": 200,
+    "bytes": 1516,
+    "type": "application/json; charset=utf-8"
+  }
+]

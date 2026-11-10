@@ -1,0 +1,75 @@
+{
+  "stage": 10,
+  "status": "LOCAL_PASS_ANDROID_PENDING",
+  "audit": {
+    "removed": [
+      "How mixes work / Hide mix details toggle",
+      "Keyword matching and Recent tracks deprioritized detail panels",
+      "Find your moment promotional header wording"
+    ],
+    "alreadyAbsent": [
+      "Weather/location explanation",
+      "No verified release year / Undated explanation",
+      "Decorative recommended-track counts"
+    ]
+  },
+  "presentation": [
+    "Your moment title; retain period, mood, season, release years, history and recommendation section titles",
+    "Your Moment-only responsive filters stack labels above horizontal chips at narrow widths, short landscape and large font scale; bounded widths and chip padding prevent content collisions",
+    "Recent rows use existing 46dp Artwork plus flexible title/artist flow with no fixed text height",
+    "Separate recommended section spacing; preserve errors/retry instead of contradictory history-empty feedback"
+  ],
+  "changedSourceFiles": [
+    "apps/mobile/src/screens/DiscoveryScreen.tsx",
+    "apps/mobile/src/components/discovery/FilterRow.tsx"
+  ],
+  "changedTestFiles": [
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 80,
+      "files": 3,
+      "command": "pnpm exec vitest run apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/discovery/__tests__/recommendation.test.ts apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx",
+      "coverage": [
+        "No mix-details controls/panels/technical copy/decorative counts",
+        "Mood, season, year/Undated and clear-filter actions",
+        "Exact filtered Load More, history navigation and explicit recent replay queue",
+        "History/catalog failures and retry; existing loading/empty states",
+        "Filter layout contracts at 320x640, 700x360 and 1.5 font scale; other filter consumers unchanged",
+        "Recommendation/classification rules and scrolling/playback isolation"
+      ],
+      "limits": "Native UI/layout contracts use mocks; recommendation tests use isolated fixtures. No real device layout measurement, network playback or physical Android interaction in this task."
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "pnpm --filter @aadat/mobile typecheck"
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "exitCode": 0,
+      "modules": 2974,
+      "apkBuild": false
+    },
+    "scope": {
+      "protectedHashes": "PASS",
+      "protectedFiles": 87,
+      "existingQueriesTrackSelectionAndFunctionalBindings": "UNCHANGED",
+      "removedHandler": "Mix-detail presentation toggle only",
+      "defaultFilterPresentation": "Opt-in responsive behavior; other consumers retain prior layout",
+      "protectedAreas": "Classification/recommendations, catalog, playback, stores, other screens, auth route guard, prior bottom navigation/skeleton/Home fixes and four icon assets"
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "Updated source is not built/installed; native visual overlap, TalkBack and small-screen/landscape acceptance remain unverified."
+    }
+  },
+  "hashes": {
+    "apps/mobile/src/screens/DiscoveryScreen.tsx": "58a61b9c4bb47c2e7dd534b5964fe727c918dd320f6d5dbac3005b87d6fdf2ed",
+    "apps/mobile/src/components/discovery/FilterRow.tsx": "68df4963f0269027dbba5d16b8b8bd93173ab9a357510b8ccb368529b160cf84",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx": "a9884e8021275aed8ecf05619a4588e9094a7b6b61ef5878e71adc82d5f46454"
+  },
+  "restrictions": "No Git commands, APK/EAS builds, backend/database/cloud changes or service restarts."
+}

@@ -1,0 +1,231 @@
+{
+  "at": "2026-11-06T15:42:36.342Z",
+  "noAudioFilesSaved": true,
+  "tracks": [
+    {
+      "id": "iYMcgidY",
+      "lookups": [
+        {
+          "mode": "ordinary",
+          "status": 200,
+          "age": "4065",
+          "cache": "HIT",
+          "date": "Fri, 06 Nov 2026 14:34:39 GMT",
+          "message": null
+        },
+        {
+          "mode": "no-cache",
+          "status": 200,
+          "age": "4065",
+          "cache": "HIT",
+          "date": "Fri, 06 Nov 2026 14:34:39 GMT",
+          "message": null
+        }
+      ],
+      "comparisons": [],
+      "qualities": [
+        {
+          "labels": [
+            "96_KBPS"
+          ],
+          "sha256": "1b9f95f14c454b8ab3d8fe86ca2fc7fc12ecce54e6973188d724c451de467567",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        },
+        {
+          "labels": [
+            "160_KBPS",
+            "default"
+          ],
+          "sha256": "f43a2975cea1c3497518c890f3bf28317554416bc518aad7ff1188c7340737dc",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        },
+        {
+          "labels": [
+            "320_KBPS"
+          ],
+          "sha256": "a4b222892c3ab9ca58d21d12858b0a849362b26ffb1f7eda56f15ad82e400b9a",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        }
+      ],
+      "title": "Aadat",
+      "artist": "Ninja",
+      "selectedField": "media_urls.320_KBPS",
+      "selectedExactlyReturned": true,
+      "expiresFields": []
+    },
+    {
+      "id": "8taj1DCo",
+      "lookups": [
+        {
+          "mode": "ordinary",
+          "status": 200,
+          "age": "3439",
+          "cache": "HIT",
+          "date": "Fri, 06 Nov 2026 14:45:10 GMT",
+          "message": null
+        },
+        {
+          "mode": "no-cache",
+          "status": 200,
+          "age": "3439",
+          "cache": "HIT",
+          "date": "Fri, 06 Nov 2026 14:45:10 GMT",
+          "message": null
+        }
+      ],
+      "comparisons": [],
+      "qualities": [
+        {
+          "labels": [
+            "96_KBPS"
+          ],
+          "sha256": "e8ede7a11583ccf1d88afaf7a79d31eba6b5f273cd617ef68e6e8e170170aebc",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        },
+        {
+          "labels": [
+            "160_KBPS",
+            "default"
+          ],
+          "sha256": "b798c330c9cb0043d2f1c3ddd099e79ebae6e0a6e53323f95dc06991afac5a30",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        },
+        {
+          "labels": [
+            "320_KBPS"
+          ],
+          "sha256": "2eb211e93ad833b040f8de30c7f00bf3b40f9e08dc7bcc62ae72c248ad59696f",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        }
+      ],
+      "title": "Rain",
+      "artist": "DIVINE",
+      "selectedField": "media_urls.320_KBPS",
+      "selectedExactlyReturned": true,
+      "expiresFields": []
+    },
+    {
+      "id": "46An-G70",
+      "lookups": [
+        {
+          "mode": "ordinary",
+          "status": 200,
+          "age": "3440",
+          "cache": "HIT",
+          "date": "Fri, 06 Nov 2026 14:45:13 GMT",
+          "message": null
+        },
+        {
+          "mode": "no-cache",
+          "status": 200,
+          "age": "3440",
+          "cache": "HIT",
+          "date": "Fri, 06 Nov 2026 14:45:13 GMT",
+          "message": null
+        }
+      ],
+      "comparisons": [],
+      "qualities": [
+        {
+          "labels": [
+            "96_KBPS"
+          ],
+          "sha256": "6b211f9b01d54b37b3d94d437f9c39ac4961ca2b718329c67e43093176e2cde4",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        },
+        {
+          "labels": [
+            "160_KBPS",
+            "default"
+          ],
+          "sha256": "9a34700c1eaac4424f0e5fffc4be236c58b0963fdaefe3b311f29d7e4f6384c3",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        },
+        {
+          "labels": [
+            "320_KBPS"
+          ],
+          "sha256": "1cbd517523eefb820b733fb32b6e582fe981830ff53345b3152b312e490a9329",
+          "host": "aac.saavncdn.com",
+          "queryKeys": [],
+          "status": 404,
+          "redirect": null,
+          "contentType": "application/octet-stream",
+          "contentRange": null,
+          "bytesInspected": 0,
+          "firstChunkBytes": 0,
+          "signature": null
+        }
+      ],
+      "title": "Happy",
+      "artist": "Karthik",
+      "selectedField": "media_urls.320_KBPS",
+      "selectedExactlyReturned": true,
+      "expiresFields": []
+    }
+  ]
+}

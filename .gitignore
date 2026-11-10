@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.npm/
+
+# Environment Variables & Secrets (Never push to public repository)
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!*.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.der
+
+# Android & Apple Signing Keys / Keystores
+*.keystore
+*.jks
+*.p12
+*.pfx
+
+# Google / Firebase & Cloud Credentials
+google-services.json
+GoogleService-Info.plist
+credentials.json
+client_secret*.json
+service-account*.json
+
+# Backend / Provider Identity Journals & Local DB / Redis
+.aadat-music/
+**/.aadat-music/
+dump.rdb
+*.sqlite
+*.sqlite3
+*.db
+
+# Build Outputs & Bundles
+dist/
+build/
+out/
+.expo/
+.next/
+*.tsbuildinfo
+*.bundle
+*.hbc
+
+# Mobile / Native Builds & Artifacts
+artifacts/
+apps/mobile/android/
+apps/mobile/ios/
+apps/mobile/.expo/
+*.apk
+*.aab
+*.ipa
+
+# Fastify & Testing Logs / Coverage
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE, Editor & Agent State
+.idea/
+.vscode/
+*.iml
+.windsurf/
+.claude/
+.agents/
+.cursor/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db

@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-06T22:02:26.239Z",
+  "target": "Existing pooled DATABASE_URL used by Fastify",
+  "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+  "sql": "SELECT 1 AS alive",
+  "startupReadOnlyOptions": true,
+  "readOnlyQuery": true,
+  "userOrSchemaRecordsRead": false,
+  "schemaOrDataWrites": false,
+  "status": "FAIL",
+  "error": {
+    "name": "error",
+    "code": "08P01",
+    "message": "unsupported startup parameter in options: statement_timeout. Please use unpooled connection or remove this parameter from the startup package. More details: [URI]"
+  }
+}

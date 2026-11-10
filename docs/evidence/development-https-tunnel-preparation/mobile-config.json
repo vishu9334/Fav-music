@@ -1,0 +1,9 @@
+{
+  "file": "apps/mobile/.env.local",
+  "endpointVariable": "EXPO_PUBLIC_GRAPHQL_ENDPOINT",
+  "currentEndpoint": "https://massachusetts-colleges-silicon-utc.trycloudflare.com/graphql",
+  "authEnabled": false,
+  "catalogEnabled": false,
+  "verifiedEndpointMarkerPresent": false,
+  "cloudPersistenceEnabled": false
+}

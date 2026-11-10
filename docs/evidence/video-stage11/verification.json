@@ -1,0 +1,156 @@
+{
+  "stage": 11,
+  "status": "LOCAL_PASS_ANDROID_PENDING",
+  "rootCauses": [
+    "Always-centred transport overlays obscured the video canvas",
+    "Buffering/error state repainted the poster over an already revealed video",
+    "Healthy empty catalog exposed an unnecessary retry; playback retry used a play/pause toggle",
+    "A source-key change could render the old session until its asynchronous React state replacement; attribution-only metadata also reset decoder identity"
+  ],
+  "changes": [
+    "Controls, title/artist/required attribution and error feedback remain outside the contained video canvas; fullscreen content stays scrollable within existing safe areas",
+    "Reuse the exact shared KobraPlaybackControls used by audio; no audio design/control rewrite",
+    "Try again appears only on an actual non-busy playback error and calls explicit coalesced same-video recovery; catalog retry is separate and error-only",
+    "Poster gate preserves decoded video through transient buffering/errors; metadata credits no longer recreate decoders",
+    "Render/session-key and generation guards prevent stale decoder/orientation callbacks; fullscreen exit remains available",
+    "Remove technical video captions/headings and unnecessary single-item carousel; retain meaningful Up next and required source credit",
+    "No new media or fallback catalog was introduced"
+  ],
+  "changedSourceFiles": [
+    "apps/mobile/src/screens/VideoScreen.tsx",
+    "apps/mobile/src/video/NativeVideoSession.tsx",
+    "apps/mobile/src/video/VideoPlaybackService.ts",
+    "apps/mobile/src/video/ExpoVideoEngine.ts",
+    "apps/mobile/src/video/video-session-key.ts",
+    "apps/mobile/src/video/video-presentation.ts"
+  ],
+  "changedTestFiles": [
+    "apps/mobile/src/video/__tests__/video-service.test.ts",
+    "apps/mobile/src/video/__tests__/video-session-key.test.ts",
+    "apps/mobile/src/video/__tests__/video-presentation.test.ts",
+    "apps/mobile/src/video/__tests__/video-ui.test.tsx",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 94,
+      "files": 7,
+      "command": "pnpm exec vitest run apps/mobile/src/video/__tests__ apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx",
+      "coverage": [
+        "Shared transport and scrubber action wiring; real service play/pause/previous/next/seek contracts",
+        "Actual-error-only retry, duplicate retry suppression, failed recovery, late audio/Pause cancellation and disposal",
+        "One engine across metadata/fullscreen transitions; no old-session render for a changed source; stale fullscreen failure guards",
+        "Fullscreen orientation entry/exit/rollback/disposal controller contracts",
+        "Poster buffering regression and attribution-only session identity",
+        "Contain aspect ratio and controls/captions outside canvas; scrolling fullscreen; reduced motion and accessible feedback",
+        "Healthy empty/loading/catalog error distinctions; scrolling cannot select/autoplay"
+      ],
+      "limits": "Native Expo player, React Native UI, keyboard/layout and audio transport use mocks. Service/controller logic is exercised locally; this does not prove physical Android visuals, actual native video decoding, blur, orientation performance or remote streaming."
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "pnpm --filter @aadat/mobile typecheck"
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "exitCode": 0,
+      "modules": 2974,
+      "apkBuild": false,
+      "bundleContentChecks": {
+        "videoPresentationHelper": true,
+        "errorRetryHelper": true,
+        "friendlyVideoError": true,
+        "normalFullscreen": true,
+        "oldAlwaysRetryRemoved": true,
+        "oldTechnicalCaptionRemoved": true
+      }
+    },
+    "existingOriginalMedia": {
+      "status": "PASS_MAC_DECODE_ONLY",
+      "clips": [
+        {
+          "asset": "apps/mobile/assets/video/motion-test.mp4",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 640,
+                "height": 360
+              },
+              {
+                "codec_name": "aac",
+                "codec_type": "audio"
+              }
+            ],
+            "format": {
+              "duration": "8.000000"
+            }
+          },
+          "decodeExit": 0,
+          "decodeErrors": ""
+        },
+        {
+          "asset": "apps/mobile/assets/video/colour-test.mp4",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 640,
+                "height": 360
+              },
+              {
+                "codec_name": "aac",
+                "codec_type": "audio"
+              }
+            ],
+            "format": {
+              "duration": "6.000000"
+            }
+          },
+          "decodeExit": 0,
+          "decodeErrors": ""
+        }
+      ],
+      "limits": "ffprobe and ffmpeg checks validate the unchanged original local clips on Mac; they are not Android or HTTPS playback evidence. Existing clips remain in the explicit visual-review flow and do not substitute for a real catalog."
+    },
+    "scope": {
+      "protectedFiles": 64,
+      "protectedHashes": "PASS",
+      "audioGlassControlsAndScrubber": "UNCHANGED",
+      "existingVideoControlAndEngineMethods": "UNCHANGED except friendly load-error copy; explicit retry added separately",
+      "realMediaAssets": "UNCHANGED",
+      "sessionIdentityChange": "Attribution-only metadata updates no longer reset decoders",
+      "previousStagesAndIcons": "UNCHANGED"
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "No updated APK built/installed. Native video/blur/rotation/safe-area/seek/audio-handoff and device acceptance remain unverified."
+    },
+    "remoteVideoStreaming": {
+      "status": "PENDING",
+      "reason": "No authorized playable remote video was verified in this stage; no URLs were invented or access controls bypassed."
+    }
+  },
+  "hashes": {
+    "apps/mobile/src/screens/VideoScreen.tsx": "92107ae7e68eabda1fe48cd48e76abe71d6d375fc603b212dfdc24661d920c2c",
+    "apps/mobile/src/video/NativeVideoSession.tsx": "f7d0a3ae870540bc25fea86ee399deabe5d78713a95b9b7ac89f5dc0a530e5e8",
+    "apps/mobile/src/video/VideoPlaybackService.ts": "a816b5fb2ed946f5af3326b1d3261939f34ff83e45e7b422501bc6355348143d",
+    "apps/mobile/src/video/ExpoVideoEngine.ts": "eee81a53fecdfade78ebc9c1bf0a39833a3aed3ba687fef493505519bdd05530",
+    "apps/mobile/src/video/video-session-key.ts": "f384deaf1305ccea45e1d3859b4785dd90a4ceee30fe9e5559beffacf5677a9f",
+    "apps/mobile/src/video/video-presentation.ts": "ebcccbaafc059861bc4bf72823a402b7edc98dae29220364455a1412e2606856",
+    "apps/mobile/src/video/__tests__/video-service.test.ts": "96f5fca589235fbbb85027ba620fc8ca00c6bdeccc7dc605e9ff51b194c0a2b0",
+    "apps/mobile/src/video/__tests__/video-session-key.test.ts": "7c8fdbbe87306ca7c30b48ba220369dcac814917da141a0b355ab76ca91946e7",
+    "apps/mobile/src/video/__tests__/video-presentation.test.ts": "9c694e4aadf3cae05ce450f7409e95c2410ac151d50db45c7166df7250999118",
+    "apps/mobile/src/video/__tests__/video-ui.test.tsx": "6f6d7d8e3f0743bea6bff51ad8a24b8acc54902cc96f126cae693d7df1726598",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx": "1554b6dd4673ea20e07bd67dd4d344f635227ed76b333ae4231a1f5d8c19be40"
+  },
+  "restrictions": "No Git commands, APK/EAS builds, backend/database/cloud changes or service restarts."
+}

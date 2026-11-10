@@ -1,0 +1,91 @@
+{
+  "status": "NOT RUN",
+  "deviceSerial": "X4GACUMZMVEQY5XO",
+  "model": "CPH2599",
+  "package": "com.favmusic",
+  "buildId": null,
+  "apkUrl": null,
+  "tracks": [
+    {
+      "title": "Believer",
+      "artist": "Imagine Dragons",
+      "providerId": "BeXBcbVK"
+    },
+    {
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "providerId": "3IoDK8qI"
+    },
+    {
+      "title": "Enemy (from the series Arcane League of Legends)",
+      "artist": "Jid, Imagine Dragons, Arcane, League of Legends",
+      "providerId": "drvhW8ob"
+    }
+  ],
+  "cases": {
+    "apk-package-signature-icons-native-modules": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "startup-main-registration": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "real-account-login-and-catalog-authorization": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "believer-audible-playback": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "levitating-audible-playback": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "enemy-audible-playback": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "play-pause": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "next-previous": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "seek": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "background-lockscreen": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "notification-controls": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "catalog-search": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "account-playlist-local-persistence": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "warehouse-local-persistence": {
+      "status": "NOT RUN",
+      "evidence": []
+    },
+    "fresh-logcat-errors": {
+      "status": "NOT RUN",
+      "evidence": []
+    }
+  },
+  "liveAccountCloudWritesAuthorized": false,
+  "audibleEvidenceRequired": "Physical listening confirmation, separately from native Playing state/logs/progress",
+  "stopAfterFirstBuildFailure": true,
+  "additionalBuildsAuthorized": false
+}

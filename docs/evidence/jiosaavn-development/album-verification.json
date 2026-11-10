@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-06T15:01:22.468Z",
+  "returnedAlbumWindow": 5,
+  "providerTotal": null,
+  "details": [
+    {
+      "id": "d9506904-6a17-8327-a0ad-579d3bdd0511",
+      "name": "Aadat",
+      "year": 2015,
+      "songs": 1,
+      "pages": 1,
+      "hasMore": false
+    },
+    {
+      "id": "7352ea5d-c9c0-8811-893a-8602839789df",
+      "name": "Aadat",
+      "year": 2025,
+      "songs": 1,
+      "pages": 1,
+      "hasMore": false
+    },
+    {
+      "id": "7a92e805-b0f6-842d-ab94-ffd7e01759b2",
+      "name": "Aadat",
+      "year": 2015,
+      "songs": 1,
+      "pages": 1,
+      "hasMore": false
+    },
+    {
+      "id": "c9f2e131-625c-8ac2-bf32-01cb5c3e46cb",
+      "name": "Aadat (Rock Version)",
+      "year": 2024,
+      "songs": 1,
+      "pages": 1,
+      "hasMore": false
+    },
+    {
+      "id": "9182d823-fb5c-8991-b00f-2390e3c3226e",
+      "name": "Aadat",
+      "year": 2021,
+      "songs": 1,
+      "pages": 1,
+      "hasMore": false
+    }
+  ],
+  "combinedUniqueSongMetadata": 30,
+  "metadataOnly": true
+}

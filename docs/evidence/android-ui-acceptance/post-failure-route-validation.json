@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-07T05:03:34.704Z",
+  "scope": "Construct existing application and validate Fastify routes only; no start/listen or SQL",
+  "stage": "Fastify route/plugin validation",
+  "pass": true
+}

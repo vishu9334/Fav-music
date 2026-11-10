@@ -1,0 +1,98 @@
+{
+  "typeScript": "PASS: four workspaces",
+  "tests": {
+    "passed": 599,
+    "skippedLiveDatabase": 3
+  },
+  "nativeDependencies": {
+    "reactNativeAndroidModules": 8,
+    "expoAndroidModules": 18,
+    "customModules": [
+      "AadatAuthModule",
+      "AadatShareModule"
+    ],
+    "status": "SOURCE DISCOVERY ONLY; APK verification pending",
+    "versionWarning": "React Native is pinned to 0.76.6; installed Expo 52.0.49 recommends 0.76.9. No dependency was changed."
+  },
+  "bundles": {
+    "catalogBranch": {
+      "metro": "PASS",
+      "modules": 2932,
+      "assets": 29,
+      "hermes": "PASS",
+      "registerComponentDefinitions": 1,
+      "canonicalEntryTail": true,
+      "soundHelixDemoBundled": false,
+      "bytecodeBytes": 5670176
+    },
+    "asConfiguredPreview": {
+      "metro": "PASS",
+      "modules": 2932,
+      "assets": 29,
+      "hermes": "PASS",
+      "registerComponentDefinitions": 1,
+      "canonicalEntryTail": true,
+      "soundHelixDemoBundled": false,
+      "bytecodeBytes": 5670301
+    }
+  },
+  "protectedFilesUnchanged": {
+    "app.json": true,
+    "apps/mobile/app.json": true,
+    "eas.json": true,
+    ".easignore": true,
+    "pnpm-lock.yaml": true,
+    "apps/mobile/index.tsx": true,
+    "metro.config.js": true,
+    "apps/mobile/metro.config.js": true,
+    "assest/icon.png": true,
+    "assest/adaptive-icon.png": true,
+    "assest/favicon.png": true,
+    "assest/Fav music.png": true
+  },
+  "buildSubmitted": false,
+  "apkAvailable": false,
+  "catalogDeviceTests": "BLOCKED: real account and verified HTTPS backend unavailable",
+  "gitCommands": false,
+  "databaseOperations": false,
+  "s3Changes": false,
+  "cloudWrites": false,
+  "easSigningCredentialsReadOrChanged": false,
+  "archive": {
+    "method": "Actual installed EAS NoVcsClient.makeShallowCopyAsync, explicit absolute EAS_PROJECT_ROOT; no Git or upload",
+    "files": 300,
+    "unsafePaths": [],
+    "missingRequired": [],
+    "symlinks": [],
+    "serverIncluded": false,
+    "legacyAndroidIncluded": false,
+    "manifestSha256": "3c2beba68d33b5e81d6d5d1095f602745dd903b1e3a778bda58bdd2426acceb4",
+    "tarSha256": "f7cf7a2257677c077b1c0eee9d4b50eeed78e0137d574e87dc5d850b8f6d73aa",
+    "tarBytes": 2502748
+  },
+  "environment": {
+    "preview": {
+      "project": {
+        "readOnlyCheck": "PASS",
+        "variablesFound": false
+      },
+      "account": {
+        "readOnlyCheck": "PASS",
+        "variablesFound": false
+      }
+    },
+    "buildProfileHasEnv": false,
+    "easNoVcs": true,
+    "absoluteProjectRoot": true
+  },
+  "endpoint": {
+    "at": "2026-11-06T18:25:10.970Z",
+    "host": "massachusetts-colleges-silicon-utc.trycloudflare.com",
+    "path": "/graphql",
+    "credentialsSent": false,
+    "operation": "query AndroidReadiness { __typename } (no user records/schema writes)",
+    "error": "TypeError",
+    "message": "fetch failed",
+    "causeCode": "ENOTFOUND"
+  }
+}

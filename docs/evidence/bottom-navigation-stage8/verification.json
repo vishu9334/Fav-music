@@ -1,0 +1,79 @@
+{
+  "stage": 8,
+  "status": "LOCAL_PASS_ANDROID_PENDING",
+  "reference": "https://kobra.systems/components/navigation-menu",
+  "rootCauses": [
+    "Duplicated tab rendering used immediate per-icon backgrounds without a shared selection transition",
+    "Dock pathname-only selection lost the underlying tab highlight on secondary screens",
+    "The dock did not observe keyboard visibility; narrow safe-area-adjusted landscape could squeeze tab targets",
+    "Installed router contract confirms that navigation without existing params may clear mounted tab route params"
+  ],
+  "changes": [
+    "One shared strip for both dock/tab-bar render paths; same 44x30 rounded highlight, aligned icon slots and >=48x58 touch targets",
+    "Measured native translation/opacity transition with cancellation; direct reduced-motion/resize settlement",
+    "Active tab reselection does not dispatch/reset; rapid duplicate presses coalesce without delayed navigation",
+    "Secondary screens use actual nested tab state; existing route params are reused on return",
+    "Dock hides through display:none while IME is visible, preserving mounted subtree; existing safe insets retained; compact layout requires adequate safe-area-adjusted width"
+  ],
+  "sourceFiles": [
+    "apps/mobile/src/components/app/AppTabBar.tsx",
+    "apps/mobile/src/components/app/BottomTabStrip.tsx",
+    "apps/mobile/src/components/app/bottom-navigation.ts",
+    "apps/mobile/src/components/app/use-dock-keyboard.ts"
+  ],
+  "testFiles": [
+    "apps/mobile/src/components/app/__tests__/bottom-navigation.test.ts",
+    "apps/mobile/src/components/app/__tests__/BottomTabStrip.test.tsx",
+    "apps/mobile/src/components/app/__tests__/AppDock.test.tsx"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 28,
+      "files": 5,
+      "command": "pnpm exec vitest run apps/mobile/src/components/app/__tests__/bottom-navigation.test.ts apps/mobile/src/components/app/__tests__/BottomTabStrip.test.tsx apps/mobile/src/components/app/__tests__/AppDock.test.tsx apps/mobile/src/components/lists/__tests__/scroll-interaction.test.ts apps/mobile/src/components/lists/__tests__/scroll-playback.test.tsx",
+      "coverage": [
+        "All four routes, underlying tab and selected semantics",
+        "Equal highlight/icon/touch geometry and icon contrast",
+        "Native animation cancellation, reduced motion and resize",
+        "Keyboard initial visibility, show/hide and listener cleanup",
+        "Existing tabPress preventDefault, long press and params",
+        "Installed tab router retains route keys, nested state and params",
+        "No playback commands from dock navigation or scrolling; existing scroll-position contracts"
+      ],
+      "limits": "React Native UI, animation, keyboard and router hooks are mocked. Installed pure router transitions are exercised; this does not prove native screen lifecycle, actual IME behavior, FPS or visual appearance."
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "pnpm --filter @aadat/mobile typecheck"
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "exitCode": 0,
+      "modules": 2974,
+      "apkBuild": false
+    },
+    "scope": {
+      "protectedFiles": 73,
+      "protectedHashes": "PASS",
+      "miniPlayerAndProgressImplementations": "UNCHANGED",
+      "tabLayoutAndRouteRegistration": "UNCHANGED",
+      "playbackStoresScreensIconsAndPriorSkeletons": "UNCHANGED"
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "No updated APK built/installed; actual tab highlight, rotation/IME, large fonts, state retention and low-end animation acceptance remain unverified."
+    }
+  },
+  "sourceAndTestHashes": {
+    "apps/mobile/src/components/app/AppTabBar.tsx": "2ea8720d0b4fdd50ec6fba3f4740d0217b7b2adf439f50bdc61bb20efee534bf",
+    "apps/mobile/src/components/app/BottomTabStrip.tsx": "74f958c1100a30bd056fb7c2abb7664b7bc6ecc912f0875dd702f042ccdfe38a",
+    "apps/mobile/src/components/app/bottom-navigation.ts": "d41e5223a9f40226c1b3c79dc5300dad7174147ad23cb7621d1ab6851e475075",
+    "apps/mobile/src/components/app/use-dock-keyboard.ts": "dfe34892a0fba3e9fcadd47b0e61d1b125a396967532726164e094097638fcc3",
+    "apps/mobile/src/components/app/__tests__/bottom-navigation.test.ts": "8209bd217a0f5d0f6a12d0d4f9b4d1857e43c325263dc64743066ae8f42e86f0",
+    "apps/mobile/src/components/app/__tests__/BottomTabStrip.test.tsx": "b277ad55b608e23544f4c7c6f495654997241cafb47aedc1ca4cf04f39e65bfc",
+    "apps/mobile/src/components/app/__tests__/AppDock.test.tsx": "54f16f8b3c2f0413ccec6f9522583458db61ce66dc1a5ce584f0a8d04f9673d1"
+  },
+  "restrictions": "No Git commands, APK/EAS builds, backend/database/cloud changes or service restarts."
+}

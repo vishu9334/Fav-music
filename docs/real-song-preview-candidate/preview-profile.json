@@ -1,0 +1,24 @@
+{
+  "status": "APPROVED_IMPLEMENTED_LOCALLY_NO_EAS_BUILD",
+  "profileName": "preview-real-songs",
+  "proposedProfile": {
+    "extends": "preview",
+    "environment": "preview",
+    "env": {
+      "EXPO_PUBLIC_APP_MODE": "development-playback-verification",
+      "EXPO_PUBLIC_DEVELOPMENT_CATALOG_ENABLED": "true",
+      "EXPO_PUBLIC_DEVELOPMENT_CATALOG_ENDPOINT": "https://anyway-pdf-obligation-suggests.trycloudflare.com/development/catalog/graphql",
+      "EXPO_PUBLIC_GRAPHQL_ENDPOINT": "https://anyway-pdf-obligation-suggests.trycloudflare.com/graphql",
+      "EXPO_PUBLIC_AUTH_ENABLED": "false",
+      "EXPO_PUBLIC_CATALOG_ENABLED": "false",
+      "EXPO_PUBLIC_ACCOUNT_PERSISTENCE_ENABLED": "false"
+    }
+  },
+  "notes": [
+    "The scoped development catalog route and standalone application mode are implemented and locally verified; see ../DEVELOPMENT_PLAYBACK_VERIFICATION.md.",
+    "No developer access key, Google secret, account token or media URI belongs in this profile.",
+    "Normal authenticated catalog remains disabled; the proposed standalone diagnostic uses its explicit read-only endpoint.",
+    "Keep ordinary preview and production profiles unchanged; reject the diagnostic mode for production builds.",
+    "Reverify this temporary hostname before any separately approved build."
+  ]
+}

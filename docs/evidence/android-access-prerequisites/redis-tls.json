@@ -1,0 +1,9 @@
+{
+  "host": "redis-10761.crce276.ap-south-1-3.ec2.cloud.redislabs.com",
+  "port": 10761,
+  "configuredTls": false,
+  "credentialsSent": false,
+  "redisCommandsSent": false,
+  "handshake": "FAIL",
+  "error": "ERR_SSL_WRONG_VERSION_NUMBER"
+}

@@ -1,0 +1,2 @@
+EAS response on 2026-11-07: This account has used its Android builds from the Free plan this month; quota resets on Tue Dec 01 2026. Error: build command failed.
+Direct read-only Expo build-history query confirmed no build was created by this request.

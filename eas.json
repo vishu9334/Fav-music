@@ -1,0 +1,58 @@
+{
+  "cli": {
+    "version": ">= 12.0.0",
+    "requireCommit": false,
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "preview-real-songs": {
+      "extends": "preview",
+      "environment": "preview",
+      "env": {
+        "EXPO_PUBLIC_APP_MODE": "development-playback-verification",
+        "EXPO_PUBLIC_DEVELOPMENT_CATALOG_ENABLED": "true",
+        "EXPO_PUBLIC_DEVELOPMENT_CATALOG_ENDPOINT": "https://anyway-pdf-obligation-suggests.trycloudflare.com/development/catalog/graphql",
+        "EXPO_PUBLIC_GRAPHQL_ENDPOINT": "https://anyway-pdf-obligation-suggests.trycloudflare.com/graphql",
+        "EXPO_PUBLIC_AUTH_ENABLED": "false",
+        "EXPO_PUBLIC_CATALOG_ENABLED": "false",
+        "EXPO_PUBLIC_ACCOUNT_PERSISTENCE_ENABLED": "false"
+      }
+    },
+    "preview-local-account": {
+      "extends": "preview",
+      "environment": "preview",
+      "env": {
+        "EXPO_PUBLIC_GRAPHQL_ENDPOINT": "https://exert-navy-gyration.ngrok-free.dev/graphql",
+        "EXPO_PUBLIC_AUTH_VERIFIED_ENDPOINT": "https://exert-navy-gyration.ngrok-free.dev/graphql",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "558308870104-f9smr1ta0ict2fch5o4ce1gja5na7qfq.apps.googleusercontent.com",
+        "EXPO_PUBLIC_APP_MODE": "account",
+        "EXPO_PUBLIC_AUTH_ENABLED": "true",
+        "EXPO_PUBLIC_CATALOG_ENABLED": "true",
+        "EXPO_PUBLIC_ACCOUNT_PERSISTENCE_ENABLED": "true",
+        "EXPO_PUBLIC_DEVELOPMENT_CATALOG_ENABLED": "false",
+        "EXPO_PUBLIC_SOCKET_ENDPOINT": "https://exert-navy-gyration.ngrok-free.dev"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

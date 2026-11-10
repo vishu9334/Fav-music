@@ -1,0 +1,10 @@
+{
+  "testsPassed": 1182,
+  "testsSkipped": 3,
+  "typecheck": "All four workspaces passed",
+  "localBuild": "BUILD SUCCESSFUL in 44s",
+  "apk": "artifacts/android/Fav-Music-discovery-fixed-arm64.apk",
+  "sha256": "cef1854d8dc3f4c8e0a5504dc227e54c81f5afc33c37297987cd758badb2b75e",
+  "deviceAcceptance": "Pending installation",
+  "backendChanges": false
+}

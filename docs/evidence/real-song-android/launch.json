@@ -1,0 +1,7 @@
+{
+  "deviceStart": "11-07 07:56:04.000",
+  "appPid": 6374,
+  "startupLogHostPid": 4382,
+  "appLogHostPid": 4406,
+  "launchOutput": "Starting: Intent { cmp=com.favmusic/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.favmusic/.MainActivity\nTotalTime: 445\nWaitTime: 463\nComplete\n"
+}

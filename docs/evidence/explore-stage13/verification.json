@@ -1,0 +1,84 @@
+{
+  "stage": 13,
+  "status": "LOCAL_PASS_ANDROID_PENDING",
+  "changes": [
+    "Selected Albums/Artists/Playlists title replaces duplicate Explore Catalog heading; original global navigation context and Back remain",
+    "Remove provider-loading paragraphs, repeated collection subtitle and Year unavailable placeholders; retain one real provider credit and actual release year",
+    "Memoized resource cards use stable primitive metadata props, 64dp artwork, bounded two-line titles and equal font-scaled size budgets; resource skeletons match",
+    "Resource-only includeAll=false removes the previous nonfunctional All chip; defaults on other filters unchanged; filter-capability failures have a short Retry filters action",
+    "Query-owned visible snapshots prevent ghost rows from another query and restore cached pages before the debounce timer; scroll restoration waits for content",
+    "Preserve explicit pagination/single-flight/deduplication, prefix and retry-page semantics; retain collection ID-array reference when IDs are unchanged",
+    "Collection rows keep artwork/title/artist, real IDs and exact playback queue; remove repeated album/duration presentation"
+  ],
+  "changedSourceFiles": [
+    "apps/mobile/src/screens/ProviderBrowseScreen.tsx",
+    "apps/mobile/src/screens/ProviderCollectionScreen.tsx",
+    "apps/mobile/src/components/catalog/CatalogResourceCard.tsx",
+    "apps/mobile/src/components/discovery/FilterRow.tsx",
+    "apps/mobile/src/components/loading/Skeleton.tsx"
+  ],
+  "changedTestFiles": [
+    "apps/mobile/src/components/app/__tests__/explore-ui.test.tsx",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx",
+    "apps/mobile/src/components/loading/__tests__/skeleton.test.tsx"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 96,
+      "files": 6,
+      "command": "pnpm exec vitest run apps/mobile/src/components/app/__tests__/explore-ui.test.tsx apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/components/loading/__tests__/skeleton.test.tsx apps/mobile/src/catalog/__tests__/page-requests.test.ts apps/mobile/src/store/__tests__/catalog-store.test.ts apps/mobile/src/catalog/__tests__/real-provider-features.test.ts",
+      "coverage": [
+        "Resource/filter context, captions and provider credit",
+        "No All chip for resources; previous All actions still work elsewhere",
+        "Rapid repeated Load More joins one request; unique IDs and bounded batches",
+        "Failed-page retry retains prefix and exact page; duplicate-only pages stop",
+        "Cached query navigation shows correct rows immediately without repeat requests; stale responses ignored",
+        "Card/skeleton size budgets at normal/large fonts; full accessible names and guarded navigation",
+        "Real captured song IDs forwarded to collection queue; no playback during browsing/loading",
+        "Collection paging/error preservation and provider metadata/classification regressions"
+      ],
+      "limits": "React Native UI/router/transport are mocked. Resource envelopes are isolated contract fixtures, not fabricated production API responses; song metadata comes from existing captured provider fixtures. No live provider, backend or actual Android verification in this stage."
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "pnpm --filter @aadat/mobile typecheck"
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "exitCode": 0,
+      "modules": 2975,
+      "apkBuild": false,
+      "bundleContentChecks": {
+        "memoizedResourceCard": true,
+        "filterRetry": true,
+        "oldDuplicateHeadingRemoved": true,
+        "oldYearPlaceholderRemoved": true
+      }
+    },
+    "scope": {
+      "protectedFiles": 90,
+      "protectedHashes": "PASS",
+      "catalogResourceCollectionAndRememberCalls": "UNCHANGED",
+      "defaultFilterActions": "UNCHANGED; includeAll=false opt-in for resource kinds",
+      "intentionalSkeletonChange": "Resource-only minimum height matches the new card geometry; ordinary playlist/song loading preserved",
+      "coreApiPlaybackIdentityStoresCategoriesIconsAndEarlierScreens": "UNCHANGED"
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "No updated APK built/installed; native appearance, TalkBack, physical scroll-position retention and low-end performance acceptance remain unverified."
+    }
+  },
+  "hashes": {
+    "apps/mobile/src/screens/ProviderBrowseScreen.tsx": "26e70bdc30046cfe9af4aac0bb2f2f24632147df4f2bcfbf62736d850e47b4cb",
+    "apps/mobile/src/screens/ProviderCollectionScreen.tsx": "c3ddb4cb59e636f6f6bbaa47d0ac244e2eda8ed42290b1aabe58efbe2be9df57",
+    "apps/mobile/src/components/catalog/CatalogResourceCard.tsx": "af9158b4046e543701dd6dd0769c7d4222879ca702d876e7ac2f82dc2ea4483e",
+    "apps/mobile/src/components/discovery/FilterRow.tsx": "ccbc9544ca3e5a2324fff717849cc90027dd1e4f00cef6b2b0470d0659b18730",
+    "apps/mobile/src/components/loading/Skeleton.tsx": "d8741eb69ff0e62e7abfd520dbde6949ed6f6254dd7d6a1057bae4f9ca9bb39c",
+    "apps/mobile/src/components/app/__tests__/explore-ui.test.tsx": "90252bba7cd2a6baa304303299cd9a06d3bac5707b86ff42d93d6911f7c2631d",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx": "988c927114d2c809359c1cc5de6580b6c3b47cb4f569f7084e56e475877e8e3b",
+    "apps/mobile/src/components/loading/__tests__/skeleton.test.tsx": "acc6fdb38f3e8993ece7c63b943af81d9cb284358c83ebb47660b8aab413a3ea"
+  },
+  "restrictions": "No Git commands, APK/EAS builds, backend/database/cloud changes or service restarts."
+}

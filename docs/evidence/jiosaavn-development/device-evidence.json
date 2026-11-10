@@ -1,0 +1,14 @@
+{
+  "versionCode": null,
+  "versionName": null,
+  "firstInstallTime": null,
+  "lastUpdateTime": null,
+  "pkgFlags": null,
+  "device": "CPH2599",
+  "package": "com.favmusic",
+  "sourceInstalledThisTask": false,
+  "appLaunchedThisTask": false,
+  "androidE2EExecuted": false,
+  "installed": false,
+  "observedResponse": "Unable to find package: com.favmusic"
+}

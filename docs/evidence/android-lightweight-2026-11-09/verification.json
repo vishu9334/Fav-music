@@ -1,0 +1,51 @@
+{
+  "bytes": 34140082,
+  "oldBytes": 68402936,
+  "smallerPercent": 50.1,
+  "sha256": "5dafb14092bbb87d20bc34f780dff15c5a15dbaa7df6ac0366ef89daca65a52e",
+  "abis": [
+    "arm64-v8a"
+  ],
+  "hermesVersion": 96,
+  "endpointPresent": true,
+  "retiredEndpointAbsent": true,
+  "correctGoogleClientId": true,
+  "privateFiles": [],
+  "secretHits": [],
+  "signatureMatchesPrevious": true,
+  "nativeModules": {
+    "RNGoogleSigninModule": true,
+    "AadatAuthModule": true,
+    "AadatShareModule": true,
+    "MusicModule": true,
+    "MusicService": true
+  },
+  "date": "2026-11-09",
+  "artifact": "artifacts/android/Fav-Music-arm64.apk",
+  "buildMethod": "Local Gradle release, existing signing configuration, explicit ARM64 ABI filter",
+  "cloudBuilds": 0,
+  "typecheck": "PASS: all four workspaces",
+  "tests": {
+    "passed": 1098,
+    "skipped": 3,
+    "failed": 0
+  },
+  "device": {
+    "model": "CPH2599",
+    "installed": true,
+    "coldActivityLaunchMs": 749,
+    "launchTimingScope": "Native activity launch; excludes network-dependent catalog loading",
+    "restoredSession": true,
+    "freshGoogleSignIn": "PASS: SDK_SUCCESS marker and authenticated profile fields after normal logout/login",
+    "playback": "PASS: native PLAYING session, visible song metadata, advancing timeline, and UI Pause",
+    "reelImport": "PASS: Android ACTION_SEND URL automatically saved; task-generated test reel removed",
+    "captionMatch": "PASS: existing Aadat Ninja reel searched, matched to Aadat by Ninja, linked and bookmarked",
+    "persistence": "PASS: linked song title/artist remained after update and restart",
+    "fatalStartupExceptionObserved": false
+  },
+  "limitations": [
+    "Backend uses the existing temporary HTTPS tunnel; stable hosting is not configured in this task.",
+    "URL-only reels are saved for manual matching; audio fingerprint recognition is not implemented by the mobile changes.",
+    "Installer supports arm64-v8a devices only; the build plugin preserves all configured ABIs by default for other build workflows."
+  ]
+}

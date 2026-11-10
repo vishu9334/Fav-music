@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Local Native Builds (EAS prebuilds in cloud)
+android/
+ios/
+.expo/
+dist/
+build/
+*.apk
+*.aab
+
+# Environment & Secrets (Never upload secrets to mobile build)
+.env
+.env.*
+*.env
+*.env.*
+**/.env
+**/.env.*
+*.pem
+*.key
+
+# Server & Backend (Do not upload server to mobile build)
+../../server/
+../../docs/
+server/
+**/server/**
+docs/
+**/docs/**
+
+# Temporary & Logs
+*.log
+.DS_Store
+Thumbs.db
+

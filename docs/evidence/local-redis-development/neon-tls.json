@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-06T19:12:22.162Z",
+  "scope": "Credential-free PostgreSQL SSLRequest and verified TLS only; no SQL/authentication",
+  "results": [
+    {
+      "variable": "DATABASE_URL",
+      "host": "ep-calm-paper-ao3neqs5-pooler.c-2.ap-southeast-1.aws.neon.tech",
+      "credentialsSent": false,
+      "sqlExecuted": false,
+      "status": "PASS",
+      "authorized": true,
+      "protocol": "TLSv1.3"
+    },
+    {
+      "variable": "DIRECT_DATABASE_URL",
+      "host": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+      "credentialsSent": false,
+      "sqlExecuted": false,
+      "status": "PASS",
+      "authorized": true,
+      "protocol": "TLSv1.3"
+    }
+  ]
+}

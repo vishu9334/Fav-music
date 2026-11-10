@@ -1,0 +1,48 @@
+{
+  "modified": [
+    "apps/mobile/src/video/NativeVideoSession.tsx",
+    "apps/mobile/src/video/VideoPosterCarousel.tsx",
+    "apps/mobile/src/development/DevelopmentPlaybackScreen.tsx",
+    "apps/mobile/src/screens/InstaMusScreen.tsx",
+    "apps/mobile/src/screens/PlayerScreen.tsx",
+    "apps/mobile/src/screens/WarehouseScreen.tsx",
+    "apps/mobile/src/screens/DiscoveryScreen.tsx",
+    "apps/mobile/src/screens/LibraryScreen.tsx",
+    "apps/mobile/src/screens/OfflineAudioScreen.tsx",
+    "apps/mobile/src/screens/SearchScreen.tsx",
+    "apps/mobile/src/screens/ProviderCollectionScreen.tsx",
+    "apps/mobile/src/screens/PlaylistScreen.tsx",
+    "apps/mobile/src/screens/SharedContentScreen.tsx",
+    "apps/mobile/src/screens/HomeScreen.tsx",
+    "apps/mobile/src/screens/VideoScreen.tsx",
+    "apps/mobile/src/screens/ProviderBrowseScreen.tsx",
+    "apps/mobile/src/components/app/AuthHoldScreen.tsx",
+    "apps/mobile/src/components/app/AppTabBar.tsx",
+    "apps/mobile/src/components/app/ui.tsx",
+    "apps/mobile/src/components/kobra/KobraPlaybackControls.tsx",
+    "apps/mobile/src/components/catalog/SongList.tsx",
+    "apps/mobile/src/components/discovery/DiscoverySummary.tsx",
+    "apps/mobile/src/components/library/LibrarySheets.tsx",
+    "apps/mobile/src/components/carousel/ArtworkCarousel.tsx",
+    "apps/mobile/src/auth/components/auth.screen.tsx",
+    "apps/mobile/src/auth/components/auth-loading.screen.tsx",
+    "apps/mobile/src/auth/components/profile-editor.tsx",
+    "apps/mobile/src/development/development-playback.controller.ts",
+    "apps/mobile/src/auth/__tests__/account-routes.test.ts",
+    "apps/mobile/src/development/__tests__/development-playback.test.ts"
+  ],
+  "added": [
+    "apps/mobile/src/components/app/FeatureLinks.tsx",
+    "apps/mobile/src/components/kobra/MorphingPlayPause.tsx",
+    "apps/mobile/src/design/theme.ts",
+    "apps/mobile/src/design/GlassSurface.tsx",
+    "apps/mobile/src/design/Artwork.tsx",
+    "apps/mobile/src/design/useReducedMotion.ts",
+    "apps/mobile/src/design/playback-geometry.ts",
+    "apps/mobile/src/design/__tests__/playback-geometry.test.ts"
+  ],
+  "reports": [
+    "docs/UI_UX_REMEDIATION.md",
+    "docs/REAL_SONG_ANDROID_VERIFICATION.md"
+  ]
+}

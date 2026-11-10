@@ -1,0 +1,22 @@
+[
+  {
+    "variant": "normal",
+    "modules": 2952,
+    "assets": 31,
+    "bundleSha256": "3e57b1197e88f98e6d66b4bad9f9b69e9b0d38d7344411ed6c83b818b4dddf65",
+    "hermesSha256": "5ac6ef3c2be9306e9f916775e96e408393e050d56297764b18e7eda50197d010",
+    "registerComponentDefinitions": 1,
+    "rootRegistrationCalls": 1,
+    "bundleTail": " \"landscape-primary\";\n    WebOrientation[\"LANDSCAPE_SECONDARY\"] = \"landscape-secondary\";\n  })(WebOrientation || (exports.WebOrientation = WebOrientation = {}));\n},2951,[]);\n__r(167);\n__r(0);"
+  },
+  {
+    "variant": "diagnostic",
+    "modules": 2957,
+    "assets": 31,
+    "bundleSha256": "0b0138aac49c9da777d06156834beba9d5e323ffb1811b76d7272ce7d9690445",
+    "hermesSha256": "4e65557dc9ea68885eb0ef347b03ac45864046de233d5d68f2be3cb348586513",
+    "registerComponentDefinitions": 1,
+    "rootRegistrationCalls": 1,
+    "bundleTail": "eturn {\n          failed: true\n        };\n      }\n    }]);\n  }(_react.default.Component);\n},2956,[1,12,13,59,61,64,31,2,47,707,44,544,2846,2908,947,946,2868,973,271,2871]);\n__r(167);\n__r(0);"
+  }
+]

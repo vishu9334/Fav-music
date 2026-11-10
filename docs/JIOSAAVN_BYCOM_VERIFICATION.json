@@ -1,0 +1,42 @@
+{
+  "at": "2026-11-06T18:10:30.162474+00:00",
+  "providerBaseUrl": "https://saavn.bycomsolutions.com/api",
+  "mode": "jiosaavn-development",
+  "boundedStreamAccess": "PASS",
+  "boundedGetRequests": 9,
+  "http206Responses": 9,
+  "bytesInspected": 9216,
+  "audioFilesSaved": false,
+  "androidAudiblePlayback": "NOT TESTED",
+  "androidSeekBackgroundNotifications": "NOT TESTED",
+  "typeScript": "PASS: all four workspaces",
+  "serverCompile": "PASS",
+  "tests": {
+    "passed": 599,
+    "skippedLiveDatabase": 3,
+    "baselinePassed": 584
+  },
+  "metro": {
+    "status": "PASS",
+    "modules": 2932,
+    "assets": 29,
+    "config": "EXPO_NO_DOTENV=1, catalog enabled, auth disabled for export only; installed app configuration unchanged"
+  },
+  "hermes": {
+    "status": "PASS",
+    "bytecodeBytes": 5670172,
+    "registerComponentDefinitions": 1,
+    "registerComponentNameOccurrences": 2,
+    "canonicalTail": true
+  },
+  "demoStreamBundled": false,
+  "testFixtureNoticeBundled": false,
+  "noGitCommands": true,
+  "noDatabaseOrS3Operations": true,
+  "noCloudChangesOrEasBuilds": true,
+  "sourceHashes": {
+    "server/src/infrastructure/music-provider/implementations/jiosaavn-music-provider.service.ts": "7483a203a5d2a397ae9fcb570152b74a1b0a36f6b261c7553ffb0b903ea83774",
+    "server/src/infrastructure/music-provider/implementations/jiosaavn-v3-music-provider.service.ts": "10df16103c1aa1fb9b2bc56ddf025861cebb26380048908201110d08ee22b5f9"
+  },
+  "capturedTestCanonicalIdsBundled": []
+}

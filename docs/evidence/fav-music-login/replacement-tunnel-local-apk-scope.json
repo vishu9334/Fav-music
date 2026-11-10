@@ -1,0 +1,23 @@
+{
+  "scope": "One replacement development HTTPS tunnel plus one corrected-endpoint local APK",
+  "reason": "Both existing local port-4000 Quick Tunnel hostnames return NXDOMAIN; backend remains healthy on loopback",
+  "requestedActions": [
+    "Create exactly one temporary Cloudflare Quick Tunnel targeting existing 127.0.0.1:4000; no Fastify/PostgreSQL/Redis restart",
+    "Verify host and Android HTTPS health, auth capabilities and anonymous-account rejection without credentials",
+    "Only after verification, update mobile development EXPO_PUBLIC_GRAPHQL_ENDPOINT, EXPO_PUBLIC_AUTH_VERIFIED_ENDPOINT and EXPO_PUBLIC_SOCKET_ENDPOINT and matching preview-local-account public profile",
+    "Regenerate production Metro/Hermes; reuse existing signing and local toolchain to build one corrected-endpoint APK on the Mac",
+    "Verify certificate/modules/public audience/private-secret exclusion; install without uninstall/clear-data; user manually selects genuine Google account; test protected music flow after actual login"
+  ],
+  "exposure": "Existing protected API routes become reachable at the replacement public HTTPS origin",
+  "cost": "No paid EAS/cloud provisioning; existing network/service use applies",
+  "excluded": [
+    "Cloud APK submission",
+    "paid plan",
+    "Neon/S3 or migration changes",
+    "Google Console changes",
+    "new credentials or signing key",
+    "backend or daemon restart",
+    "extra tunnels or additional APKs"
+  ],
+  "approvalRequiredBy": "User rule: no cloud changes without explicit approval; prior tunnel approval covered an earlier tunnel."
+}

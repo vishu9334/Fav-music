@@ -1,0 +1,290 @@
+# ----------------------------------------------------
+# ENUMS
+# ----------------------------------------------------
+enum RoomAccess {
+  PUBLIC
+  PRIVATE
+}
+
+enum RoomChatPolicy {
+  EPHEMERAL_SESSION_ONLY
+  PERSISTENT_LOG
+}
+
+enum ChatRetentionPreference {
+  EPHEMERAL_SESSION_ONLY
+  PERSISTENT_HISTORY
+}
+
+enum WarehouseStatus {
+  ACTIVE
+  ARCHIVED
+  HIDDEN
+}
+
+enum ReelMatchStatus {
+  PENDING
+  MATCHED
+  UNMATCHED
+  EXTRACTION_FAILED
+}
+
+enum TimeAffinity {
+  DAWN
+  MORNING
+  AFTERNOON
+  EVENING
+  LATE_NIGHT
+}
+
+enum WeatherAffinity {
+  CLEAR_SUNNY
+  RAINY
+  CLOUDY
+  STORMY
+  SNOW_COLD
+}
+
+enum SeasonAffinity {
+  SPRING
+  SUMMER
+  MONSOON
+  AUTUMN
+  WINTER
+}
+
+# ----------------------------------------------------
+# TYPES
+# ----------------------------------------------------
+type AuthCapabilities {
+  service: String!
+  version: Int!
+  authenticationEnabled: Boolean!
+  cloudCollectionsEnabled: Boolean!
+}
+
+type User {
+  id: ID!
+  email: String!
+  displayName: String!
+  avatarUrl: String
+  chatRetentionPreference: ChatRetentionPreference!
+  createdAt: String!
+}
+
+type Track {
+  id: ID!
+  title: String!
+  artistName: String!
+  albumName: String
+  durationSeconds: Int!
+  releaseYear: Int
+  attribution: String!
+  discoveryBasis: String
+  sourceLabel: String
+  developmentOnly: Boolean
+  hasVideo: Boolean!
+  moods: [String!]!
+  
+  
+  # Ephemeral Presigned URLs (resolved on demand)
+  audioPlaybackUrl: String!
+  videoPlaybackUrl: String
+  artworkUrl: String!
+  
+  # Contextual Affinities
+  timeAffinities: [TimeAffinity!]!
+  weatherAffinities: [WeatherAffinity!]!
+  seasonAffinities: [SeasonAffinity!]!
+  energyScore: Float!
+  tempoBpm: Int
+}
+
+type WarehouseItem {
+  id: ID!
+  track: Track!
+  status: WarehouseStatus!
+  isFavorite: Boolean!
+  listenCount: Int!
+  skipCount: Int!
+  archivedAt: String
+  addedAt: String!
+}
+
+type SeasonalCollection {
+  id: ID!
+  name: String!
+  seasonTag: SeasonAffinity!
+  weatherTag: WeatherAffinity
+  tracks: [Track!]!
+  isCustomized: Boolean!
+}
+
+type InstaMusFallbackMeta {
+  extractedTitle: String
+  extractedArtist: String
+  captionKeywords: [String!]
+}
+
+type InstaMusIngestResult {
+  reelId: ID!
+  reelUrl: String!
+  status: ReelMatchStatus!
+  confidenceScore: Float
+  matchedTrack: Track
+  fallbackMeta: InstaMusFallbackMeta
+  requiresManualSearch: Boolean!
+  errorMessage: String
+}
+
+type RoomSummary {
+  id: ID!
+  name: String!
+  access: RoomAccess!
+  chatPolicy: RoomChatPolicy!
+  hostUserId: ID!
+  originalControllerId: ID
+  activeControllerId: ID
+  participantCount: Int!
+  maxParticipants: Int!
+  currentTrack: Track
+}
+
+type ServiceChecks {
+  database: String!
+  cache: String!
+}
+
+type HealthStatus {
+  status: String!
+  uptimeSeconds: Int!
+  timestamp: String!
+  version: String!
+  services: ServiceChecks!
+}
+
+# ----------------------------------------------------
+# QUERIES
+# ----------------------------------------------------
+
+enum CatalogMediaKind { AUDIO VIDEO ARTWORK }
+input CatalogQueryInput {
+  query: String
+  first: Int
+  after: String
+  mood: String
+  season: SeasonAffinity
+  yearFrom: Int
+  yearTo: Int
+  undated: Boolean
+  hasVideo: Boolean
+}
+type CatalogSong {
+  id: ID!
+  title: String!
+  artistName: String!
+  albumName: String
+  durationSeconds: Int!
+  releaseYear: Int
+  attribution: String!
+  discoveryBasis: String
+  sourceLabel: String
+  developmentOnly: Boolean
+  hasVideo: Boolean!
+  moods: [String!]!
+  timeAffinities: [TimeAffinity!]!
+  seasonAffinities: [SeasonAffinity!]!
+}
+type CatalogPage { nodes: [CatalogSong!]! endCursor: String hasNextPage: Boolean! }
+type CatalogMediaLease { trackId: ID! kind: CatalogMediaKind! url: String! issuedAt: String! expiresAt: String expiresInSeconds: Int refreshAfterSeconds: Int }
+
+type AccountLibrarySnapshot { revision: Int! data: String! }
+type AccountLibraryReceipt { appliedRevision: Int! snapshot: AccountLibrarySnapshot! }
+input AccountLibraryCommitInput { expectedRevision: Int! mutationId: ID! data: String! }
+
+type CatalogResource { id:ID! kind:String! name:String! artworkUrl:String releaseYear:Int sourceLabel:String! }
+type CatalogResourcePage { nodes:[CatalogResource!]! page:Int! total:Int hasMore:Boolean! }
+type CatalogCollection { resource:CatalogResource! nodes:[CatalogSong!]! page:Int! total:Int hasMore:Boolean! }
+
+type CatalogProviderInfo { sourceLabel:String! developmentOnly:Boolean! resourceKinds:[String!]! remotePagination:Boolean! videoSupported:Boolean! recognitionSupported:Boolean! }
+
+type Query {
+  catalogProviderInfo:CatalogProviderInfo!
+  catalogResources(kind:String!,query:String!,page:Int,first:Int):CatalogResourcePage!
+  catalogCollection(id:ID!,page:Int,first:Int):CatalogCollection!
+  accountLibrary: AccountLibrarySnapshot!
+    authCapabilities: AuthCapabilities!
+  catalogPage(input: CatalogQueryInput): CatalogPage!
+  catalogMedia(ids: [ID!]!, kind: CatalogMediaKind!): [CatalogMediaLease!]!
+  # Health
+  health: HealthStatus!
+
+  # Identity
+  me: User!
+  
+  # Catalog & Discovery
+  track(id: ID!): Track
+  searchCatalog(query: String!, limit: Int): [Track!]!
+  
+  # Global Play Contextual Smart Shuffle (Non-LLM)
+  getGlobalPlayQueue(latitude: Float, longitude: Float, limit: Int): [Track!]!
+  
+  # Seasonal Collections
+  getSeasonalCollections: [SeasonalCollection!]!
+  mySavedCollections: [SeasonalCollection!]!
+  
+  # Hybrid Music Warehouse
+  myWarehouse(status: WarehouseStatus): [WarehouseItem!]!
+  myFavorites: [WarehouseItem!]!
+  
+  # InstaMus
+  myInstaMusBookmarks: [Track!]!
+  
+  # Rooms Overview
+  publicRooms: [RoomSummary!]!
+}
+
+# ----------------------------------------------------
+# MUTATIONS
+# ----------------------------------------------------
+type AuthSession {
+  accessToken: String!
+  refreshToken: String!
+  expiresIn: Int!
+  user: User!
+}
+
+type RefreshedSession {
+  accessToken: String!
+  refreshToken: String!
+  expiresIn: Int!
+}
+
+type Mutation {
+  updateProfile(displayName:String!, preference:ChatRetentionPreference!):User!
+  commitAccountLibrary(input: AccountLibraryCommitInput!): AccountLibraryReceipt!
+  loginWithGoogle(idToken: String!): AuthSession!
+  refreshSession(refreshToken: String!): RefreshedSession!
+  logout(refreshToken: String): Boolean!
+
+  # User Preferences
+  updateChatRetentionPreference(preference: ChatRetentionPreference!): User!
+
+  # InstaMus Ingestion from Share Intent
+  ingestInstaMusReel(reelUrl: String!, isPrivate: Boolean, hasProcessingRights:Boolean): InstaMusIngestResult!
+  
+  # Warehouse State Management (No Global Deletion)
+  archiveWarehouseTrack(trackId: ID!): WarehouseItem!
+  restoreWarehouseTrack(trackId: ID!): WarehouseItem!
+  hideWarehouseTrack(trackId: ID!): WarehouseItem!
+  removeFromArchive(trackId: ID!): Boolean!
+  toggleFavorite(trackId: ID!): WarehouseItem!
+  
+  # Seasonal Collections
+  saveSeasonalCollection(definitionId: ID!, customName: String!): SeasonalCollection!
+  renameSavedCollection(collectionId: ID!, newName: String!): SeasonalCollection!
+  deleteSavedCollection(collectionId: ID!): Boolean!
+  
+  # Telemetry for Shuffle Weights
+  recordPlaybackMetric(trackId: ID!, durationSec: Int!, wasSkipped: Boolean!): Boolean!
+}

@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-07T05:12:20.814Z",
+  "backendPid": 84177,
+  "backendStartupRetry": "PASS: listening on 127.0.0.1:4000",
+  "originalPrivateKeyReused": true,
+  "keyExpiresAt": "2026-11-07T07:00:14.270Z",
+  "newKeyRenewals": 0,
+  "normalAndroidHealth": "PASS on Wi-Fi",
+  "hostMobileClientCatalogAndStreams": "PASS",
+  "androidCatalogProbe": "FAIL: response-header timeout",
+  "existingInstalledApkAccess": "FAIL: displayed access verification error",
+  "existingAppPid": 6374,
+  "newEasSubmissions": 0,
+  "newApkInstalled": false,
+  "newUiAcceptance": "NOT RUN",
+  "unchangedSourceFilesVerified": 328,
+  "changedSourceFiles": [],
+  "privateInputCleared": true
+}

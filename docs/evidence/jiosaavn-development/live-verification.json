@@ -1,0 +1,53 @@
+{
+  "at": "2026-11-06T14:45:02.741Z",
+  "configuredBase": "https://jiosaavn-api-v3.vercel.app",
+  "searches": [
+    {
+      "query": "Aadat",
+      "returned": 10,
+      "unique": 10,
+      "pages": 2,
+      "hasMore": false,
+      "yearsKnown": 10,
+      "keywordTagged": 0
+    },
+    {
+      "query": "Rain",
+      "returned": 10,
+      "unique": 10,
+      "pages": 2,
+      "hasMore": false,
+      "yearsKnown": 10,
+      "keywordTagged": 5
+    },
+    {
+      "query": "Happy",
+      "returned": 10,
+      "unique": 10,
+      "pages": 2,
+      "hasMore": false,
+      "yearsKnown": 10,
+      "keywordTagged": 10
+    }
+  ],
+  "albums": {
+    "returned": 5,
+    "total": null,
+    "hasMore": false,
+    "detailSongs": 1
+  },
+  "stream": {
+    "canonicalId": "225f2d04-7d79-80e4-953e-4af5bc64e9eb",
+    "title": "Aadat",
+    "artist": "Ninja",
+    "year": 2015,
+    "status": 404,
+    "contentType": "application/octet-stream",
+    "contentLength": "0",
+    "acceptRanges": null,
+    "expiryKnown": false,
+    "refreshAfterSeconds": 120,
+    "bodyRequested": false
+  },
+  "errors": []
+}

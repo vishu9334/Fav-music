@@ -1,0 +1,40 @@
+--- a/packages/contracts/src/dtos/catalog-api.dto.ts
++++ b/packages/contracts/src/dtos/catalog-api.dto.ts
+@@ -9,6 +9,8 @@
+   readonly id: string; readonly title: string; readonly artistName: string; readonly albumName: string | null;
+   readonly durationSeconds: number; readonly releaseYear: number | null; readonly attribution: string;
+   readonly discoveryBasis?:'TITLE_ALBUM_KEYWORDS'; readonly sourceLabel?:string; readonly developmentOnly?:boolean;
++  /** Stable public song page; never a playback lease or signed media URL. */
++  readonly shareUrl?: string | null;
+   readonly hasVideo: boolean; readonly moods: readonly string[]; readonly timeAffinities: readonly string[];
+   readonly seasonAffinities: readonly string[];
+ }
+--- a/packages/contracts/src/graphql/schema.ts
++++ b/packages/contracts/src/graphql/schema.ts
+@@ -76,6 +76,7 @@
+   id: ID!
+   title: String!
+   artistName: String!
++  shareUrl: String
+   albumName: String
+   durationSeconds: Int!
+   releaseYear: Int
+@@ -183,6 +184,7 @@
+   id: ID!
+   title: String!
+   artistName: String!
++  shareUrl: String
+   albumName: String
+   durationSeconds: Int!
+   releaseYear: Int
+--- a/server/src/modules/catalog/services/provider-catalog.service.ts
++++ b/server/src/modules/catalog/services/provider-catalog.service.ts
+@@ -25,7 +25,7 @@
+     private async song(song: IMusicProviderSong): Promise<CatalogSong> {
+         const id = await this.identities.remember({ provider: this.provider.providerId, kind: 'song', externalId: song.id });
+         // Only explicit title/album keywords produce derived tags. Missing years and video stay unavailable.
+-        return { id, title: song.title, artistName: song.artist, albumName: song.album ?? null, durationSeconds: song.durationSeconds, releaseYear: song.releaseYear ?? null,
++        return { id, title: song.title, artistName: song.artist, shareUrl: song.providerUrl ?? null, albumName: song.album ?? null, durationSeconds: song.durationSeconds, releaseYear: song.releaseYear ?? null,
+             attribution: song.copyright ?? `${this.provider.providerId} development catalog. Distribution rights are not verified.`, hasVideo: false, ...ProviderDiscoveryRules.tags(song.title, song.album), discoveryBasis: 'TITLE_ALBUM_KEYWORDS', sourceLabel: 'JioSaavn · development provider', developmentOnly: true };
+     }
+     private async resource(value: MusicProviderResource): Promise<CatalogResource> { return { id: await this.identities.remember({ provider: this.provider.providerId, kind: value.kind, externalId: value.id }), kind: value.kind, name: value.name, artworkUrl: value.artworkUrl ?? null, releaseYear: value.releaseYear ?? null, sourceLabel: 'JioSaavn · development provider' }; }

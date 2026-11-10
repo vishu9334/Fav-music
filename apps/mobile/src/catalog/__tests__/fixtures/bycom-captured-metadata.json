@@ -1,0 +1,522 @@
+[
+  {
+    "id": "f5e75856-4598-8a85-8509-3e90deb1afe4",
+    "title": "Believer",
+    "artistName": "Imagine Dragons",
+    "albumName": "Evolve",
+    "durationSeconds": 204,
+    "releaseYear": 2018,
+    "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "407d6426-d997-8421-aacf-0b03399ae8e6",
+    "title": "Believer",
+    "artistName": "Imagine Dragons",
+    "albumName": "Believer",
+    "durationSeconds": 219,
+    "releaseYear": 2019,
+    "attribution": "℗ 2019 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "afebb609-e0dc-8cd3-9171-d91f8ca2436f",
+    "title": "Believer (Kaskade Remix)",
+    "artistName": "Imagine Dragons, Kaskade",
+    "albumName": "Believer (Kaskade Remix)",
+    "durationSeconds": 190,
+    "releaseYear": 2017,
+    "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "98ef744f-3fef-8f31-a12f-c7fc2c940ca1",
+    "title": "Believer (Acoustic)",
+    "artistName": "The Cameron Collective",
+    "albumName": "You Made Me A Believer",
+    "durationSeconds": 198,
+    "releaseYear": 2017,
+    "attribution": "© 2017 TCC Media",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "3f79030a-b28d-87e8-995f-c6185d67bc86",
+    "title": "Believer",
+    "artistName": "The Cameron Collective",
+    "albumName": "You Made Me A Believer",
+    "durationSeconds": 196,
+    "releaseYear": 2017,
+    "attribution": "© 2017 TCC Media",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "bba3e490-770d-8b02-aa02-8f56ccadf823",
+    "title": "Believer",
+    "artistName": "Imagine Dragons",
+    "albumName": "Rock Playlist",
+    "durationSeconds": 202,
+    "releaseYear": 2021,
+    "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "cc05e692-c86d-863e-8390-9ddc8b08d859",
+    "title": "Believer",
+    "artistName": "Imagine Dragons",
+    "albumName": "Trending Now Volume 3",
+    "durationSeconds": 202,
+    "releaseYear": 2020,
+    "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "ce8c0999-c728-8653-8968-7566a826e930",
+    "title": "Believer",
+    "artistName": "Imagine Dragons",
+    "albumName": "Race Hits 2022",
+    "durationSeconds": 204,
+    "releaseYear": 2021,
+    "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "852157da-37f8-851e-808c-67765e0d207f",
+    "title": "Believer",
+    "artistName": "Imagine Dragons",
+    "albumName": "Work From Home Tunes",
+    "durationSeconds": 202,
+    "releaseYear": 2020,
+    "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "3e678b56-a7df-811b-8d6f-5450f1147998",
+    "title": "Believer",
+    "artistName": "Imagine Dragons",
+    "albumName": "Trending Pop 2021",
+    "durationSeconds": 204,
+    "releaseYear": 2022,
+    "attribution": "℗ 2017 KIDinaKORNER/Interscope Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "37662751-96fc-807d-962f-51e963733d03",
+    "title": "Happy",
+    "artistName": "Karthik",
+    "albumName": "Happy",
+    "durationSeconds": 219,
+    "releaseYear": 2005,
+    "attribution": "© 2005 Aditya Music",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "79d4029c-544c-82de-9a57-a73f87dec825",
+    "title": "Happy",
+    "artistName": "All Ok",
+    "albumName": "Happy",
+    "durationSeconds": 221,
+    "releaseYear": 2020,
+    "attribution": "℗ 2020 All Ok Records",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "ae95ec7d-0153-81e7-a67e-f23cf43ec7fd",
+    "title": "Happy (Remix)",
+    "artistName": "All Ok",
+    "albumName": "Happy (Remix)",
+    "durationSeconds": 214,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 All Ok",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "0ed89b46-b15e-8648-ac84-dafa74e98dd2",
+    "title": "Happy (From \"Despicable Me 2\")",
+    "artistName": "Pharrell Williams",
+    "albumName": "G I R L",
+    "durationSeconds": 233,
+    "releaseYear": 2014,
+    "attribution": "(P) 2013 Back Lot Music, under exclusive license to Columbia Records, a Division of Sony Music Entertainment",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "3f3cca0a-415b-8e1d-a8cf-ca7d954a6686",
+    "title": "Happy",
+    "artistName": "Franco Simon, Siju Thuravoor, Yuvan Shankar Raja",
+    "albumName": "Happy Be Happy (Original Motion Picture Soundtrack)",
+    "durationSeconds": 214,
+    "releaseYear": 2007,
+    "attribution": "(P) 2005 Khader Hassan",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "7620d7d2-6882-82d7-b400-ed9811540849",
+    "title": "Happy Nation",
+    "artistName": "Ace Of Base",
+    "albumName": "Happy Nation",
+    "durationSeconds": 255,
+    "releaseYear": 1992,
+    "attribution": "© 2014 Mega Records, a division of Playground Music Scandinavia AB",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "db6d5d17-b4fd-8f94-be46-6e71ecfc2dba",
+    "title": "Happy Nation",
+    "artistName": "Ace Of Base",
+    "albumName": "The Sign",
+    "durationSeconds": 255,
+    "releaseYear": 1993,
+    "attribution": "© 2014 Mega Records, a division of Playground Music Scandinavia AB",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "2cdbd2bc-6efe-8da8-bf0d-6343aec639e0",
+    "title": "Happy Birthday Song",
+    "artistName": "Cocomelon",
+    "albumName": "CoComelon Essentials",
+    "durationSeconds": 62,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Moonbug Entertainment Music Limited",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "55614cc7-3d0e-81d4-b82a-083b28f08a48",
+    "title": "Happy Birthday Song",
+    "artistName": "Cocomelon",
+    "albumName": "Kids Birthday Party",
+    "durationSeconds": 62,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Moonbug Entertainment Music Limited",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "fcc981b4-0f46-8d15-99a5-2413d30cf531",
+    "title": "Happy Diwali",
+    "artistName": "Vishal & Shekhar, Vaishali, Surthi, Diva, Suraj, Aparna",
+    "albumName": "Home Delivery",
+    "durationSeconds": 276,
+    "releaseYear": 2005,
+    "attribution": "℗ 2005 Super Cassettes Industries Private Limited",
+    "hasVideo": false,
+    "moods": [
+      "Happy"
+    ],
+    "seasonAffinities": [],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "1f122aed-006b-8f65-84da-3e5168b091a8",
+    "title": "Rain",
+    "artistName": "DIVINE",
+    "albumName": "Rain",
+    "durationSeconds": 203,
+    "releaseYear": 2025,
+    "attribution": "℗ 2025 Gully Gang Records",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "ca0bb3ab-30e5-8a76-99a8-e5a486fe7d61",
+    "title": "Rain Sounds for Sleeping - No Fade (Loopable)",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "Heavy Rain on Tin Roof (Loopable - No Fade)",
+    "durationSeconds": 60,
+    "releaseYear": 2022,
+    "attribution": "℗ 2022 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "cecc9885-9ebd-81b4-982d-906ce1185e6b",
+    "title": "rain aid sleep, heavy rain sounds loop",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "Heavy Rain (No Music - No Fade - Loopable)",
+    "durationSeconds": 60,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "57e288f4-330b-8398-a2c6-81a9fae3e63a",
+    "title": "Rain Sounds To Help Kids Sleep",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "1 Hour of Heavy Rain Sounds White Noise",
+    "durationSeconds": 60,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "1d06efb5-2d90-82cb-84bb-460df771aa6a",
+    "title": "Rain White Noise for Baby Sleep - Loopable",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "Heavy Rain on Tin Roof (Loopable - No Fade)",
+    "durationSeconds": 60,
+    "releaseYear": 2022,
+    "attribution": "℗ 2022 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "e72e11bf-c602-8e0d-94ea-1f90b4b312bc",
+    "title": "Rain For Sleeping",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "Rain Sounds for Sleeping - Loopable",
+    "durationSeconds": 60,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "5c3c9c4c-10b8-84fc-a33a-271f00de57f4",
+    "title": "Rain Sounds",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "1 Hour of Heavy Rain Sounds White Noise",
+    "durationSeconds": 60,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "b0925d1f-55e6-8428-87c4-288d9f285173",
+    "title": "Rain Sounds To Help Me Sleep",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "1 Hour of Heavy Rain Sounds White Noise",
+    "durationSeconds": 59,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "13b62d11-9083-866c-9c62-86309e2ada97",
+    "title": "Rain Sounds 2",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "1 Hour of Heavy Rain Sounds White Noise",
+    "durationSeconds": 60,
+    "releaseYear": 2021,
+    "attribution": "℗ 2021 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  },
+  {
+    "id": "b9bf1513-4c69-816d-8de5-6fbd2d6ae17e",
+    "title": "Rain Sounds White Noise for Baby Sleep - Loopable",
+    "artistName": "Heavy Rain Sounds for Sleep",
+    "albumName": "Heavy Rain on Tin Roof (Loopable - No Fade)",
+    "durationSeconds": 60,
+    "releaseYear": 2022,
+    "attribution": "℗ 2022 Heavy Rain Sounds for Sleep",
+    "hasVideo": false,
+    "moods": [],
+    "seasonAffinities": [
+      "MONSOON"
+    ],
+    "timeAffinities": [],
+    "discoveryBasis": "TITLE_ALBUM_KEYWORDS",
+    "sourceLabel": "JioSaavn · development provider",
+    "developmentOnly": true
+  }
+]

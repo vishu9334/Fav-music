@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-07T01:15:17.466Z",
+  "serial": "X4GACUMZMVEQY5XO",
+  "origin": "https://anyway-pdf-obligation-suggests.trycloudflare.com",
+  "probeId": "aadat-https-871d74a9-05b1-4dd1-9a75-2bece5c0d831",
+  "credentialsSent": false,
+  "apkInstalled": false,
+  "deviceResult": {
+    "probeId": "aadat-https-871d74a9-05b1-4dd1-9a75-2bece5c0d831",
+    "origin": "https://anyway-pdf-obligation-suggests.trycloudflare.com",
+    "credentialsSent": false,
+    "liveness": {
+      "path": "/health/live",
+      "httpStatus": 200,
+      "tlsCipher": "TLS_AES_128_GCM_SHA256",
+      "responseBytes": 57,
+      "payload": {
+        "status": "alive",
+        "timestamp": "2026-11-07T01:15:19.687Z"
+      },
+      "pass": true
+    },
+    "graphql": {
+      "path": "/graphql",
+      "httpStatus": 200,
+      "tlsCipher": "TLS_AES_128_GCM_SHA256",
+      "responseBytes": 172,
+      "payload": {
+        "data": {
+          "health": {
+            "status": "ok",
+            "version": "0.1.0"
+          },
+          "authCapabilities": {
+            "service": "aadat-music",
+            "version": 1,
+            "authenticationEnabled": false,
+            "cloudCollectionsEnabled": false
+          }
+        }
+      },
+      "pass": true
+    },
+    "pass": true
+  },
+  "pass": true,
+  "temporaryFileRemoved": true
+}

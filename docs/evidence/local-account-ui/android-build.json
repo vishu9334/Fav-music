@@ -1,0 +1,19 @@
+{
+  "id": "3ceccc2f-8b2e-4c4f-b316-b27028211473",
+  "status": "FINISHED",
+  "profile": "preview-local-account",
+  "apk": "https://expo.dev/artifacts/eas/sPv1oON1phN-Hxxubfsqh4QSyrOTs_KyoLHz-ZpUZ5U.apk",
+  "maximumBuildsApproved": 1,
+  "buildsSubmitted": 1,
+  "installation": "ADB install -r succeeded; user confirmed prior app was uninstalled externally; fresh install",
+  "oldDeviceDataPreservation": "Not applicable: no retained package in any Android profile before installation",
+  "genuineGoogleAcceptance": "Awaiting user account selection/consent; not verified",
+  "startup": "PASS: actual Google sign-in screen",
+  "localVerification": {
+    "testsPassed": 672,
+    "skipped": 3,
+    "typeScript": "PASS",
+    "metro": "PASS",
+    "hermes": "PASS"
+  }
+}

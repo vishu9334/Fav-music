@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-07T02:34:44.503Z",
+  "label": "background-paused",
+  "package": "com.favmusic",
+  "found": true,
+  "lines": [
+    "package=com.favmusic",
+    "active=true",
+    "state=PlaybackState {state=PAUSED(2), position=68497, buffered position=129753, speed=0.0, updated=513130609, actions=6554039, custom actions=[Action:mName='stop, mIcon=2131230973, mExtras=null], active item id=0, error=null}",
+    "volumeType=LOCAL, controlType=ABSOLUTE, max=0, current=0, volumeControlId=null",
+    "metadata: size=8, description=Levitating, null, null"
+  ]
+}

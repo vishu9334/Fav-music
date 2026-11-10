@@ -1,0 +1,27 @@
+{
+  "checkedOn": "2026-11-06",
+  "startedAt": "2026-11-06T03:11:07.628Z",
+  "finishedAt": "2026-11-06T03:11:22.636Z",
+  "elapsedMilliseconds": 15008,
+  "approval": "Read-only preflight only; no migration or database-write approval",
+  "targetComparison": {
+    "sameEndpoint": true,
+    "sameDatabase": true,
+    "sameRole": true,
+    "sameSchema": true
+  },
+  "targetFingerprint": "ea74876a021c1c5ea93c4db3424b97e237355284647f2e3ec6175a8174f69cc9",
+  "connectionTimeoutMilliseconds": 15000,
+  "status": "FAILED",
+  "failureReason": "Connection or approved read-only statement failed",
+  "errorCode": "UNSPECIFIED",
+  "sqlStatementsExecuted": 0,
+  "catalogPreflightCompleted": false,
+  "historyStatus": "NOT RUN",
+  "liveIdentityAndReadOnlyStatusConfirmed": false,
+  "liveConflictAndPrivilegeChecks": "NOT VERIFIED — connection failed before SQL",
+  "databaseWriteStatementsExecuted": 0,
+  "migrationsApplied": false,
+  "automaticRetryAttempted": false,
+  "rawExecutionEvidence": "/var/folders/kn/51qtp42s3djbbb7hflzc630m0000gn/T/aadat-live-readonly-K7ZgIn/execution-summary.json"
+}

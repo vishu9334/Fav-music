@@ -1,0 +1,42 @@
+{
+  "status": true,
+  "serverTime": 1793975679617,
+  "albumid": "1297527",
+  "title": "Aadat",
+  "name": "Aadat",
+  "year": "2015",
+  "primary_artists": "Ninja",
+  "image": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-150x150.jpg",
+  "songs": [
+    {
+      "id": "iYMcgidY",
+      "song": "Aadat",
+      "album": "Aadat",
+      "year": 2015,
+      "primary_artists": "Ninja",
+      "singers": "Ninja",
+      "image": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-500x500.jpg",
+      "images": {
+        "50x50": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-50x50.jpg",
+        "150x150": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-150x150.jpg",
+        "500x500": "https://c.saavncdn.com/683/Aadat-Punjabi-2015-500x500.jpg"
+      },
+      "duration": "4:07",
+      "label": "Malwa Records",
+      "albumid": "1297527",
+      "language": "Punjabi",
+      "copyright_text": "© 2018 Malwa Records",
+      "has_lyrics": true,
+      "lyrics": null,
+      "perma_url": "https://www.jiosaavn.com/song/aadat/GTEmUhNZU2o",
+      "album_url": "https://www.jiosaavn.com/album/aadat/SW5ZKewkXO0_",
+      "release_date": "2015-07-20",
+      "api_url": {
+        "song": "https://jiosaavn-api-v3.vercel.app/song?id=iYMcgidY",
+        "album": "https://jiosaavn-api-v3.vercel.app/album?id=1297527"
+      }
+    }
+  ],
+  "perma_url": "https://www.jiosaavn.com/album/aadat/SW5ZKewkXO0_",
+  "release_date": "2015-07-20"
+}

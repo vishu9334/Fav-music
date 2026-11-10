@@ -1,0 +1,18 @@
+{
+  "localAuthReadiness": "HTTP 200; authenticationEnabled=true; cloudCollectionsEnabled=true",
+  "localHealth": "HTTP 200",
+  "protectedAccountQueryWithoutCredentials": "HTTP 401 UNAUTHORIZED",
+  "googleWebAudienceMatchesInstalledBuild": true,
+  "installedEndpointMatchesVerifiedEndpoint": true,
+  "backend": "Started existing local-account-development runtime with existing data and configuration",
+  "schemaChanges": false,
+  "sourceChanges": false,
+  "remoteExposure": "User explicitly approved restoring the existing ngrok endpoint; tunnel running",
+  "deviceLogin": "PASS: Retry reported an expired session; fresh Google sign-in opened authenticated Home on CPH2599",
+  "publicAuthReadiness": "HTTP 200; authenticationEnabled=true",
+  "publicAccountQueryWithoutCredentials": "HTTP 401 UNAUTHORIZED",
+  "apkRebuildRequired": false,
+  "roomsScreen": "PASS: authenticated room discovery loaded successfully; no active listening rooms",
+  "roomPlaybackAcceptance": "Not run: no active room; no test room or messages were created",
+  "runningServices": "Existing local-account API and explicitly approved ngrok endpoint left running"
+}

@@ -1,0 +1,28 @@
+{
+  "changedBaselinedPaths": [
+    ".env",
+    "server/.env",
+    "server/src/infrastructure/music-provider/implementations/jiosaavn-music-provider.service.ts"
+  ],
+  "preservedBaselinedPaths": [
+    "apps/mobile/.env.local",
+    "server/src/infrastructure/music-provider/implementations/jiosaavn-v3-music-provider.service.ts",
+    "server/src/modules/catalog/catalog.module.ts",
+    "server/prisma/schema.prisma",
+    "apps/mobile/src/library/library.service.ts",
+    "apps/mobile/src/store/useLibraryStore.ts",
+    "apps/mobile/src/catalog/catalog-runtime.ts",
+    "app.json",
+    "apps/mobile/app.json",
+    "apps/mobile/index.tsx",
+    "metro.config.js",
+    "apps/mobile/metro.config.js",
+    "pnpm-lock.yaml",
+    "assest/icon.png",
+    "assest/Fav music.png",
+    "assest/favicon.png",
+    "assest/adaptive-icon.png"
+  ],
+  "onlyTwoPublicEnvironmentKeysChanged": true,
+  "sameCanonicalIdsAcrossCapturedWindows": 6
+}

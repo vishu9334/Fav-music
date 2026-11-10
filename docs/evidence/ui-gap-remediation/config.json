@@ -1,0 +1,32 @@
+[
+  {
+    "cwd": "/Users/magicmac/Library/CloudStorage/GoogleDrive-vishalkumarptn32@gmail.com/My Drive/Aadat-music",
+    "orientation": "default",
+    "keyboard": "resize",
+    "package": "com.favmusic",
+    "projectId": "be1ffc50-0de2-4b0e-a0d1-ad3ea5e543ee",
+    "icons": {
+      "icon": "./assest/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assest/adaptive-icon.png",
+        "backgroundColor": "#09090b"
+      },
+      "favicon": "./assest/favicon.png"
+    }
+  },
+  {
+    "cwd": "/Users/magicmac/Library/CloudStorage/GoogleDrive-vishalkumarptn32@gmail.com/My Drive/Aadat-music/apps/mobile",
+    "orientation": "default",
+    "keyboard": "resize",
+    "package": "com.favmusic",
+    "projectId": "be1ffc50-0de2-4b0e-a0d1-ad3ea5e543ee",
+    "icons": {
+      "icon": "../../assest/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "../../assest/adaptive-icon.png",
+        "backgroundColor": "#09090b"
+      },
+      "favicon": "../../assest/favicon.png"
+    }
+  }
+]

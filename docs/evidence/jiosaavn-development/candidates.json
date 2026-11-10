@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://saavn.sumit.co/api/search/songs?query=Aadat&page=0&limit=2",
+    "status": 403,
+    "location": null
+  },
+  {
+    "url": "https://saavn.dev/api/search/songs?query=Aadat&page=0&limit=2",
+    "error": "URLError",
+    "detail": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "url": "https://saavn.me/search?song=Aadat",
+    "status": 403,
+    "location": null
+  },
+  {
+    "url": "https://jiosaavn-api-v3.vercel.app/docs/",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "bytes": 3104
+  }
+]

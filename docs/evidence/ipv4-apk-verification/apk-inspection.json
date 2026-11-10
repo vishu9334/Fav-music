@@ -1,0 +1,29 @@
+{
+  "containsIpv4FixMarker": true,
+  "modules": {
+    "com/favmusic/auth/AuthHttpClient$CatalogIpv4TlsFactory": true,
+    "expo/modules/blur/BlurModule": true,
+    "expo/modules/video/VideoModule": true,
+    "com/doublesymmetry/trackplayer/module/MusicModule": true,
+    "com/doublesymmetry/trackplayer/service/MusicService": true,
+    "com/favmusic/auth/AadatAuthModule": true,
+    "com/favmusic/auth/AuthHttpClient": true,
+    "com/swmansion/reanimated/ReanimatedModule": true,
+    "com/horcrux/svg/SvgPackage": true,
+    "com/swmansion/gesturehandler/RNGestureHandlerPackage": true
+  },
+  "dexFiles": 4,
+  "hermesBundle": true,
+  "bundleBytes": 3528132,
+  "containsDiagnosticMode": true,
+  "containsApprovedEndpoint": true,
+  "privateKeyHits": [],
+  "secretPaths": [],
+  "nativeLibraries": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "pass": true
+}

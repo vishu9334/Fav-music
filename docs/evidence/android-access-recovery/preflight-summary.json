@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-06T18:52:50.597Z",
+  "file": "docs/PHASE_1A_MIGRATION_PREFLIGHT_READONLY.sql",
+  "sha256": "35556085aa1ef7d3abd109c45e88829e48b606f202134efa9b0a252e9391628a",
+  "targetHost": "ep-calm-paper-ao3neqs5.c-2.ap-southeast-1.aws.neon.tech",
+  "tlsHostnameVerificationRequired": true,
+  "applicationOrAuthRowsRead": false,
+  "schemaOrDataWrites": false,
+  "migrationsExecuted": false,
+  "status": "PASS",
+  "transactionReadOnly": "on",
+  "postgresVersion": "18.6 (ac70818)",
+  "effectiveSchema": "public",
+  "canConnect": true,
+  "schemaPrivileges": [
+    {
+      "schema": "neon_auth",
+      "usage": true,
+      "create": true
+    },
+    {
+      "schema": "public",
+      "usage": true,
+      "create": true
+    }
+  ],
+  "publicRelations": [],
+  "publicTypes": [],
+  "publicTableCount": 0,
+  "neonAuthTableCount": 9,
+  "userTablePresent": false,
+  "prismaHistoryPresent": false,
+  "resultSets": 20,
+  "tlsAuthorized": true,
+  "tlsProtocol": "TLSv1.3",
+  "ddlEventTriggers": 0,
+  "customDefaultAclRows": 0,
+  "targetDependencies": 0,
+  "publicForeignKeys": 0,
+  "neonAuthTableNames": [
+    "account",
+    "invitation",
+    "jwks",
+    "member",
+    "organization",
+    "project_config",
+    "session",
+    "user",
+    "verification"
+  ]
+}

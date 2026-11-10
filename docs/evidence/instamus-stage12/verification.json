@@ -1,0 +1,83 @@
+{
+  "stage": 12,
+  "status": "EXISTING_SCREEN_LOCAL_PASS_ANDROID_PENDING",
+  "changes": [
+    "One Manual matching form heading; contextual Search results and Saved reels titles; no promotional empty-state card",
+    "Short Save reel / Link and bookmark / Remove reel labels with full song-aware accessibility labels",
+    "Short review/save/load feedback; no duplicated Searching caption during catalog loading",
+    "Search rows retain artwork/title/artist and existing controls; repeated album/duration/button-title metadata removed",
+    "Saved cards retain real linked title/artist, original reference and distinct user notes; no Manually linked prefix or duplicate song title",
+    "Stable SongRow callbacks with latest-result and scroll guards; existing virtualization/query/pagination bindings retained",
+    "Invalid Instagram-reference parsing is caught as visible feedback instead of a synchronous UI exception",
+    "Library error does not announce an empty saved-reels collection"
+  ],
+  "changedSourceFiles": [
+    "apps/mobile/src/screens/InstaMusScreen.tsx",
+    "apps/mobile/src/design/controls.tsx"
+  ],
+  "changedTestFiles": [
+    "apps/mobile/src/components/app/__tests__/instamus-ui.test.tsx",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx"
+  ],
+  "verification": {
+    "focusedTests": {
+      "status": "PASS",
+      "tests": 75,
+      "files": 5,
+      "command": "pnpm exec vitest run apps/mobile/src/components/app/__tests__/instamus-ui.test.tsx apps/mobile/src/components/app/__tests__/copy.test.tsx apps/mobile/src/library/__tests__/batch2-library.test.ts apps/mobile/src/library/__tests__/scope-guard.test.ts apps/mobile/src/components/lists/__tests__/scroll-interaction.test.ts",
+      "coverage": [
+        "Concise UI and accessible labels",
+        "Real captured catalog IDs forwarded to Play/link/save; no playback while typing/loading",
+        "Exact query and Load More calls; stable row callbacks; stale/scroll-release tap rejection",
+        "Save and manual canonical association, with success only after completion",
+        "Account-scope changes and stale removal-confirmation protection",
+        "Saved reference/title/artist and distinct user notes; original sharing destination",
+        "Empty/loading/error states and safe valid/invalid reel opening",
+        "Existing local-memory library persistence/bookmarks/deduplication and reference validation",
+        "Shared Button defaults/styles/actions remain unchanged when no explicit accessibility label is provided"
+      ],
+      "limits": "UI/native navigation, sharing, Linking and store actions use mocks; catalog metadata is captured from existing fixtures. Persistence regression tests use isolated in-memory storage. No real Instagram API, account/backend writes or physical Android interaction was performed."
+    },
+    "mobileTypeScript": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "pnpm --filter @aadat/mobile typecheck"
+    },
+    "productionMetro": {
+      "status": "PASS",
+      "exitCode": 0,
+      "modules": 2974,
+      "apkBuild": false
+    },
+    "scope": {
+      "protectedFiles": 118,
+      "protectedHashes": "PASS",
+      "existingQueriesVirtualizationKeysAndIconButton": "UNCHANGED",
+      "sharedButtonChange": "Optional accessibilityLabel only; default styling and event forwarding unchanged",
+      "playbackCallbackChange": "Stable memoized callbacks with current-result membership and existing scroll guard",
+      "newInstagramIntegration": "NONE",
+      "separateInstaFavUi": "Not present in existing mobile routes/components; no new feature added",
+      "bundleContentChecks": {
+        "shortSuccess": true,
+        "shortReview": true,
+        "oldPromotionalHeadingRemoved": true,
+        "oldLongSuccessRemoved": true
+      }
+    },
+    "android": {
+      "status": "PENDING",
+      "reason": "No updated APK built or installed; physical scrolling, font scaling, keyboard, accessibility and visual acceptance remain unverified."
+    }
+  },
+  "scopeLimits": {
+    "InstaFav": "No separate existing mobile InstaFav screen/component was found; no new feature or route was invented. Existing saved/manual-linked reel cards were cleaned.",
+    "InstagramIntegration": "No new provider, extraction, scraping or recognition implementation. Stage 21 remains separate."
+  },
+  "hashes": {
+    "apps/mobile/src/screens/InstaMusScreen.tsx": "13e0bef2e4f72a48cbfd6f46d7316997f438d6798aa4bd762fd95054d7b551d6",
+    "apps/mobile/src/design/controls.tsx": "a76024135ab2d508c2bcf45181fef848e4aa159e43c127d6503256eb5f2733d5",
+    "apps/mobile/src/components/app/__tests__/instamus-ui.test.tsx": "c111b0f71a717c1f3298a552b84abb8f5bb91ba6379f3bea2e6a750c67b3c26c",
+    "apps/mobile/src/components/app/__tests__/copy.test.tsx": "7331c862782a6345b947653fce02278ebd901fe3212687cc8b0cb45329fbf307"
+  },
+  "restrictions": "No Git commands, APK/EAS builds, backend/database/cloud changes or service restarts."
+}

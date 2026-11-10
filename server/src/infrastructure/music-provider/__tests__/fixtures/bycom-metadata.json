@@ -1,0 +1,4601 @@
+{
+  "notice": "Captured 2026-11-06 from approved Bycom API. Metadata is real; every URL is replaced by example.invalid for isolated offline tests. No audio is bundled.",
+  "searchFirst": {
+    "total": 13263,
+    "start": 1,
+    "results": [
+      {
+        "id": "BeXBcbVK",
+        "name": "Believer",
+        "year": "2018",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "SdZc6-ST",
+        "name": "Believer",
+        "year": "2019",
+        "duration": 219,
+        "copyright": "℗ 2019 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "14799536",
+          "name": "Believer",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "JaIt9ecZ",
+        "name": "Believer (Kaskade Remix)",
+        "year": "2017",
+        "duration": 190,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "10958035",
+          "name": "Believer (Kaskade Remix)",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            },
+            {
+              "id": "598340",
+              "name": "Kaskade"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "B9SRuAyM",
+        "name": "Believer (Acoustic)",
+        "year": "2017",
+        "duration": 198,
+        "copyright": "© 2017 TCC Media",
+        "album": {
+          "id": "10757772",
+          "name": "You Made Me A Believer",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "2357217",
+              "name": "The Cameron Collective"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "zcF1wJIM",
+        "name": "Believer",
+        "year": "2017",
+        "duration": 196,
+        "copyright": "© 2017 TCC Media",
+        "album": {
+          "id": "10757772",
+          "name": "You Made Me A Believer",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "2357217",
+              "name": "The Cameron Collective"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "w_59NU9U",
+        "name": "Believer",
+        "year": "2021",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "26161480",
+          "name": "Rock Playlist",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "G5qVaJkz",
+        "name": "Believer",
+        "year": "2020",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "22407776",
+          "name": "Trending Now Volume 3",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "CxLr_vsC",
+        "name": "Believer",
+        "year": "2021",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "31490439",
+          "name": "Race Hits 2022",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "alngY9ZD",
+        "name": "Believer",
+        "year": "2020",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "24057432",
+          "name": "Work From Home Tunes",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "rFCRIr5j",
+        "name": "Believer",
+        "year": "2022",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "35092250",
+          "name": "Trending Pop 2021",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  },
+  "searchNext": {
+    "total": 13263,
+    "start": 11,
+    "results": [
+      {
+        "id": "ndIHbnIQ",
+        "name": "Believer",
+        "year": "2021",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "29743946",
+          "name": "Kids Party Hits",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "aCZajjBf",
+        "name": "Believer",
+        "year": "2022",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "31797403",
+          "name": "Rock Morning Mixtape 2022",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "POFtm2J0",
+        "name": "Believer",
+        "year": "2023",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "46013356",
+          "name": "Love &amp; Pride 2023",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "_xlYe0dv",
+        "name": "Believer",
+        "year": "2020",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "22404753",
+          "name": "Trending Now Volume 4",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "8G-jFstw",
+        "name": "Believer",
+        "year": "2023",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "45434925",
+          "name": "End of School Kids songs",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "AG1wi4-a",
+        "name": "Believer",
+        "year": "2020",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "21983596",
+          "name": "Best of 2017",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "Dp-gQUmC",
+        "name": "Believer",
+        "year": "2023",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "49266603",
+          "name": "Rock on! Rock it! Rock Out!",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "3BNPuxpr",
+        "name": "Believer",
+        "year": "2021",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "28723141",
+          "name": "Sync and Sing",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "9ZAyZJ4D",
+        "name": "Believer",
+        "year": "2022",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "35390465",
+          "name": "Rockola Rock",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "umId33aW",
+        "name": "Believer",
+        "year": "2021",
+        "duration": 202,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "26562562",
+          "name": "Spring Blossom",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  },
+  "album": {
+    "id": "13435951",
+    "name": "Evolve",
+    "year": 2018,
+    "url": "https://media.example.invalid/test-only",
+    "songCount": 12,
+    "artists": {
+      "primary": [
+        {
+          "id": "599452",
+          "name": "Imagine Dragons",
+          "image": [
+            {
+              "quality": "50x50",
+              "url": "https://media.example.invalid/test-only"
+            },
+            {
+              "quality": "150x150",
+              "url": "https://media.example.invalid/test-only"
+            },
+            {
+              "quality": "500x500",
+              "url": "https://media.example.invalid/test-only"
+            }
+          ],
+          "url": "https://media.example.invalid/test-only"
+        }
+      ]
+    },
+    "image": [
+      {
+        "quality": "50x50",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "150x150",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "500x500",
+        "url": "https://media.example.invalid/test-only"
+      }
+    ],
+    "songs": [
+      {
+        "id": "uQKEtZYc",
+        "name": "Next To Me",
+        "year": "2018",
+        "duration": 230,
+        "copyright": "℗ 2018 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "JM05-GBQ",
+        "name": "I Don’t Know Why",
+        "year": "2018",
+        "duration": 190,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "sZULdFlE",
+        "name": "Whatever It Takes",
+        "year": "2018",
+        "duration": 201,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "BeXBcbVK",
+        "name": "Believer",
+        "year": "2018",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "O0F3-PWY",
+        "name": "Walking The Wire",
+        "year": "2018",
+        "duration": 232,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "_n4tm2Ws",
+        "name": "Rise Up",
+        "year": "2018",
+        "duration": 231,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "eOhQat6c",
+        "name": "I’ll Make It Up To You",
+        "year": "2018",
+        "duration": 262,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "RLWcTXW7",
+        "name": "Yesterday",
+        "year": "2018",
+        "duration": 205,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "-KYvAnod",
+        "name": "Mouth Of The River",
+        "year": "2018",
+        "duration": 221,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "zikdtWU6",
+        "name": "Thunder",
+        "year": "2018",
+        "duration": 187,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "tRu8-oj5",
+        "name": "Start Over",
+        "year": "2018",
+        "duration": 186,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "VmddtEso",
+        "name": "Dancing In The Dark",
+        "year": "2018",
+        "duration": 233,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  },
+  "artist": {
+    "id": "599452",
+    "name": "Imagine Dragons",
+    "image": [
+      {
+        "quality": "50x50",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "150x150",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "500x500",
+        "url": "https://media.example.invalid/test-only"
+      }
+    ]
+  },
+  "artistFirst": {
+    "total": 1191,
+    "songs": [
+      {
+        "id": "BeXBcbVK",
+        "name": "Believer",
+        "year": "2018",
+        "duration": 204,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "yDeAS8Eh",
+        "name": "Bones",
+        "year": "2022",
+        "duration": 165,
+        "copyright": "℗ 2022 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "33436571",
+          "name": "Bones",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "zikdtWU6",
+        "name": "Thunder",
+        "year": "2018",
+        "duration": 187,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "drvhW8ob",
+        "name": "Enemy (from the series Arcane League of Legends)",
+        "year": "2021",
+        "duration": 173,
+        "copyright": "℗ 2021 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "30541534",
+          "name": "Enemy (from the series Arcane League of Legends)",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "2902776",
+              "name": "Jid"
+            },
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            },
+            {
+              "id": "924158",
+              "name": "Arcane"
+            },
+            {
+              "id": "865159",
+              "name": "League of Legends"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "3g5G9QTu",
+        "name": "Demons",
+        "year": "2013",
+        "duration": 175,
+        "copyright": "℗ 2012 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "1142502",
+          "name": "Night Visions",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "lKKbRg6w",
+        "name": "Bad Liar",
+        "year": "2018",
+        "duration": 260,
+        "copyright": "℗ 2018 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "14306558",
+          "name": "Origins",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "sZULdFlE",
+        "name": "Whatever It Takes",
+        "year": "2018",
+        "duration": 201,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "SdZc6-ST",
+        "name": "Believer",
+        "year": "2019",
+        "duration": 219,
+        "copyright": "℗ 2019 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "14799536",
+          "name": "Believer",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "bts8P3Ub",
+        "name": "Natural",
+        "year": "2018",
+        "duration": 189,
+        "copyright": "℗ 2018 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "14306558",
+          "name": "Origins",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "Ppq9UTh8",
+        "name": "Radioactive",
+        "year": "2014",
+        "duration": 282,
+        "copyright": "℗ 2014 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "1151623",
+          "name": "Radioactive",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  },
+  "artistNext": {
+    "total": 1191,
+    "songs": [
+      {
+        "id": "K1P4T0jI",
+        "name": "Radioactive",
+        "year": "2013",
+        "duration": 187,
+        "copyright": "℗ 2012 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "1142502",
+          "name": "Night Visions",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "u_Qn9uyY",
+        "name": "Warriors",
+        "year": "2014",
+        "duration": 170,
+        "copyright": "℗ 2014 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "1197803",
+          "name": "Warriors",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "VUdcCLaS",
+        "name": "Birds",
+        "year": "2019",
+        "duration": 219,
+        "copyright": "℗ 2019 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "16232118",
+          "name": "Birds",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "vostbtmZ",
+        "name": "Sucker for Pain (with Logic, Ty Dolla $ign &amp; X Ambassadors)",
+        "year": "2016",
+        "duration": 244,
+        "copyright": "℗ 2016 Atlantic Recording Corporation",
+        "album": {
+          "id": "16234786",
+          "name": "Suicide Squad: The Album",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "600822",
+              "name": "Lil Wayne"
+            },
+            {
+              "id": "625089",
+              "name": "Wiz Khalifa"
+            },
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "_n4tm2Ws",
+        "name": "Rise Up",
+        "year": "2018",
+        "duration": 231,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "qvgosduM",
+        "name": "Enemy (from the series Arcane League of Legends)",
+        "year": "2024",
+        "duration": 173,
+        "copyright": "© 2021 Riot Games, Inc.",
+        "album": {
+          "id": "54632931",
+          "name": "Arcane League of Legends (Soundtrack from the Animated Series)",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "O0F3-PWY",
+        "name": "Walking The Wire",
+        "year": "2018",
+        "duration": 232,
+        "copyright": "℗ 2017 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "13435951",
+          "name": "Evolve",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "mo-pYaaV",
+        "name": "Friction",
+        "year": "2015",
+        "duration": 202,
+        "copyright": "℗ 2014 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "1222962",
+          "name": "Smoke + Mirrors",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "_BMx78Jr",
+        "name": "On Top Of The World",
+        "year": "2013",
+        "duration": 189,
+        "copyright": "℗ 2012 KIDinaKORNER/Interscope Records",
+        "album": {
+          "id": "1142502",
+          "name": "Night Visions",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "F6txFR6j",
+        "name": "Born To Be Yours",
+        "year": "2018",
+        "duration": 193,
+        "copyright": "(P) 2018 Kygo AS under exclusive license to Sony Music Entertainment International Ltd / Ultra Records, LLC",
+        "album": {
+          "id": "13120191",
+          "name": "Born To Be Yours",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "774092",
+              "name": "Kygo"
+            },
+            {
+              "id": "599452",
+              "name": "Imagine Dragons"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  },
+  "playlistFirst": {
+    "id": "156710699",
+    "name": "Bollywood Rock - Workout Mix",
+    "year": null,
+    "url": "https://media.example.invalid/test-only",
+    "songCount": 10,
+    "artists": [
+      {
+        "id": "455275",
+        "name": "Shankar Mahadevan",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "467329",
+        "name": "Ehsaan Noorani",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455281",
+        "name": "Loy Mendonsa",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455280",
+        "name": "Shankar-Ehsaan-Loy",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "465404",
+        "name": "Siddharth Mahadevan",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "456278",
+        "name": "Prasoon Joshi",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "468461",
+        "name": "Farhan Akhtar",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "459577",
+        "name": "Sonam Kapoor",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "456269",
+        "name": "A.R. Rahman",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "456051",
+        "name": "Clinton Cerejo",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455124",
+        "name": "Mohit Chauhan",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "456259",
+        "name": "Irshad Kamil",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "459632",
+        "name": "Ranbir Kapoor",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "457020",
+        "name": "Shammi Kapoor",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      }
+    ],
+    "image": [
+      {
+        "quality": "50x50",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "150x150",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "500x500",
+        "url": "https://media.example.invalid/test-only"
+      }
+    ],
+    "songs": [
+      {
+        "id": "B38Mf-9e",
+        "name": "Bhaag Milkha Bhaag (Rock Version)",
+        "year": "2013",
+        "duration": 279,
+        "copyright": "(P) 2013 Sony Music Entertainment India Pvt. Ltd.",
+        "album": {
+          "id": "1141008",
+          "name": "Bhaag Milkha Bhaag",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "455280",
+              "name": "Shankar-Ehsaan-Loy"
+            },
+            {
+              "id": "465404",
+              "name": "Siddharth Mahadevan"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "jE4Mjfr0",
+        "name": "Saadda Haq (Featuring Orianthi Panagaris On Guitars)",
+        "year": "2011",
+        "duration": 365,
+        "copyright": "©  2011 T-Series",
+        "album": {
+          "id": "1045274",
+          "name": "Rockstar",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "456269",
+              "name": "A.R. Rahman"
+            },
+            {
+              "id": "456051",
+              "name": "Clinton Cerejo"
+            },
+            {
+              "id": "455124",
+              "name": "Mohit Chauhan"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "2kif0JGb",
+        "name": "Jee Karda (Rock Version)",
+        "year": "2025",
+        "duration": 239,
+        "copyright": "(P) 2015 Sony Music Entertainment India Pvt. Ltd.",
+        "album": {
+          "id": "33008927",
+          "name": "Badlapur",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "461968",
+              "name": "Sachin-Jigar"
+            },
+            {
+              "id": "473376",
+              "name": "Divya Kumar"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "UqQ3zO1H",
+        "name": "Aafaton Ke Parinde",
+        "year": "2012",
+        "duration": 203,
+        "copyright": "© 2012 YRF Music",
+        "album": {
+          "id": "1031044",
+          "name": "Ishaqzaade",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "457422",
+              "name": "Amit Trivedi"
+            },
+            {
+              "id": "455680",
+              "name": "Suraj Jagan"
+            },
+            {
+              "id": "473376",
+              "name": "Divya Kumar"
+            },
+            {
+              "id": "461070",
+              "name": "Kausar Munir"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "f4B-OELT",
+        "name": "Aag Hun Main",
+        "year": "2016",
+        "duration": 216,
+        "copyright": "℗ 2016 Think Music",
+        "album": {
+          "id": "2451006",
+          "name": "Kabali (Original Motion Picture Soundtrack)",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "557323",
+              "name": "Santhosh Narayanan"
+            },
+            {
+              "id": "455680",
+              "name": "Suraj Jagan"
+            },
+            {
+              "id": "718052",
+              "name": "Arunraja Kamaraj"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "6-QpF34d",
+        "name": "Rock On!!",
+        "year": "2010",
+        "duration": 231,
+        "copyright": "℗ 2010 Super Cassettes Industries Private Limited",
+        "album": {
+          "id": "1045264",
+          "name": "Rock On",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "468461",
+              "name": "Farhan Akhtar"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "-bY0lliV",
+        "name": "Khol Pinjra",
+        "year": "2024",
+        "duration": 188,
+        "copyright": "℗ 2024 Super Cassettes Industries Private Limited",
+        "album": {
+          "id": "54717210",
+          "name": "Savi",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "455129",
+              "name": "Sunidhi Chauhan"
+            },
+            {
+              "id": "18686865",
+              "name": "Arkadeep Karmakar"
+            },
+            {
+              "id": "3438596",
+              "name": "Ritajaya Banerjee"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "jtSOPstr",
+        "name": "Emotional Attyachaar (Rock Version)",
+        "year": "2009",
+        "duration": 239,
+        "copyright": "℗ 2009 Super Cassettes Industries Private Limited",
+        "album": {
+          "id": "1025011",
+          "name": "Dev D",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "457422",
+              "name": "Amit Trivedi"
+            },
+            {
+              "id": "456134",
+              "name": "Bonnie Chakraborty"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "xmNfzi8F",
+        "name": "Dum (Version, 1)",
+        "year": "2009",
+        "duration": 298,
+        "copyright": "(P) 2002 Sony Music Entertainment India Pvt. Ltd.",
+        "album": {
+          "id": "2765394",
+          "name": "Dum",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "458154",
+              "name": "Sandeep Chowta"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "XXxmvxLL",
+        "name": "Ud-daa Punjab",
+        "year": "2016",
+        "duration": 274,
+        "copyright": "©  2016 Zee Music Co.",
+        "album": {
+          "id": "2288439",
+          "name": "Udta Punjab",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "455669",
+              "name": "Vishal Dadlani"
+            },
+            {
+              "id": "457422",
+              "name": "Amit Trivedi"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  },
+  "playlistNext": {
+    "id": "156710699",
+    "name": "Bollywood Rock - Workout Mix",
+    "year": null,
+    "url": "https://media.example.invalid/test-only",
+    "songCount": 10,
+    "artists": [
+      {
+        "id": "8696657",
+        "name": "Leslee Lewis",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "8696657",
+        "name": "Leslee Lewis",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "8696657",
+        "name": "Leslee Lewis",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "461646",
+        "name": "Mahesh Babu",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455785",
+        "name": "Priyanka Chopra",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "758681",
+        "name": "Prithviraj Sukumaran",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455542",
+        "name": "Gaurav",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "456191",
+        "name": "Sandeep",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "14339182",
+        "name": "Romy",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "1850662",
+        "name": "Vivek Hariharan",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "2880232",
+        "name": "Shashwat Sachdev",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455665",
+        "name": "Kumaar",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "1497708",
+        "name": "Vicky Kaushal",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455780",
+        "name": "Paresh Rawal",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      }
+    ],
+    "image": [
+      {
+        "quality": "50x50",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "150x150",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "500x500",
+        "url": "https://media.example.invalid/test-only"
+      }
+    ],
+    "songs": [
+      {
+        "id": "iUCHyvgT",
+        "name": "Dil Chahe Desi Girl (From &quot;Phir Se Rock &amp; Roll&quot;)",
+        "year": "2023",
+        "duration": 184,
+        "copyright": "© 2023 Leslee Lewis",
+        "album": {
+          "id": "67880066",
+          "name": "Dil Chahe Desi Girl (From &quot;Phir Se Rock &amp; Roll&quot;)",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "8696657",
+              "name": "Leslee Lewis"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "C3Ihe1zJ",
+        "name": "Challa (Main Lad Jaana)",
+        "year": "2019",
+        "duration": 207,
+        "copyright": "© 2019 Zee Music Company",
+        "album": {
+          "id": "14715839",
+          "name": "Uri - The Surgical Strike",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "14339182",
+              "name": "Romy"
+            },
+            {
+              "id": "1850662",
+              "name": "Vivek Hariharan"
+            },
+            {
+              "id": "2880232",
+              "name": "Shashwat Sachdev"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "x01qu2OA",
+        "name": "Sakht Jaan",
+        "year": "2021",
+        "duration": 232,
+        "copyright": "© 2021 Zee Music Company",
+        "album": {
+          "id": "31319911",
+          "name": "83",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "456323",
+              "name": "Pritam"
+            },
+            {
+              "id": "461985",
+              "name": "Amit Mishra"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "NF1wle3k",
+        "name": "Bande (From &quot;Vikram Vedha&quot;)",
+        "year": "2022",
+        "duration": 193,
+        "copyright": "℗ 2022 Super Cassettes Industries Private Limited",
+        "album": {
+          "id": "38544941",
+          "name": "Bande (From &quot;Vikram Vedha&quot;)",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "3893720",
+              "name": "Sivam"
+            },
+            {
+              "id": "594484",
+              "name": "Sam C.S."
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "c0zCgPuj",
+        "name": "Toofaan Title Track",
+        "year": "2021",
+        "duration": 279,
+        "copyright": "© 2021 Zee Music Company",
+        "album": {
+          "id": "28183968",
+          "name": "Toofaan",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "465404",
+              "name": "Siddharth Mahadevan"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "W6Sm2T7a",
+        "name": "Kurbaan Hua",
+        "year": "2009",
+        "duration": 259,
+        "copyright": "(P) 2009 Sony Music Entertainment India Pvt. Ltd.",
+        "album": {
+          "id": "11783237",
+          "name": "Kurbaan",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "456102",
+              "name": "Salim-Sulaiman"
+            },
+            {
+              "id": "455669",
+              "name": "Vishal Dadlani"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "cU-dv3tR",
+        "name": "Barson Yaaron Banake Pyari",
+        "year": "2009",
+        "duration": 348,
+        "copyright": "©  2009 T-Series",
+        "album": {
+          "id": "1036243",
+          "name": "London Dreams",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "455280",
+              "name": "Shankar-Ehsaan-Loy"
+            },
+            {
+              "id": "455294",
+              "name": "Ehsaan"
+            },
+            {
+              "id": "455281",
+              "name": "Loy Mendonsa"
+            },
+            {
+              "id": "455669",
+              "name": "Vishal Dadlani"
+            },
+            {
+              "id": "455459",
+              "name": "Roopkumar Rathod"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "jYIT1FrI",
+        "name": "Aao Na",
+        "year": "2014",
+        "duration": 256,
+        "copyright": "©  2014 Junglee Music",
+        "album": {
+          "id": "1521145",
+          "name": "Haider",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "455669",
+              "name": "Vishal Dadlani"
+            },
+            {
+              "id": "456050",
+              "name": "Vishal Bhardwaj"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "GCWxHXMA",
+        "name": "Rajj Rajj Ke",
+        "year": "2016",
+        "duration": 260,
+        "copyright": "©  2016 T-Series",
+        "album": {
+          "id": "2502053",
+          "name": "Akira",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "459880",
+              "name": "Vishal &amp; Shekhar"
+            },
+            {
+              "id": "455669",
+              "name": "Vishal Dadlani"
+            },
+            {
+              "id": "2006458",
+              "name": "Nahid Afrin"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "2_tBUxhO",
+        "name": "Jana Gana Mana",
+        "year": "2022",
+        "duration": 244,
+        "copyright": "© 2023 Zee Music Company",
+        "album": {
+          "id": "35068913",
+          "name": "Major",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "461985",
+              "name": "Amit Mishra"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "total": 69,
+    "start": -9,
+    "results": [
+      {
+        "id": "156710699",
+        "name": "Bollywood Rock - Workout Mix",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 27
+      },
+      {
+        "id": "153572365",
+        "name": "Josh Hi Josh",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 30
+      },
+      {
+        "id": "111163065",
+        "name": "Workout - 1 Hour",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 25
+      },
+      {
+        "id": "168313130",
+        "name": "Just Run - 1 Hour",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 20
+      },
+      {
+        "id": "1200360637",
+        "name": "Bollywood Workout Hits",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 51
+      },
+      {
+        "id": "156654591",
+        "name": "Zumba - 1 Hour",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 34
+      },
+      {
+        "id": "952121651",
+        "name": "Takatak Theme Music",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 28
+      },
+      {
+        "id": "87109788",
+        "name": "Hip Hop Workout",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 45
+      },
+      {
+        "id": "148257613",
+        "name": "Do Time Gym",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 43
+      },
+      {
+        "id": "83412571",
+        "name": "Workout Beats - Tamil",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only",
+        "songCount": 40
+      }
+    ]
+  },
+  "playlistLast": {
+    "id": "156710699",
+    "name": "Bollywood Rock - Workout Mix",
+    "year": null,
+    "url": "https://media.example.invalid/test-only",
+    "songCount": 7,
+    "artists": [
+      {
+        "id": "640931",
+        "name": "Sachin Sanghvi",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "470069",
+        "name": "Jigar Saraiya",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "461968",
+        "name": "Sachin-Jigar",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455680",
+        "name": "Suraj Jagan",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "464934",
+        "name": "Mayur Puri",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455277",
+        "name": "Prabhu Deva",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "480051",
+        "name": "Ganesh Acharya",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "597219",
+        "name": "Salman Yusuff Khan",
+        "image": [],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "597220",
+        "name": "Dharmesh Yelande",
+        "image": [],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "597221",
+        "name": "Noorin Sha",
+        "image": [],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "597222",
+        "name": "Lauren Gottlieb",
+        "image": [],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "455280",
+        "name": "Shankar-Ehsaan-Loy",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "468461",
+        "name": "Farhan Akhtar",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "id": "465404",
+        "name": "Siddharth Mahadevan",
+        "image": [
+          {
+            "quality": "50x50",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "150x150",
+            "url": "https://media.example.invalid/test-only"
+          },
+          {
+            "quality": "500x500",
+            "url": "https://media.example.invalid/test-only"
+          }
+        ],
+        "url": "https://media.example.invalid/test-only"
+      }
+    ],
+    "image": [
+      {
+        "quality": "50x50",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "150x150",
+        "url": "https://media.example.invalid/test-only"
+      },
+      {
+        "quality": "500x500",
+        "url": "https://media.example.invalid/test-only"
+      }
+    ],
+    "songs": [
+      {
+        "id": "EFQvUZoa",
+        "name": "Kar Ja Re Ya Mar Ja Re",
+        "year": "2013",
+        "duration": 172,
+        "url": "https://media.example.invalid/test-only",
+        "copyright": "(P) 2013 UTV under exclusive license to Sony Music Entertainment India Pvt. Ltd.",
+        "album": {
+          "id": "3156191",
+          "name": "ABCD - Any Body Can Dance",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "461968",
+              "name": "Sachin-Jigar"
+            },
+            {
+              "id": "455680",
+              "name": "Suraj Jagan"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "GSl8OHJg",
+        "name": "Jaago",
+        "year": "2016",
+        "duration": 338,
+        "url": "https://media.example.invalid/test-only",
+        "copyright": "©  2016 Zee Music Co.",
+        "album": {
+          "id": "2664901",
+          "name": "Rock On 2",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "455280",
+              "name": "Shankar-Ehsaan-Loy"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "8kDOe6zr",
+        "name": "Junooniyatt",
+        "year": "2023",
+        "duration": 226,
+        "url": "https://media.example.invalid/test-only",
+        "copyright": "© 2023 Star India Pvt Ltd",
+        "album": {
+          "id": "43082741",
+          "name": "Junooniyatt",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "1850662",
+              "name": "Vivek Hariharan"
+            },
+            {
+              "id": "457145",
+              "name": "Salim Merchant"
+            },
+            {
+              "id": "463184",
+              "name": "Shraddha Pandit"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "yz6Xl7uT",
+        "name": "Pareshaan",
+        "year": "2012",
+        "duration": 292,
+        "url": "https://media.example.invalid/test-only",
+        "copyright": "© 2012 YRF Music",
+        "album": {
+          "id": "1031044",
+          "name": "Ishaqzaade",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "457422",
+              "name": "Amit Trivedi"
+            },
+            {
+              "id": "467027",
+              "name": "Shalmali"
+            },
+            {
+              "id": "461070",
+              "name": "Kausar Munir"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "FYn22Gd9",
+        "name": "Jannatein Kahan (Power Ballad)",
+        "year": "2012",
+        "duration": 271,
+        "url": "https://media.example.invalid/test-only",
+        "copyright": "(P) 2012 Sony Music Entertainment India Pvt. Ltd.",
+        "album": {
+          "id": "1032000",
+          "name": "Jannat 2",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "456323",
+              "name": "Pritam"
+            },
+            {
+              "id": "459576",
+              "name": "Nikhil D'souza"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "cnFyI_0A",
+        "name": "Bandeh",
+        "year": "2004",
+        "duration": 467,
+        "url": "https://media.example.invalid/test-only",
+        "copyright": "© 2004 Times Music",
+        "album": {
+          "id": "1022623",
+          "name": "Black Friday (Original Motion Picture Soundtrack)",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "464890",
+              "name": "Indian Ocean"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      },
+      {
+        "id": "svw76g-r",
+        "name": "Chhil Gaye Naina",
+        "year": "2025",
+        "duration": 197,
+        "url": "https://media.example.invalid/test-only",
+        "copyright": "(P) 2015 Sony Music Entertainment India Pvt. Ltd.",
+        "album": {
+          "id": "33318075",
+          "name": "NH10",
+          "url": "https://media.example.invalid/test-only"
+        },
+        "artists": {
+          "primary": [
+            {
+              "id": "459691",
+              "name": "Sanjeev-Darshan"
+            },
+            {
+              "id": "693814",
+              "name": "Kanika Kapoor"
+            },
+            {
+              "id": "7488910",
+              "name": "Deepanshu Pandit"
+            }
+          ]
+        },
+        "downloadUrl": [
+          {
+            "quality": "12kbps",
+            "url": "https://media.example.invalid/test-only/12kbps"
+          },
+          {
+            "quality": "48kbps",
+            "url": "https://media.example.invalid/test-only/48kbps"
+          },
+          {
+            "quality": "96kbps",
+            "url": "https://media.example.invalid/test-only/96kbps"
+          },
+          {
+            "quality": "160kbps",
+            "url": "https://media.example.invalid/test-only/160kbps"
+          },
+          {
+            "quality": "320kbps",
+            "url": "https://media.example.invalid/test-only/320kbps"
+          }
+        ]
+      }
+    ]
+  }
+}

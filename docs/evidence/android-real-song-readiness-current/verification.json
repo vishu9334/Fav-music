@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-07",
+  "timezone": "Asia/Calcutta",
+  "localMobileEndpoint": "PASS: https://anyway-pdf-obligation-suggests.trycloudflare.com/graphql",
+  "actualEasPreviewConfiguration": "FAIL: profile has no env values; fresh project/account preview checks returned no variables",
+  "normalCatalogMobileFlow": "BLOCKED: flag off, account-gated routes/transport, live catalogPage HTTP 401 UNAUTHORIZED",
+  "protectedUserApiGuard": "PASS: me HTTP 401 UNAUTHORIZED",
+  "providerMetadata": "PASS: three actual songs",
+  "boundedProviderAudio": "PASS: three HTTP 206 audio/mp4 responses, 1024 bytes each, MP4 ftyp; diagnostic only",
+  "intendedMobileFlowAudio": "NOT VERIFIED: no account/session or approved separate development channel",
+  "developmentSolution": "IMPLEMENTATION-READY PROPOSAL ONLY; policy/source/runtime changes awaiting approval",
+  "typeScript": "PASS: four workspaces",
+  "tests": {
+    "passed": 609,
+    "skippedLiveDatabase": 3
+  },
+  "bundles": {
+    "actualPreview": {
+      "metro": "PASS",
+      "modules": 2932,
+      "assets": 29,
+      "hermes": "PASS",
+      "bytecodeBytes": 5670303,
+      "registerComponentDefinitions": 1,
+      "canonicalEntryTail": true,
+      "workingHttpsEndpointBundled": false,
+      "soundHelixDemoBundled": false
+    },
+    "mobileDevelopment": {
+      "metro": "PASS",
+      "modules": 2932,
+      "assets": 29,
+      "hermes": "PASS",
+      "bytecodeBytes": 5670430,
+      "registerComponentDefinitions": 1,
+      "canonicalEntryTail": true,
+      "workingHttpsEndpointBundled": true,
+      "soundHelixDemoBundled": false
+    }
+  },
+  "configurationPreserved": {
+    "server/.env": true,
+    "apps/mobile/.env.local": true,
+    "eas.json": true,
+    "apps/mobile/eas.json": true,
+    "server/src/modules/catalog/catalog.module.ts": true,
+    "apps/mobile/src/catalog/catalog-runtime.ts": true,
+    "apps/mobile/src/auth/components/account-access.tsx": true,
+    "server/prisma/schema.prisma": true,
+    "app.json": true,
+    "apps/mobile/app.json": true,
+    "metro.config.js": true,
+    "apps/mobile/metro.config.js": true,
+    "apps/mobile/index.tsx": true,
+    "pnpm-lock.yaml": true
+  },
+  "runtimeCodeOrPolicyChanged": false,
+  "accountOrSchemaWrites": false,
+  "newCloudResourcesOrEasBuilds": false,
+  "meaningfulAsIsPreviewBuild": "FAIL: cannot reach real music through current app flow"
+}

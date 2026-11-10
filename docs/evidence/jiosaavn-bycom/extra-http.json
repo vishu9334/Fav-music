@@ -1,0 +1,169 @@
+{
+  "at": "2026-11-06T17:46:28.904Z",
+  "origin": "https://saavn.bycomsolutions.com",
+  "auth": "No credentials; ordinary JSON Accept header; no restriction bypass",
+  "results": [
+    {
+      "path": "/api/search/songs?query=Believer&page=1&limit=10",
+      "status": 200,
+      "ms": 1197,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 75979,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-0.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/search/songs?query=Believer&page=2&limit=10",
+      "status": 200,
+      "ms": 620,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 78952,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-1.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/albums?id=13435951",
+      "status": 200,
+      "ms": 509,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 74106,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-2.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/artists/599452",
+      "status": 200,
+      "ms": 614,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 141343,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-3.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/artists/599452/songs?page=0&sortBy=popularity&sortOrder=desc",
+      "status": 200,
+      "ms": 323,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 66172,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-4.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/artists/599452/songs?page=1&sortBy=popularity&sortOrder=desc",
+      "status": 200,
+      "ms": 366,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 58420,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-5.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/search/playlists?query=Workout&page=0&limit=10",
+      "status": 200,
+      "ms": 349,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 5327,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-6.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/playlists?id=82914609&page=0&limit=10",
+      "status": 200,
+      "ms": 388,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 37734,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-7.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    },
+    {
+      "path": "/api/playlists?id=82914609&page=1&limit=10",
+      "status": 200,
+      "ms": 331,
+      "contentType": "application/json",
+      "server": "cloudflare",
+      "location": null,
+      "cache": null,
+      "age": null,
+      "bodyBytes": 37779,
+      "accessDenied": false,
+      "rawMetadataFile": "extra-8.json",
+      "success": true,
+      "topLevelFields": [
+        "success",
+        "data"
+      ]
+    }
+  ]
+}

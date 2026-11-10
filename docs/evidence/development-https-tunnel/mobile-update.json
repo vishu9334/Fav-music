@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-07T01:16:31.464Z",
+  "file": "apps/mobile/.env.local",
+  "key": "EXPO_PUBLIC_GRAPHQL_ENDPOINT",
+  "oldEndpoint": "https://massachusetts-colleges-silicon-utc.trycloudflare.com/graphql",
+  "newEndpoint": "https://anyway-pdf-obligation-suggests.trycloudflare.com/graphql",
+  "onlyEndpointLineChanged": true,
+  "allOtherParsedValuesPreserved": true,
+  "otherConfigurationPreserved": {
+    "server/.env": true,
+    "app.json": true,
+    "apps/mobile/app.json": true,
+    "eas.json": true,
+    "server/development/local-redis.env": true
+  },
+  "authEnabled": false,
+  "catalogEnabled": false,
+  "authVerifiedEndpointMarkerPresent": false,
+  "cloudPersistenceEnabled": false
+}

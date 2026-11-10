@@ -1,0 +1,34 @@
+[
+  {
+    "path": "/",
+    "status": 403,
+    "server": "cloudflare",
+    "contentType": "text/plain; charset=UTF-8",
+    "proxyReason": null,
+    "body": "error code: 1010\n"
+  },
+  {
+    "path": "/docs",
+    "status": 403,
+    "server": "cloudflare",
+    "contentType": "text/plain; charset=UTF-8",
+    "proxyReason": null,
+    "body": "error code: 1010\n"
+  },
+  {
+    "path": "/openapi.json",
+    "status": 403,
+    "server": "cloudflare",
+    "contentType": "text/plain; charset=UTF-8",
+    "proxyReason": null,
+    "body": "error code: 1010\n"
+  },
+  {
+    "path": "/api/search/songs?query=Aadat&page=0&limit=2",
+    "status": 403,
+    "server": "cloudflare",
+    "contentType": "text/plain; charset=UTF-8",
+    "proxyReason": null,
+    "body": "error code: 1010\n"
+  }
+]

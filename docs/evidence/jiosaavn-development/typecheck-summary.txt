@@ -1,0 +1,13 @@
+
+> aadat-music-monorepo@0.1.0 typecheck /Users/magicmac/Library/CloudStorage/GoogleDrive-vishalkumarptn32@gmail.com/My Drive/Aadat-music
+> pnpm -r run typecheck
+
+Scope: 4 of 5 workspace projects
+packages/config typecheck$ true
+packages/config typecheck: Done
+packages/contracts typecheck$ tsc --noEmit
+packages/contracts typecheck: Done
+server typecheck$ tsc --noEmit
+apps/mobile typecheck$ tsc --noEmit
+apps/mobile typecheck: Done
+server typecheck: Done

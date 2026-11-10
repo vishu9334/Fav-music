@@ -1,0 +1,28 @@
+[
+  {
+    "variant": "normal",
+    "package": "com.favmusic",
+    "icons": {
+      "icon": "./assest/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assest/adaptive-icon.png",
+        "backgroundColor": "#09090b"
+      },
+      "favicon": "./assest/favicon.png"
+    },
+    "diagnostic": false
+  },
+  {
+    "variant": "diagnostic",
+    "package": "com.favmusic",
+    "icons": {
+      "icon": "./assest/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assest/adaptive-icon.png",
+        "backgroundColor": "#09090b"
+      },
+      "favicon": "./assest/favicon.png"
+    },
+    "diagnostic": true
+  }
+]
